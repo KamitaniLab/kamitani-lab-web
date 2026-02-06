@@ -11,8 +11,8 @@ hasCJKLanguage: true
 
 permalinks:
   publication: /publication/:slug/
-  post: /post/:slug/
-  project: /project/:slug/
+  post: /post/:contentbasename/
+  project: /project/:contentbasename/
 
 taxonomies:
   tag: tags
