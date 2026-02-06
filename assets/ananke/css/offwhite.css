@@ -1,0 +1,205 @@
+/* ============================================
+   VIRGIL ABLOH / OFF-WHITE DESIGN SYSTEM
+   "KAMITANI LAB"
+   ============================================ */
+
+/* --- TYPOGRAPHY --- */
+body,
+.avenir {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+}
+
+/* --- BASE COLORS --- */
+body {
+  background-color: #fff !important;
+  color: #111 !important;
+}
+
+/* --- KILL ALL BORDER-RADIUS --- */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+/* --- LINKS: monochrome --- */
+a {
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+a:hover,
+a:focus {
+  color: #000;
+  opacity: 0.6;
+}
+
+/* Override Tachyons link colors */
+.dark-blue { color: #000 !important; }
+.link.dark-blue { color: #000 !important; }
+.link.dark-blue:hover,
+.link.dark-blue:focus { opacity: 0.6; color: #000 !important; }
+.dim:hover,
+.dim:focus { opacity: 0.6 !important; }
+.hover-white:hover { color: rgba(255,255,255,0.7) !important; }
+
+/* --- HEADER / FOOTER --- */
+header .bg-black,
+header .bg-dark-blue,
+header [class*="bg-"] {
+  background-color: #000 !important;
+}
+
+/* Site title in header: industrial weight */
+header h1 {
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  font-weight: 900 !important;
+}
+
+/* --- NAVIGATION --- */
+nav a,
+nav li {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* --- CARDS: sharp, heavy border --- */
+.link-card,
+.paper-card,
+.member-card {
+  background: #fff !important;
+  border: 2px solid #000 !important;
+  border-radius: 0 !important;
+  transition: background-color 0.15s ease;
+}
+.link-card:hover,
+.paper-card:hover,
+.member-card:hover {
+  background: #f7f7f7 !important;
+}
+
+/* Override Tachyons card borders */
+.ba.b--light-gray {
+  border-color: #000 !important;
+  border-width: 2px !important;
+}
+.bg-white.ba {
+  border-color: #000 !important;
+  border-width: 2px !important;
+}
+
+/* --- SECTION HEADINGS --- */
+main h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 900;
+}
+
+/* Year dividers: heavy underline */
+main h2.bb {
+  border-bottom-width: 3px !important;
+  border-bottom-color: #000 !important;
+}
+
+/* --- TAGS: zip-tie style --- */
+.dib.bg-light-gray {
+  background-color: #000 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* --- BUTTONS --- */
+.bg-dark-blue {
+  background-color: #000 !important;
+}
+a.bg-dark-blue:hover {
+  background-color: #333 !important;
+}
+
+/* --- YEAR NAVIGATION PILLS --- */
+nav.tc a.ba {
+  border-color: #000 !important;
+  border-width: 2px !important;
+  color: #000 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+nav.tc a.ba:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #000 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* --- GRAY OVERRIDES --- */
+.mid-gray {
+  color: #333 !important;
+}
+.gray {
+  color: #666 !important;
+}
+
+/* --- BOTTOM BORDER ITEMS (news/art on homepage) --- */
+.bb.b--light-gray {
+  border-color: #000 !important;
+}
+
+/* --- QUOTATION MARK DECORATIONS (applied via template classes) --- */
+.ow-quote::before {
+  content: "\201C";
+  margin-right: 0.05em;
+}
+.ow-quote::after {
+  content: "\201D";
+  margin-left: 0.05em;
+}
+
+/* --- PAGEFIND SEARCH OVERRIDES --- */
+.pagefind-ui__search-input {
+  border: 2px solid #000 !important;
+  border-radius: 0 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.pagefind-ui__search-clear {
+  border-radius: 0 !important;
+}
+.pagefind-ui__result-link {
+  color: #000 !important;
+}
+
+/* --- CONTENT AREA --- */
+.nested-links a {
+  color: #000 !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.nested-links a:hover {
+  opacity: 0.6;
+}
+
+/* --- HORIZONTAL RULES --- */
+hr {
+  border-color: #000;
+  border-width: 2px;
+}
+
+/* --- SELECTION COLOR (Off-White yellow accent) --- */
+::selection {
+  background: #FFC300;
+  color: #000;
+}
+::-moz-selection {
+  background: #FFC300;
+  color: #000;
+}

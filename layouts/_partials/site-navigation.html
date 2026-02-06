@@ -1,0 +1,27 @@
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw9 hover-white white-90 dib no-underline" style="text-transform:uppercase; letter-spacing:0.12em;">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </a>
+    <div class="flex-l items-center">
+      {{ partials.Include "i18nlist.html" . }}
+      {{ if .Site.Menus.main }}
+        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}" style="display:flex; flex-wrap:wrap; align-items:center; gap:0;">
+          {{ range $i, $item := .Site.Menus.main }}
+          <li class="list f6 fw7 dib" style="text-transform:uppercase; letter-spacing:0.12em;">
+            {{ if $i }}<span class="white-40 mh2">/</span>{{ end }}
+            <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partials.IncludeCached "social/follow.html" . }}
+    </div>
+  </div>
+</nav>

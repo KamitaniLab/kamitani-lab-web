@@ -1,17 +1,17 @@
 {{/* Reusable card for link-type posts (media, awards, news, research) */}}
-<div class="link-card pa3 mb3 bg-white ba b--light-gray br2">
+<div class="link-card pa3 mb3 bg-white ba bw1 b--black">
   <h3 class="f5 fw6 mv0 lh-title">
     {{ if .Params.link_url }}
-      <a href="{{ .Params.link_url }}" class="link dark-blue dim" target="_blank" rel="noopener">{{ .Title }}</a>
+      <a href="{{ .Params.link_url }}" class="link black underline-hover" target="_blank" rel="noopener">{{ .Title }}</a>
     {{ else }}
-      <a href="{{ .RelPermalink }}" class="link dark-blue dim">{{ .Title }}</a>
+      <a href="{{ .RelPermalink }}" class="link black underline-hover">{{ .Title }}</a>
     {{ end }}
   </h3>
   <div class="f6 gray mt1">
     {{ .Date.Format "2006-01-02" }}
     {{ with .Params.tags }}
       {{ range . }}
-        <span class="dib bg-light-gray ph1 pv0 br2 ml1 f7">{{ . }}</span>
+        <span class="dib bg-black white ph1 pv0 ml1 f7 fw7 ttu tracked">{{ . }}</span>
       {{ end }}
     {{ end }}
   </div>
