@@ -1,0 +1,159 @@
+staff:
+  - name: "Yukiyasu Kamitani"
+    name_ja: "神谷 之康"
+    role: "Professor"
+    role_ja: "教授"
+    links:
+      - label: "Kyoto Univ Researcher DB"
+        url: "https://kdb.iimc.kyoto-u.ac.jp/profile_private/ja.8f4f353628c6dc71.html"
+
+  - name: "Yoshihiro Nagano"
+    name_ja: "長野 祥大"
+    role: "Assistant Professor"
+    role_ja: "助教"
+    links:
+      - label: "Website"
+        url: "https://ganow.me/"
+
+  - name: "Misato Tanaka"
+    name_ja: "田中 美里"
+    role: "Program-specific Researcher"
+    role_ja: "特定研究員"
+    links: []
+
+  - name: "Haibao Wang"
+    name_ja: "王 海保"
+    role: "Program-specific Researcher"
+    role_ja: "特定研究員"
+    links: []
+
+  - name: "Yukiko Masuda"
+    name_ja: "増田 由季子"
+    role: "Secretary"
+    role_ja: "秘書"
+    links: []
+
+atr_staff:
+  - name: "Yukiyasu Kamitani"
+    name_ja: "神谷 之康"
+    role: "Department Head"
+    role_ja: "室長"
+    links:
+      - label: "researchmap"
+        url: "http://researchmap.jp/y_kamitani/?lang=english"
+
+  - name: "Eizaburo Doi"
+    name_ja: "土肥 英三郎"
+    role: "Researcher"
+    role_ja: "研究員"
+    links:
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=F1Tci7gAAAAJ&hl=en"
+
+  - name: "Takufumi Yanagisawa"
+    name_ja: "柳澤 琢史"
+    role: "Visiting Researcher"
+    role_ja: "客員研究員"
+    affiliation: "Osaka University"
+    affiliation_ja: "大阪大学"
+    links:
+      - label: "researchmap"
+        url: "http://researchmap.jp/takufumi/?lang=english"
+
+  - name: "Ryohei Fukuma"
+    name_ja: "福間 良平"
+    role: "Visiting Researcher"
+    role_ja: "客員研究員"
+    affiliation: "Osaka University"
+    affiliation_ja: "大阪大学"
+    links:
+      - label: "researchmap"
+        url: "http://researchmap.jp/fukuma/?lang=english"
+
+  - name: "Mitsuaki Tsukamoto"
+    name_ja: "塚本 光昭"
+    role: "Research Engineer"
+    role_ja: "研究技術員"
+    links:
+      - label: "researchmap"
+        url: "https://researchmap.jp/m_tsukamoto/?lang=english"
+
+  - name: "Fan Cheng"
+    name_ja: "程 帆"
+    role: "Intern"
+    role_ja: "研修研究員"
+    links: []
+
+  - name: "Huixiang Yang"
+    name_ja: "楊 惠翔"
+    role: "Cooperate Researcher"
+    role_ja: "連携研究員"
+    affiliation: "Osaka University"
+    affiliation_ja: "大阪大学"
+    links: []
+
+atr_students:
+  - name: "Ken Shirakawa"
+    name_ja: "白川 健"
+    level: "D3"
+    affiliation: "Kyoto University"
+
+  - name: "Naoki Miyaguchi"
+    name_ja: "宮口 直樹"
+    level: "M2"
+    affiliation: "Kyoto University"
+
+atr_secretary:
+  - name: "Yukari Kado"
+    name_ja: "加道 由香里"
+    role: "Secretary"
+    role_ja: "秘書"
+
+students:
+  - name: "Shiyun Yang"
+    name_ja: "楊 詩韻"
+    level: "D2"
+
+  - name: "Kenya Otsuka"
+    name_ja: "大塚 健矢"
+    level: "D1"
+
+  - name: "Hideki Izumi"
+    name_ja: "泉 英樹"
+    level: "M2"
+
+  - name: "Shunsuke Onoo"
+    name_ja: "小野尾 俊介"
+    level: "M2"
+
+  - name: "Taiga Kurosawa"
+    name_ja: "黒澤 大河"
+    level: "M2"
+
+  - name: "Reo Tsukasa"
+    name_ja: "司 怜央"
+    level: "M2"
+
+  - name: "Yawei Yu"
+    name_ja: "喻 雅葳"
+    level: "M2"
+
+  - name: "Xiaoxuan Liu"
+    name_ja: "劉 暁軒"
+    level: "M2"
+
+  - name: "Motokazu Umehara"
+    name_ja: "梅原 志和"
+    level: "M1"
+
+  - name: "Noa Nakanishi"
+    name_ja: "中西 希天"
+    level: "M1"
+
+  - name: "Moana Mikami"
+    name_ja: "三上 モアナ"
+    level: "M1"
+
+  - name: "Hiroki Yasuda"
+    name_ja: "安田 大起"
+    level: "M1"
