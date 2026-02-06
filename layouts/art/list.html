@@ -15,7 +15,7 @@
 
   {{ range $years }}
     {{ $year := . }}
-    <h2 id="year-{{ $year }}" class="f4 fw6 mb3 mt4 bb b--light-gray pb2">{{ $year }}</h2>
+    <h2 id="year-{{ $year }}" class="f4 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked ow-quote">{{ $year }}</h2>
     {{ range $pages }}
       {{ if eq (.Date.Format "2006") $year }}
         {{ partial "link-card.html" . }}
