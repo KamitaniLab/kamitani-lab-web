@@ -1,0 +1,22 @@
+appearance:
+  theme_day: minimal
+  font: native
+
+header:
+  navbar:
+    show_language: true
+    show_search: true
+
+footer:
+  copyright:
+    notice: "© {year} Kamitani Lab, Kyoto University & ATR"
+
+features:
+  search:
+    provider: pagefind
+
+marketing:
+  seo:
+    org_name: Kamitani Lab
+    twitter: ykamit
+    description: "Kamitani Lab – Neuroinformatics – Kyoto University & ATR"

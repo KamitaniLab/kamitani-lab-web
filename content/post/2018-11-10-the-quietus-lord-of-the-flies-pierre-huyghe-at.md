@@ -1,0 +1,20 @@
+---
+title: 'The Quietus | Lord Of The Flies: Pierre Huyghe At The Serpentine　| 2018'
+date: 2018-11-10
+tags:
+- art
+- exhibition
+- review
+- news
+- media
+- deepimagereconstruction
+tumblr_url: https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/179958572961/the-quietus-lord-of-the-flies-pierre-huyghe-at
+links:
+- name: Link
+  url: http://thequietus.com/articles/25633-pierre-huyghe-uumwelt-serpentine-review
+aliases:
+- /news/the-quietus-lord-of-the-flies-pierre-huyghe-at/
+---
+
+[The Quietus | Lord Of The Flies: Pierre Huyghe At The Serpentine　| 2018](http://thequietus.com/articles/25633-pierre-huyghe-uumwelt-serpentine-review)
+

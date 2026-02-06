@@ -1,0 +1,39 @@
+baseURL: https://ykamit.github.io/kamitani-lab/
+title: Kamitani Lab
+
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+
+permalinks:
+  publication: /publication/:slug/
+  post: /post/:slug/
+  project: /project/:slug/
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+pagination:
+  pagerSize: 20
+
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^CI$
+      - ^WC_

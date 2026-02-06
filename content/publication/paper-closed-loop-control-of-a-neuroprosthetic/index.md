@@ -1,0 +1,20 @@
+---
+title: Closed-Loop Control of a Neuroprosthetic Hand by Magnetoencephalographic Signals
+  | PLoS ONE 2015
+date: 2015-07-02
+tags:
+- papers
+tumblr_url: https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152904222926/paper-closed-loop-control-of-a-neuroprosthetic
+links:
+- name: Paper
+  url: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0131547
+publication_types:
+- article-journal
+featured: false
+aliases:
+- /papers/paper-closed-loop-control-of-a-neuroprosthetic/
+---
+
+[[paper] Closed-Loop Control of a Neuroprosthetic Hand by Magnetoencephalographic Signals | PLoS ONE 2015](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0131547)
+
+Fukuma, R., Yanagisawa, T., Yorifuji, S., Kato, R., Yokoi, H., Hirata, M., … Yoshimine, T. (2015). Closed-Loop Control of a Neuroprosthetic Hand by Magnetoencephalographic Signals. PLOS ONE, 10(7), e0131547. | Objective A neuroprosthesis using a brain–machine interface (BMI) is a promising therapeutic option for severely paralyzed patients, but the ability to control it may vary among individual patients and needs to be evaluated before any invasive procedure is undertaken. We have developed a neuroprosthetic hand that can be controlled by magnetoencephalographic (MEG) signals to noninvasively evaluate subjects’ ability to control a neuroprosthesis. Method Six nonparalyzed subjects performed grasping or opening movements of their right hand while the slow components of the MEG signals (SMFs) were recorded in an open-loop condition. The SMFs were used to train two decoders to infer the timing and types of movement by support vector machine and Gaussian process regression. The SMFs were also used to calculate estimated slow cortical potentials (eSCPs) to identify the origin of motor information. Finally, using the trained decoders, the subjects controlled a neuroprosthetic hand in a closed-loop condition. Results The SMFs in the open-loop condition revealed movement-related cortical field characteristics and successfully inferred the movement type with an accuracy of 75.0 ± 12.9% (mean ± SD). In particular, the eSCPs in the sensorimotor cortex contralateral to the moved hand varied significantly enough among the movement types to be decoded with an accuracy of 76.5 ± 10.6%, which was significantly higher than the accuracy associated with eSCPs in the ipsilateral sensorimotor cortex (58.1 ± 13.7%; p = 0.0072, paired two-tailed Student’s t -test). Moreover, another decoder using SMFs successfully inferred when the accuracy was the greatest. Combining these two decoders allowed the neuroprosthetic hand to be controlled in a closed-loop condition. Conclusions Use of real-time MEG signals was shown to successfully control the neuroprosthetic hand. The developed system may be useful for evaluating movement-related slow cortical potentials of severely paralyzed patients to predict the efficacy of invasive BMI.
