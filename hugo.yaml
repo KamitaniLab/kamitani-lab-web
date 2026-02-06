@@ -37,7 +37,7 @@ languages:
         - name: ニュース
           pageRef: /news
           weight: 50
-        - name: リンク
+        - name: Resources
           pageRef: /links
           weight: 80
         - name: 検索
@@ -64,7 +64,7 @@ menus:
     - name: News
       pageRef: /news
       weight: 50
-    - name: Links
+    - name: Resources
       pageRef: /links
       weight: 80
     - name: Search
