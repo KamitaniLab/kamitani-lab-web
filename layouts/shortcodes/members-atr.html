@@ -1,6 +1,6 @@
 <div class="members-grid">
 {{ range .Site.Data.members.atr_staff }}
-<div class="member-card pa3 mb3 ba bw1 b--black">
+<div class="member-card pa3 mb3 bb b--black">
   <h3 class="f4 fw7 mb1 ttu tracked">{{ .name }}</h3>
   <p class="f5 gray mt0 mb1">{{ .name_ja }}</p>
   <p class="f5 mb1">{{ .role }} / {{ .role_ja }}</p>
@@ -14,7 +14,7 @@
 {{ end }}
 
 {{ range .Site.Data.members.atr_students }}
-<div class="member-card pa3 mb3 ba bw1 b--black">
+<div class="member-card pa3 mb3 bb b--black">
   <h3 class="f4 fw7 mb1 ttu tracked">{{ .name }}</h3>
   <p class="f5 gray mt0 mb1">{{ .name_ja }}</p>
   <p class="f5 mb0">{{ .level }}{{ with .affiliation }}, {{ . }}{{ end }}</p>
@@ -22,7 +22,7 @@
 {{ end }}
 
 {{ range .Site.Data.members.atr_secretary }}
-<div class="member-card pa3 mb3 ba bw1 b--black">
+<div class="member-card pa3 mb3 bb b--black">
   <h3 class="f4 fw7 mb1 ttu tracked">{{ .name }}</h3>
   <p class="f5 gray mt0 mb1">{{ .name_ja }}</p>
   <p class="f5 mb0">{{ .role }} / {{ .role_ja }}</p>

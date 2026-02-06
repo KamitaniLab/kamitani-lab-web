@@ -34,7 +34,7 @@
           <a href="{{ "papers/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
         </div>
         {{ range first 5 $papers }}
-        <div class="pa3 mb2 bg-white ba bw1 b--black">
+        <div class="pa3 mb2 bg-white">
           <h3 class="f5 fw6 mv0 lh-title">
             {{ if .Params.link_url }}
               <a href="{{ .Params.link_url }}" class="link black underline-hover" target="_blank" rel="noopener">{{ .Title }}</a>

@@ -66,29 +66,13 @@ nav li {
   font-size: 0.85rem;
 }
 
-/* --- CARDS: sharp, heavy border --- */
+/* --- CARDS: no frames --- */
 .link-card,
 .paper-card,
 .member-card {
   background: #fff !important;
-  border: 2px solid #000 !important;
+  border: none !important;
   border-radius: 0 !important;
-  transition: background-color 0.15s ease;
-}
-.link-card:hover,
-.paper-card:hover,
-.member-card:hover {
-  background: #f7f7f7 !important;
-}
-
-/* Override Tachyons card borders */
-.ba.b--light-gray {
-  border-color: #000 !important;
-  border-width: 2px !important;
-}
-.bg-white.ba {
-  border-color: #000 !important;
-  border-width: 2px !important;
 }
 
 /* --- SECTION HEADINGS --- */
