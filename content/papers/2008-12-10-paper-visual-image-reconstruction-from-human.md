@@ -13,5 +13,5 @@ Miyawaki, Y., Uchida, H., Yamashita, O., Sato, M., Morito, Y., Tanabe, H. C., â€
 
 [pdf] [http://www.cell.com/neuron/pdf/S0896-6273(08)00958-6.pdf](http://www.cell.com/neuron/pdf/S0896-6273(08)00958-6.pdf)
 
-![image](https://64.media.tumblr.com/4342730dbb0827e62e89cfa40de4d22c/tumblr_inline_ofqxcgUgXH1tgfa5r_540.png)
-![image](https://64.media.tumblr.com/9c8514b03b4e60fddd8b07c66ac30429/tumblr_inline_ofrezqBPKA1tgfa5r_540.jpg)
+![image](/images/posts/65b806250850_tumblr_inline_ofqxcgUgXH1tgfa5r_540.png)
+![image](/images/posts/cb9e9e960552_tumblr_inline_ofrezqBPKA1tgfa5r_540.jpg)

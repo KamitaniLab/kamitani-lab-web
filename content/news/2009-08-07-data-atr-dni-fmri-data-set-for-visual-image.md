@@ -10,4 +10,4 @@ draft: false
 [[data] ATR – DNi » fMRI Data Set for Visual Image Reconstruction: Miyawaki et al., Neuron 2008](https://bicr.atr.jp/dni/en/downloads/fmri-data-set-for-visual-image-reconstruction/)
 
 
-![image](https://64.media.tumblr.com/e1fcc445a091f96d12cc41abf41a45b0/tumblr_inline_ofonyyEU0C1tgfa5r_540.jpg)
+![image](/images/posts/123faa601a4c_tumblr_inline_ofonyyEU0C1tgfa5r_540.jpg)

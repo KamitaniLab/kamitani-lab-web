@@ -17,4 +17,4 @@ Highlights
 
 ► Decoding of orientation-selective activity patterns depends on visual input strength. ► Results largely follow the predictions of neurophysiological studies in animals. ► Areas V1–V3 are differentially affected by changes in contrast and spatial frequency. ► Amplitude of BOLD response can predict changes in orientation decoding accuracy. ► Predictions are enhanced by incorporating BOLD amplitudes into a simulation model.
 
-![image](https://64.media.tumblr.com/8c282a95f8e32b4310afe60725341a6a/tumblr_inline_ofwtydsQZz1tgfa5r_540.png)
+![image](/images/posts/4ba3ee4cafd1_tumblr_inline_ofwtydsQZz1tgfa5r_540.png)

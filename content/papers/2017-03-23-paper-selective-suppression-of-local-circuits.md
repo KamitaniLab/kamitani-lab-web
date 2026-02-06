@@ -11,4 +11,4 @@ draft: false
 
 Hasegawa M, Majima K, Itokazu T, Maki T, Albrecht U-R, Castner N, Izumo M, Sohya K, Sato TK, Kamitani Y, Sato TR (2017) Selective Suppression of Local Circuits during Movement Preparation in the Mouse Motor Cortex. Cell Rep 18:2676–2686.
 
-![image](https://64.media.tumblr.com/bde06323ea385508d0f5a5bbcc1895f0/tumblr_inline_on9te0O2Im1tgfa5r_540.jpg)
+![image](/images/posts/dbeb2c2f75c5_tumblr_inline_on9te0O2Im1tgfa5r_540.jpg)

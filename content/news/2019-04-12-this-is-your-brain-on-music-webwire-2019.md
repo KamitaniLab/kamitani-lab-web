@@ -10,4 +10,4 @@ draft: false
 [This is your brain on music | WebWire 2019](https://www.webwire.com/ViewPressRel.asp?aId=237447)
 
 
-![image](https://64.media.tumblr.com/382f5c723fdd2a6500a1efe99ddc7cfd/tumblr_inline_ppuwiuZzq51tgfa5r_540.jpg)
+![image](/images/posts/de7bf7ee02e0_tumblr_inline_ppuwiuZzq51tgfa5r_540.jpg)

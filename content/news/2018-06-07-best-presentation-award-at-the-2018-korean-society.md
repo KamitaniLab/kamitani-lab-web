@@ -7,4 +7,4 @@ draft: false
 ---
 
 
-![image](https://64.media.tumblr.com/8cf4a8162b1a54f74b0dd3d0b4bb4c5d/tumblr_inline_p9y214cgDX1tgfa5r_540.png)
+![image](/images/posts/7f0cc2c5cb5a_tumblr_inline_p9y214cgDX1tgfa5r_540.png)

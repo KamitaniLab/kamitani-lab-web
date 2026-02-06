@@ -10,4 +10,4 @@ draft: false
 [Aperitif de Cinema | WEB連載 | 大人の科学.net Dr.  パルナサスの鏡 ヒース・レジャーの遺作にしてテリー・ギリアムの最高傑作 夢を忘れた大人のための究極のファンタジー](http://otonanokagaku.net/issue/cinema/vol12/)
 
 
-![image](https://64.media.tumblr.com/6f842f9de92b92a1f4353c578cbcabb0/tumblr_inline_offmc33enr1tgfa5r_540.jpg)
+![image](/images/posts/dd9badb659c0_tumblr_inline_offmc33enr1tgfa5r_540.jpg)

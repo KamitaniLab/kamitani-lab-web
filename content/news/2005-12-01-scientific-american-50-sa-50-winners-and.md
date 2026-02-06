@@ -10,4 +10,4 @@ draft: false
 [Scientific American 50: SA 50 Winners and Contributors](https://www.scientificamerican.com/article/scientific-american-50-sa/)
 
 
-![image](https://64.media.tumblr.com/70d487b0911fb5b9a5f8edaee23ed1b7/tumblr_inline_offp28nzx91tgfa5r_540.png)
+![image](/images/posts/9eac1ef93881_tumblr_inline_offp28nzx91tgfa5r_540.png)

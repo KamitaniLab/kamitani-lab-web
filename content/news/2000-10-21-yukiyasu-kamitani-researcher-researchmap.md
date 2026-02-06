@@ -10,4 +10,4 @@ draft: false
 [Yukiyasu Kamitani - Researcher - researchmap](http://researchmap.jp/y_kamitani/?lang=english)
 
 
-![image](https://64.media.tumblr.com/c2f7457c56d90e1b6e25f1b3f6eaace1/tumblr_inline_ofk4eyrW2E1tgfa5r_540.png)
+![image](/images/posts/1546282a3a05_tumblr_inline_ofk4eyrW2E1tgfa5r_540.png)

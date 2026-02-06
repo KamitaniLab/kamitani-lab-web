@@ -24,4 +24,4 @@ Abstract: Studying the brain using functional MRI is a complex and effort-intens
 
 本講演会は、科学研究費補助金基盤研究（S）「心的イメージの神経基盤の解明」（研究代表者：神谷之康、JP15H05710） の助成を受けて行われます。
 
-![image](https://64.media.tumblr.com/71b9a16a5a74613e78a0db34a41cd871/tumblr_inline_otlfb20Kfn1tgfa5r_540.jpg)
+![image](/images/posts/1eb1ec2fa0d4_tumblr_inline_otlfb20Kfn1tgfa5r_540.jpg)

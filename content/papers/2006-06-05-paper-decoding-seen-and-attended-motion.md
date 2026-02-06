@@ -13,4 +13,4 @@ Kamitani, Y., & Tong, F. (2006). Decoding Seen and Attended Motion Directions fr
 
 Free PMC Article [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635016/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635016/)
 
-![image](https://64.media.tumblr.com/bee606f286dae9664a8f45400b95001f/tumblr_inline_ofwlzpDyj01tgfa5r_540.jpg)
+![image](/images/posts/41db56208482_tumblr_inline_ofwlzpDyj01tgfa5r_540.jpg)

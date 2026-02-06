@@ -11,4 +11,4 @@ draft: false
 
 間島 慶、神谷 之康, BRAIN and NERVE 63(3) 241-246 (2011)
 
-![image](https://64.media.tumblr.com/17d4f59f2270f659dee55e4e16ccfd58/tumblr_inline_ofwrtxBTUE1tgfa5r_540.png)
+![image](/images/posts/b990fabdee67_tumblr_inline_ofwrtxBTUE1tgfa5r_540.png)

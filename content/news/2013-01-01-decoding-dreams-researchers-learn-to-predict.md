@@ -10,4 +10,4 @@ draft: false
 [Decoding Dreams -  Researchers learn to predict visual imagery in dreams based on functional MRI scans of brain activity during sleep.](http://www.the-scientist.com/?articles.view/articleNo/33726/title/Decoding-Dreams/)
 
 
-![image](https://64.media.tumblr.com/31a07be551be919f2d38c11e13b40a35/tumblr_inline_offlt9XgB41tgfa5r_540.jpg)
+![image](/images/posts/217aefd1e14b_tumblr_inline_offlt9XgB41tgfa5r_540.jpg)

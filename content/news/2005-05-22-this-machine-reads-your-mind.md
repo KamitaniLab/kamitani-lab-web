@@ -10,4 +10,4 @@ draft: false
 [This Machine Reads Your Mind](http://www.mindpowernews.com/MachineReadsMinds.htm)
 
 
-![image](https://64.media.tumblr.com/d48b90453b1dc9c749df3491a752d879/tumblr_inline_offouf594o1tgfa5r_540.png)
+![image](/images/posts/6c6eed84893c_tumblr_inline_offouf594o1tgfa5r_540.png)

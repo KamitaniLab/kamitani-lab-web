@@ -11,4 +11,4 @@ draft: false
 
 The robotic hand mimics a real one and is controlled based on real-time imaging of the user’s brain activity
 
-![image](https://64.media.tumblr.com/448af2a5ff31a5b63321594bd260936c/tumblr_inline_ogf5n7t0CP1tgfa5r_540.jpg)
+![image](/images/posts/9ad672d10337_tumblr_inline_ogf5n7t0CP1tgfa5r_540.jpg)

@@ -10,4 +10,4 @@ draft: false
 [Members: ATR Lab (Department of Neuroinformatics)](https://bicr.atr.jp/dni/member/)
 
 
-![image](https://64.media.tumblr.com/011932b532fda2ae1419b6b1d8060197/tumblr_inline_ofk3sdMPIq1tgfa5r_500.gif)
+![image](/images/posts/0db6027f3c5b_tumblr_inline_ofk3sdMPIq1tgfa5r_500.gif)
