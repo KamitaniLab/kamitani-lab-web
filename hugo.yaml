@@ -28,7 +28,7 @@ languages:
         - name: 研究
           pageRef: /research
           weight: 30
-        - name: 論文
+        - name: Publications
           pageRef: /papers
           weight: 35
         - name: アート
@@ -55,7 +55,7 @@ menus:
     - name: Research
       pageRef: /research
       weight: 30
-    - name: Papers
+    - name: Publications
       pageRef: /papers
       weight: 35
     - name: Artworks
