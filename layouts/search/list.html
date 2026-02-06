@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns mw7 center">
+  <h1 class="f2 fw6 mb4">{{ .Title }}</h1>
+  <div id="search" class="mb5"></div>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        showImages: false
+      });
+    });
+  </script>
+</article>
+{{ end }}

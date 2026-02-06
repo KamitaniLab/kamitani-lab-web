@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Kamitani Lab (Kyoto University & ATR) website, built with Hugo and Hugo Blox (Research Group theme), deployed to GitHub Pages. Migrated from a Tumblr-based site (371 posts).
+Kamitani Lab (Kyoto University & ATR) website, built with Hugo and deployed to GitHub Pages. Migrated from a Tumblr-based site (371 posts).
 
 ## Commands
 
@@ -15,81 +15,63 @@ hugo server --buildDrafts
 # Production build + search index
 hugo --gc --minify && npx pagefind --site public
 
-# Update Hugo modules
-hugo mod get -u && hugo mod tidy
-
 # Create new content
-hugo new content publication/YYYY-slug/index.md
-hugo new content post/YYYY-MM-title.md
-hugo new content project/YYYY-MM-title.md
+hugo new content papers/YYYY-slug.md
+hugo new content news/YYYY-MM-title.md
+hugo new content art/YYYY-MM-title.md
+
+# Re-run Tumblr migration (fetches all 371 posts)
+python3 scripts/migrate_tumblr.py
 ```
 
 Build output goes to `public/` (gitignored). Deployment is automated via GitHub Actions on push to `main` (builds Hugo, runs Pagefind, deploys).
 
 ## Architecture
 
-- **Hugo static site** with Hugo Blox (blox-bootstrap/v5 module)
-- **Bilingual** (English default, Japanese): configured in `config/_default/languages.yaml`
+- **Hugo static site** with Ananke theme (git submodule in `themes/ananke`, Tachyons CSS)
+- **Bilingual** (English default, Japanese): configured in `hugo.yaml` under `languages`
 - **GitHub Actions** deploys on push to main (`.github/workflows/deploy.yml`)
 - **Pagefind** provides static full-text search (`/search/`)
 
 ### Navigation
 
-About → Members → Research → Publications → Artworks → News → Links → Search
-
-### Configuration
-
-Split configuration in `config/_default/`:
-
-| File | Purpose |
-|---|---|
-| `hugo.yaml` | Core settings, module imports, permalinks, outputs |
-| `params.yaml` | Theme appearance, header, footer, search, SEO |
-| `menus.yaml` | English navigation menu |
-| `languages.yaml` | Language settings (en/ja) with Japanese menu |
+About → Members → Research → Papers → Artworks → News → Links → Search
 
 ### Content structure
 
 | Directory | Purpose | Format |
 |---|---|---|
-| `content/publication/` | Publications (65) | Page bundles (`<slug>/index.md`) with `publication_types`, `links` |
-| `content/post/` | News, media coverage, awards (269) | Flat markdown with `links`, `external_link` |
-| `content/project/` | Art projects and collaborations (36) | Flat markdown with `links`, `external_link` |
-| `content/authors/` | Lab members (26) | Page bundles (`<slug>/_index.md`) with `user_groups` |
-| `content/people/` | Members listing page | Landing page with `people` blocks |
-| `content/research/` | Static summary page (4 areas) | Landing page with `markdown` block |
-| `content/about/` | Lab info, affiliation, access | Landing page with `markdown` block |
+| `content/papers/` | Publications (65) | Markdown with `link_url`, `tags` |
+| `content/news/` | News, media coverage, awards (270) | Markdown with `link_url`, `tags` |
+| `content/art/` | Art projects and collaborations (36) | Markdown with `link_url`, `tags` |
+| `content/research/` | Static summary page (4 areas) | Single page, `layout: "research"` |
+| `content/members/` | Members listing (Kyoto U + ATR) | Shortcodes rendering `data/members.yaml` |
+| `content/about/` | Lab info, affiliation, access | Single page |
 | `content/links/` | External resources and profiles | Single page |
-| `content/search/` | Search page | Custom layout (`page/search`) with Pagefind UI |
+| `content/search/` | Search page | Pagefind UI widget |
 
 ### Custom layouts
 
-- `layouts/page/search.html` — Pagefind search UI widget
+- `layouts/papers/list.html` — Year-grouped listing with year-nav anchors
+- `layouts/papers/single.html` — Paper detail with "Read paper" button
+- `layouts/{news,art}/list.html` — Year-grouped card listings via `_partials/link-card.html`
+- `layouts/research/research.html` — Static summary (no post list)
+- `layouts/search/list.html` — Pagefind search UI
+- `layouts/shortcodes/members-{staff,students,atr}.html` — Render from `data/members.yaml`
 
 ### Data files
 
-- **`data/members.yaml`** — Original member data (reference copy; authors are in `content/authors/`)
+- **`data/members.yaml`** — Staff/students for both Kyoto University and ATR labs. Sections: `staff`, `students`, `atr_staff`, `atr_students`, `atr_secretary`.
 
 ### Key conventions
 
-- Migrated posts use `links` array (Hugo Blox format) and `external_link` for external URLs.
+- Migrated posts use `link_url` (not `url`, reserved by Hugo) for external links.
 - `tumblr_url` in frontmatter preserves original Tumblr post URLs.
-- `aliases` in frontmatter provide redirects from old URLs (`/papers/`, `/news/`, `/art/`).
-- Navigation menu defined in `config/_default/menus.yaml` (EN) and `config/_default/languages.yaml` (JA).
-- Homepage and section pages use Hugo Blox `landing` type with widget `sections`.
-- Members use Hugo Blox Authors system with `user_groups` for People widget grouping.
-- Publications use page bundles; posts and projects use flat files.
+- Navigation menu defined centrally in `hugo.yaml` under `menus.main`.
+- Content filenames follow `YYYY-MM-DD-slug.md` pattern.
+- Section list templates group posts by year in reverse chronological order.
+- Research page is a static summary (Brain Decoding, NeuroAI, BMI, Art), not a post list.
 
-### URL mapping (old → new)
+### Migration script
 
-| Old | New |
-|---|---|
-| `/papers/` | `/publication/` |
-| `/news/` | `/post/` |
-| `/art/` | `/project/` |
-| `/members/` | `/people/` |
-
-### Migration scripts
-
-- `scripts/migrate_tumblr.py` — Fetches posts from Tumblr API, writes Hugo content files
-- `scripts/migrate_to_blox.py` — Converts Ananke content to Hugo Blox structure (papers→publication, news→post, art→project, members→authors)
+`scripts/migrate_tumblr.py` fetches all posts from the Tumblr API (`/api/read/json`), handles `regular` (NPF), `link`, and `photo` post types, classifies by tags (`papers` → papers, `art` → art, default → news), and writes Hugo Markdown files.
