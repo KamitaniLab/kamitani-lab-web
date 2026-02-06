@@ -17,7 +17,7 @@
   {{/* Year navigation */}}
   <nav class="tc mb4">
     {{ range $years }}
-      <a href="#year-{{ . }}" class="f6 link ba bw1 b--black ph2 pv1 mb2 dib black fw7 ttu tracked mr1">{{ . }}</a>
+      <a href="#year-{{ . }}" class="f6 link ph2 pv1 mb2 dib black fw7 ttu tracked mr1 underline-hover">{{ . }}</a>
     {{ end }}
   </nav>
 
@@ -28,7 +28,7 @@
     <div class="paper-list">
       {{ range $pages }}
         {{ if eq (.Date.Format "2006") $year }}
-        <div class="paper-card pa3 mb3 bg-white ba bw1 b--black">
+        <div class="paper-card pa3 mb3 bg-white">
           <h3 class="f5 fw6 mv0 lh-title">
             {{ if .Params.link_url }}
               <a href="{{ .Params.link_url }}" class="link black underline-hover" target="_blank" rel="noopener">{{ .Title }}</a>
