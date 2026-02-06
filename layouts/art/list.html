@@ -20,7 +20,7 @@
       {{ if eq (.Date.Format "2006") $year }}
         {{ partial "link-card.html" . }}
         {{ with .Content }}
-          <div class="f5 mid-gray mb4 ml3 nested-links">{{ . }}</div>
+          <div class="f5 mid-gray mb4 ml3 nested-links youtube-container">{{ . }}</div>
         {{ end }}
       {{ end }}
     {{ end }}

@@ -134,6 +134,16 @@ footer {
   color: #666 !important;
 }
 
+/* --- YOUTUBE EMBEDS: smaller in listings --- */
+.youtube-container {
+  max-width: 360px;
+}
+.youtube-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+}
+
 /* --- BOTTOM BORDER ITEMS (news/art on homepage) --- */
 .bb.b--light-gray {
   border-color: #000 !important;
