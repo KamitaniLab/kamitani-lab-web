@@ -23,49 +23,6 @@
     </section>
     {{ end }}
 
-    <div class="flex-ns">
-
-      {{/* Publications (bottom left) */}}
-      {{ $papers := (where site.RegularPages "Section" "papers").ByDate.Reverse }}
-      {{ if $papers }}
-      <section class="mb5 w-50-ns pr3-ns">
-        <div class="flex items-center justify-between mb3">
-          <h2 class="f3 fw9 mv0 ttu tracked ow-quote">Latest Publications</h2>
-          <a href="{{ "papers/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
-        </div>
-        {{ range first 5 $papers }}
-        <div class="pa3 mb2 bg-white">
-          <h3 class="f5 fw6 mv0 lh-title">
-            {{ if .Params.link_url }}
-              <a href="{{ .Params.link_url }}" class="link black underline-hover" target="_blank" rel="noopener">{{ .Title }}</a>
-            {{ else }}
-              <a href="{{ .RelPermalink }}" class="link black underline-hover">{{ .Title }}</a>
-            {{ end }}
-          </h3>
-          <span class="f6 gray">{{ .Date.Format "2006-01-02" }}</span>
-        </div>
-        {{ end }}
-      </section>
-      {{ end }}
-
-      {{/* Art (bottom right) */}}
-      {{ $art := (where site.RegularPages "Section" "art").ByDate.Reverse }}
-      {{ if $art }}
-      <section class="mb5 w-50-ns pl3-ns">
-        <div class="flex items-center justify-between mb3">
-          <h2 class="f3 fw9 mv0 ttu tracked ow-quote">Art</h2>
-          <a href="{{ "art/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
-        </div>
-        {{ range first 5 $art }}
-        <div class="pa2 mb2 bb bw1 b--black">
-          <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 link black underline-hover lh-title db"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
-          <span class="f7 gray">{{ .Date.Format "2006-01-02" }}</span>
-        </div>
-        {{ end }}
-      </section>
-      {{ end }}
-
-    </div>
   </div>
 
 {{ end }}

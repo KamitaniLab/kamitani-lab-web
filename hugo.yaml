@@ -34,9 +34,6 @@ languages:
         - name: アート
           pageRef: /art
           weight: 40
-        - name: ニュース
-          pageRef: /news
-          weight: 50
         - name: Resources
           pageRef: /links
           weight: 80
@@ -61,9 +58,6 @@ menus:
     - name: Art
       pageRef: /art
       weight: 40
-    - name: News
-      pageRef: /news
-      weight: 50
     - name: Resources
       pageRef: /links
       weight: 80
