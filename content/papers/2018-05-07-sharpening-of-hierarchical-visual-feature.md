@@ -11,4 +11,4 @@ draft: false
 
 Abdelhack, M. & Kamitani, Y. Sharpening of Hierarchical Visual Feature Representations of Blurred Images. eneuro(2018).
 
-![image](https://64.media.tumblr.com/8ca7619d74cff7d22f7761822f112ca9/tumblr_inline_p8dnes13lC1tgfa5r_540.png)
+![image](/images/posts/a986e0b74877_tumblr_inline_p8dnes13lC1tgfa5r_540.png)

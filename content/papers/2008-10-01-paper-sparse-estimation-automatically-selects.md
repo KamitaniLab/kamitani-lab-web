@@ -13,4 +13,4 @@ Yamashita, O., Sato, M., Yoshioka, T., Tong, F., & Kamitani, Y. (2008). Sparse e
 
 Free PMC Article [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158033/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158033/)
 
-![image](https://64.media.tumblr.com/bb34e11c918a17f0b7abe3a343e9bdea/tumblr_inline_ofqxx804OT1tgfa5r_540.jpg)
+![image](/images/posts/5dd34e32392c_tumblr_inline_ofqxx804OT1tgfa5r_540.jpg)

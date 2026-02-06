@@ -10,4 +10,4 @@ draft: false
 [第14回京大デザイン心理学講演会  |   Kyoto University Design School – Collaborative Graduate Program in Design: Jonathan Smallwood and Beth Jefferies](http://www.design.kyoto-u.ac.jp/event/forthcoming/8093/)
 
 
-![image](https://64.media.tumblr.com/2956296c1566dfee43c7956fa1cc6ac3/tumblr_inline_ofg21jeIE51tgfa5r_540.jpg)
+![image](/images/posts/8899398d4e82_tumblr_inline_ofg21jeIE51tgfa5r_540.jpg)

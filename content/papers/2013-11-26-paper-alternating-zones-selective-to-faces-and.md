@@ -13,4 +13,4 @@ Matsuo, T., Kawasaki, K., Kawai, K., Majima, K., Masuda, H., Murakami, H., … H
 
 [pdf] [http://cercor.oxfordjournals.org/content/early/2013/11/25/cercor.bht319.full.pdf+html](http://cercor.oxfordjournals.org/content/early/2013/11/25/cercor.bht319.full.pdf+html)
 
-![image](https://64.media.tumblr.com/dc33e0349b1d14a574c63c16bc332f49/tumblr_inline_ofyaw7waiv1tgfa5r_540.png)
+![image](/images/posts/8aadc8664faf_tumblr_inline_ofyaw7waiv1tgfa5r_540.png)

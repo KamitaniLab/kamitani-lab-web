@@ -10,4 +10,4 @@ draft: false
 [Grants-in-Aid for Scientific Research (KAKEN, 科研費データベース):  神谷之康 (50418513)](https://kaken.nii.ac.jp/ja/search/?qm=50418513)
 
 
-![image](https://64.media.tumblr.com/fdb91146d19f655c11157fdf00c1aeea/tumblr_inline_ofawccyfbv1tgfa5r_540.png)
+![image](/images/posts/4bdb07ae7078_tumblr_inline_ofawccyfbv1tgfa5r_540.png)

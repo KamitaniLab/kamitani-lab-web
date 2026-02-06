@@ -10,4 +10,4 @@ draft: false
 [“dissonant imaginary” ー Daito Manabe + Kamitani Lab, Kyoto University | Daito Manabe](http://www.daito.ws/work/dissonant-imaginary.html)
 
 
-![image](https://64.media.tumblr.com/c3af2d1fe4a17cf01457d7caf2959bda/tumblr_inline_pn0l7bFeo51tgfa5r_540.jpg)
+![image](/images/posts/fc414f4bd8f7_tumblr_inline_pn0l7bFeo51tgfa5r_540.jpg)

@@ -10,4 +10,4 @@ draft: false
 [Our team won the 3rd place in BCI Award 2017 for BCI prosthetic hand to control phantom limb pain (Nature Communications 2016).](http://www.bci-award.com/2017)
 
 
-![image](https://64.media.tumblr.com/7f161cf50acbdd3d3643e3c36d54163e/tumblr_inline_p027zc5HUT1tgfa5r_540.png)
+![image](/images/posts/4f89dad50b14_tumblr_inline_p027zc5HUT1tgfa5r_540.png)

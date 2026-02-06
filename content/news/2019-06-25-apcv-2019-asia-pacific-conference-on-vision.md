@@ -10,4 +10,4 @@ draft: false
 [APCV 2019 Asia-Pacific Conference on Vision |  July 28 – August 1, 2019](http://visionsociety.jp/apcv2019/program.html)
 
 
-![image](https://64.media.tumblr.com/9d2e3a57a33d9cffa7cbbebf75b1ca55/tumblr_inline_ptnnypxUE51tgfa5r_540.png)
+![image](/images/posts/ce5ee8dfad47_tumblr_inline_ptnnypxUE51tgfa5r_540.png)

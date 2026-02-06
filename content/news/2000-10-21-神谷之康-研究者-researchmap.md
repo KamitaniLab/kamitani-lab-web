@@ -10,4 +10,4 @@ draft: false
 [神谷之康 - 研究者 - researchmap](http://researchmap.jp/y_kamitani/?lang=japanese)
 
 
-![image](https://64.media.tumblr.com/d48f5b06f4f315ef21a7eaa94b9c1211/tumblr_inline_ofk4dfz0Ej1tgfa5r_540.png)
+![image](/images/posts/5106675f1c47_tumblr_inline_ofk4dfz0Ej1tgfa5r_540.png)

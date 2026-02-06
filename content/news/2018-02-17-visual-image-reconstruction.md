@@ -10,4 +10,4 @@ draft: false
 [Visual image reconstruction](https://openfmri.org/dataset/ds000255/)
 
 
-![image](https://64.media.tumblr.com/9ffde58328804232d997fc7e8c70e915/tumblr_inline_p4au4sfLDc1tgfa5r_540.png)
+![image](/images/posts/42a5f1563035_tumblr_inline_p4au4sfLDc1tgfa5r_540.png)

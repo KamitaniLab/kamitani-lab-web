@@ -11,4 +11,4 @@ draft: false
 
 Scientific American 295, 30 (2006) doi:10.1038/scientificamerican0906-30
 
-![image](https://64.media.tumblr.com/5bf7861bc7a2ea98128f4fb2e3de733d/tumblr_inline_offmrgDbET1tgfa5r_540.png)
+![image](/images/posts/5a8e9eb22f7f_tumblr_inline_offmrgDbET1tgfa5r_540.png)

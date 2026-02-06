@@ -13,4 +13,4 @@ Kamitani, Y., & Tong, F. (2005). Decoding the visual and subjective contents of 
 
 [Free PMC Article https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1808230/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1808230/)
 
-![image](https://64.media.tumblr.com/d5848b3cfef88aa21fe028869a49c082/tumblr_inline_ofqxp6O9AU1tgfa5r_540.jpg)
+![image](/images/posts/85726385ad0e_tumblr_inline_ofqxp6O9AU1tgfa5r_540.jpg)

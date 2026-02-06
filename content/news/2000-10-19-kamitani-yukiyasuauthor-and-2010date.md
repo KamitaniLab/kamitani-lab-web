@@ -10,4 +10,4 @@ draft: false
 [(Kamitani Yukiyasu[Author]) AND ("2010"[Date - Publication] : "3000"[Date - Publication]) - Search Results - PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=%28Kamitani+Yukiyasu%5BAuthor%5D%29+AND+%28%222010%22%5BDate+-+Publication%5D+%3A+%223000%22%5BDate+-+Publication%5D%29&sort=date)
 
 
-![image](https://64.media.tumblr.com/c1ece2d09273ac4a08088a3dc3c0df78/c2e4d9adad637653-cf/s540x810/a6c9a080af57ad6150301c4ff624296f079d67cb.png)
+![image](/images/posts/a9a2aa38fb59_a6c9a080af57ad6150301c4ff624296f079d67cb.png)

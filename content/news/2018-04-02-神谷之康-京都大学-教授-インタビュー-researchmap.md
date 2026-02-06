@@ -10,4 +10,4 @@ draft: false
 [神谷之康 京都大学 教授 インタビュー | researchmap](https://article.researchmap.jp/tsunagaru/2018/04/)
 
 
-![image](https://64.media.tumblr.com/ed59b9088c534c0ba0176021ef210657/tumblr_inline_p6jpxkskcs1tgfa5r_540.png)
+![image](/images/posts/34b7fd67306a_tumblr_inline_p6jpxkskcs1tgfa5r_540.png)

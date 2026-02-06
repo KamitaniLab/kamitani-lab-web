@@ -11,4 +11,4 @@ draft: false
 
 Yanagisawa, T., Hirata, M., Saitoh, Y., Kishima, H., Matsushita, K., Goto, T., … Yoshimine, T. (2012). Electrocorticographic control of a prosthetic arm in paralyzed patients. Annals of Neurology, 71(3), 353–361. | Objective:Paralyzed patients may benefit from restoration of movement afforded by prosthetics controlled by electrocorticography (ECoG). Although ECoG shows promising results in human volunteers, it is unclear whether ECoG signals recorded from chronically paralyzed patients provide sufficient motor information, and if they do, whether they can be applied to control a prosthetic
 
-![image](https://64.media.tumblr.com/5d7d7311ae6cbb55b7d1264ece1436fe/tumblr_inline_ofyewjMNG71tgfa5r_540.png)
+![image](/images/posts/89273e0411cb_tumblr_inline_ofyewjMNG71tgfa5r_540.png)

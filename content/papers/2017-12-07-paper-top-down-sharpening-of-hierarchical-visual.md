@@ -11,4 +11,4 @@ draft: false
 
 Abdelhack and Kamitani, biorxiv (2017), doi: [https://doi.org/10.1101/230078 ](https://doi.org/10.1101/230078%C2%A0)
 
-![image](https://64.media.tumblr.com/6fc77cd33a5f5db84907d30901e6d92d/tumblr_inline_p0lfz0tBPd1tgfa5r_540.png)
+![image](/images/posts/14c807904266_tumblr_inline_p0lfz0tBPd1tgfa5r_540.png)

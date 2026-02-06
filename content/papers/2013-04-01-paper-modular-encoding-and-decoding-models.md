@@ -13,4 +13,4 @@ Fujiwara, Y., Miyawaki, Y., & Kamitani, Y. (2013). Modular Encoding and Decoding
 
 pdf: [http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00423](http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00423)
 
-![image](https://64.media.tumblr.com/31380d4049e4244dc3a7f7c763b9f27c/tumblr_inline_ofqy6b0nWr1tgfa5r_540.png)
+![image](/images/posts/daf73f318e3a_tumblr_inline_ofqy6b0nWr1tgfa5r_540.png)

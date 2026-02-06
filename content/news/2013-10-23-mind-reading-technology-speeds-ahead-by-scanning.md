@@ -10,4 +10,4 @@ draft: false
 [Mind-reading Technology Speeds Ahead By scanning blogs of brain activity, scientists may be able to decode people's thoughts, dreams and intentions](https://www.scientificamerican.com/article/mind-reading-technology-speeds-ahead/)
 
 
-![image](https://64.media.tumblr.com/ff00320700b4534fe7668d9f379a141f/tumblr_inline_offkzeK0D11tgfa5r_540.jpg)
+![image](/images/posts/60692d58806d_tumblr_inline_offkzeK0D11tgfa5r_540.jpg)

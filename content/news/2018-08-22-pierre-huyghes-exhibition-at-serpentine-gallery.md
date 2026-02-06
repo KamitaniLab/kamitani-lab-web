@@ -11,4 +11,4 @@ draft: false
 
 We provided brain-decoded images (deep image reconstruction) for his installation art.
 
-![image](https://64.media.tumblr.com/9989db6f3d0d22ceb8ea805df53fdfdb/tumblr_inline_pdv449co3z1tgfa5r_540.png)
+![image](/images/posts/779856af8118_tumblr_inline_pdv449co3z1tgfa5r_540.png)

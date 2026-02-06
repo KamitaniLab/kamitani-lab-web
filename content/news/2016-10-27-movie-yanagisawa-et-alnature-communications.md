@@ -10,4 +10,4 @@ draft: false
 [[movie] Yanagisawa et al.(Nature Communications 2016): Phantom limb-controlled BMI robot](http://www.nature.com/article-assets/npg/ncomms/2016/161027/ncomms13209/extref/ncomms13209-s2.mov)
 
 
-![image](https://64.media.tumblr.com/9f3a2414de2b2eecfab42e325bf2ba3c/tumblr_inline_ofphstHBDm1tgfa5r_540.png)
+![image](/images/posts/622c62f49b76_tumblr_inline_ofphstHBDm1tgfa5r_540.png)

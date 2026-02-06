@@ -164,7 +164,7 @@ Graduate School of Informatics, M1 / 情報学研究科 M1
 Graduate School of Informatics, M1 / 情報学研究科 M1
 
 ![image](https://researchmap.jp/y_kamitani/avatar.png)
-![image](https://64.media.tumblr.com/791ff7b0fa9abe4200d3f6fd0164bfe8/10bd5ca93a0feede-39/s540x810/ee052448f87f8041569d56b33b34a6061074cfde.jpg)
-![image](https://64.media.tumblr.com/d7a56d5c915e61457a92ec41c8c9d756/10bd5ca93a0feede-e4/s540x810/f236ab82ae7e953a415a2abed64265346cc1788a.jpg)
-![image](https://64.media.tumblr.com/353f78c1fecd1513b2dc615932f3473a/10bd5ca93a0feede-76/s540x810/00bd8aefbfadd923d8cad7c4c5dda1eb1e7d7186.jpg)
-![image](https://64.media.tumblr.com/8954f33c02823e047508b2d489d08f0f/10bd5ca93a0feede-8b/s540x810/58e4cd34e5a13a3ceb5a7ea7ffd4d455f00a0852.jpg)
+![image](/images/posts/a6bc28c359e7_ee052448f87f8041569d56b33b34a6061074cfde.jpg)
+![image](/images/posts/d344d6f09c43_f236ab82ae7e953a415a2abed64265346cc1788a.jpg)
+![image](/images/posts/05a652549429_00bd8aefbfadd923d8cad7c4c5dda1eb1e7d7186.jpg)
+![image](/images/posts/6b8ed6510b9e_58e4cd34e5a13a3ceb5a7ea7ffd4d455f00a0852.jpg)

@@ -11,4 +11,4 @@ draft: false
 
 Majima, K., Sukhanov, P., Horikawa, T. & Kamitani, Y. Position Information Encoded by Population Activity in Hierarchical Visual Areas. Eneuro ENEURO.0268–16.2017 (2017). doi:10.1523/ENEURO.0268-16.2017
 
-![image](https://64.media.tumblr.com/0201e8c9ddab3890b22e2b1bc097ccf9/tumblr_inline_onxoy4ZqpT1tgfa5r_500.gif)
+![image](/images/posts/0b3036f5e42d_tumblr_inline_onxoy4ZqpT1tgfa5r_500.gif)

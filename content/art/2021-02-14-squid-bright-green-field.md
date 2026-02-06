@@ -10,4 +10,4 @@ draft: false
 [Squid – Bright Green Field](https://brightgreenfield.squidband.uk/)
 
 
-![image](https://64.media.tumblr.com/7da3c89601f581d4a7ae3224a83868d0/312c7327f727f14e-23/s540x810/360bf163a078665ffd67781f0e42c76b637081fc.jpg)
+![image](/images/posts/6f1516524b4a_360bf163a078665ffd67781f0e42c76b637081fc.jpg)

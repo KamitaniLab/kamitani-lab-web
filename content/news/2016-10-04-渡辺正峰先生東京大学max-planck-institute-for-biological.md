@@ -27,4 +27,4 @@ Max Planck Institute for Biological Cybernetics (独) 客員研究員
 
 （本講演会は、科学研究費補助金基盤研究（S）「心的イメージの神経基盤の解明」[研究代表者：神谷之康、JP15H05710] の助成を受けて行われます）
 
-![image](https://64.media.tumblr.com/a6b8f92200d07872c064f519c16e1657/tumblr_inline_ofkxuqPWih1tgfa5r_540.jpg)
+![image](/images/posts/077a07f3cf50_tumblr_inline_ofkxuqPWih1tgfa5r_540.jpg)
