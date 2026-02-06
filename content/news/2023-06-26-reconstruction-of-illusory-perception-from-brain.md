@@ -1,0 +1,11 @@
+---
+title: "Reconstruction of illusory perception from brain activity (Cheng et al., 2023)"
+date: 2023-06-26
+tags: ["movies", "movie", "reconstructions", "reconstruction", "illusion"]
+link_url: "https://youtube.com/playlist?list=PLNHcdUTDOdP8JRlibq5GXaN5P-_4-FAu3"
+tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/721192938432053248/reconstruction-of-illusory-perception-from-brain"
+draft: false
+---
+
+[Reconstruction of illusory perception from brain activity (Cheng et al., 2023)](https://youtube.com/playlist?list=PLNHcdUTDOdP8JRlibq5GXaN5P-_4-FAu3)
+

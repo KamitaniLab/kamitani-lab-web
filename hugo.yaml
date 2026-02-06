@@ -1,0 +1,96 @@
+baseURL: https://kamitani-lab.github.io/
+title: Kamitani Lab
+theme: ananke
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    params:
+      description: "Kamitani Lab – Neuroinformatics – Kyoto University & ATR"
+  ja:
+    languageName: 日本語
+    weight: 2
+    title: 神谷研究室
+    params:
+      description: "神谷研究室 – 神経情報学 – 京都大学・ATR"
+    menus:
+      main:
+        - name: 概要
+          pageRef: /about
+          weight: 10
+        - name: メンバー
+          pageRef: /members
+          weight: 20
+        - name: 研究
+          pageRef: /research
+          weight: 30
+        - name: 論文
+          pageRef: /papers
+          weight: 35
+        - name: アート
+          pageRef: /art
+          weight: 40
+        - name: ニュース
+          pageRef: /news
+          weight: 50
+        - name: リンク
+          pageRef: /links
+          weight: 80
+        - name: 検索
+          pageRef: /search
+          weight: 90
+
+menus:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 10
+    - name: Members
+      pageRef: /members
+      weight: 20
+    - name: Research
+      pageRef: /research
+      weight: 30
+    - name: Papers
+      pageRef: /papers
+      weight: 35
+    - name: Artworks
+      pageRef: /art
+      weight: 40
+    - name: News
+      pageRef: /news
+      weight: 50
+    - name: Links
+      pageRef: /links
+      weight: 80
+    - name: Search
+      pageRef: /search
+      weight: 90
+
+params:
+  favicon: ""
+  site_logo: ""
+  description: "Kamitani Lab – Neuroinformatics – Kyoto University & ATR"
+  background_color_class: bg-dark-blue
+  body_classes: avenir
+  post_content_classes: avenir
+  show_reading_time: false
+  ananke_socials:
+    - name: github
+      url: https://github.com/KamitaniLab
+    - name: twitter
+      url: https://twitter.com/ykamit
+    - name: youtube
+      url: https://www.youtube.com/@KamitaniLab
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+pagination:
+  pagerSize: 500
