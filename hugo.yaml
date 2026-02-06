@@ -58,7 +58,7 @@ menus:
     - name: Publications
       pageRef: /papers
       weight: 35
-    - name: Artworks
+    - name: Art
       pageRef: /art
       weight: 40
     - name: News
