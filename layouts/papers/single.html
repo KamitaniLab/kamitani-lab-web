@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns mw7 center">
+  <header class="mb4">
+    <p class="f6 gray mb1">
+      <a href="{{ (.Parent).RelPermalink }}" class="link dim gray">&larr; Papers</a>
+    </p>
+    <h1 class="f2 fw6 lh-title mb2">{{ .Title }}</h1>
+    <div class="f6 gray">
+      {{ .Date.Format "2006-01-02" }}
+      {{ with .Params.tags }}
+        {{ range . }}
+          <a href="{{ absURL (printf "tags/%s/" (urlize .)) }}" class="link dim dib bg-light-gray dark-gray ph2 pv1 br2 ml1 no-underline">{{ . }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ with .Params.link_url }}
+      <p class="mt3 mb0">
+        <a href="{{ . }}" class="f5 link white bg-dark-blue ph3 pv2 br2 dib dim" target="_blank" rel="noopener">Read paper &rarr;</a>
+      </p>
+    {{ end }}
+  </header>
+  <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

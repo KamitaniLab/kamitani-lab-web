@@ -19,15 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          submodules: recursive
           fetch-depth: 0
-      - uses: actions/setup-go@v5
-        with:
-          go-version: '1.22'
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
           extended: true
-      - run: hugo mod get -u
       - run: hugo --minify
       - run: npx pagefind --site public
       - uses: actions/upload-pages-artifact@v3

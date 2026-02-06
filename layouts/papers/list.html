@@ -1,0 +1,60 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns mw8 center">
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray nested-links">
+    {{- .Content -}}
+  </section>
+
+  {{/* Collect all years */}}
+  {{ $pages := .Pages.ByDate.Reverse }}
+  {{ $years := slice }}
+  {{ range $pages }}
+    {{ $y := .Date.Format "2006" }}
+    {{ if not (in $years $y) }}
+      {{ $years = $years | append $y }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Year navigation */}}
+  <nav class="tc mb4">
+    {{ range $years }}
+      <a href="#year-{{ . }}" class="f6 link dim ba ph2 pv1 mb2 dib dark-gray br2 mr1">{{ . }}</a>
+    {{ end }}
+  </nav>
+
+  {{/* Papers grouped by year */}}
+  {{ range $years }}
+    {{ $year := . }}
+    <h2 id="year-{{ $year }}" class="f3 fw6 mb3 mt4 bb b--light-gray pb2">{{ $year }}</h2>
+    <div class="paper-list">
+      {{ range $pages }}
+        {{ if eq (.Date.Format "2006") $year }}
+        <div class="paper-card pa3 mb3 bg-white ba b--light-gray br2">
+          <h3 class="f5 fw6 mv0 lh-title">
+            {{ if .Params.link_url }}
+              <a href="{{ .Params.link_url }}" class="link dark-blue dim" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ else }}
+              <a href="{{ .RelPermalink }}" class="link dark-blue dim">{{ .Title }}</a>
+            {{ end }}
+          </h3>
+          <div class="f6 gray mt1">
+            {{ .Date.Format "2006-01-02" }}
+            {{ with .Params.tags }}
+              {{ range . }}
+                <span class="dib bg-light-gray ph2 pv1 br2 ml1">{{ . }}</span>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ with .Summary }}
+            {{ if gt (len (plainify .)) 10 }}
+              <p class="f6 mid-gray mt2 mb0 lh-copy truncate-2">{{ plainify . | truncate 200 }}</p>
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ partial "pagination.html" . }}
+</article>
+{{ end }}
