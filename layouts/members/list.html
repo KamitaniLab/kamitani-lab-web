@@ -3,6 +3,8 @@
     <style>
       .members-section {
         text-align: left;
+        max-width: 60rem;
+        margin: 0 auto;
       }
       .members-section h2 {
         text-transform: uppercase;
@@ -10,30 +12,70 @@
         border-bottom: 2px solid #111;
         padding-bottom: 0.5rem;
         margin-top: 2.5rem;
+        margin-bottom: 0.25rem;
+        font-size: 1.5rem;
+      }
+      .members-section h5 {
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.4;
       }
       .members-section h3 {
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: #555;
+        font-size: 1rem;
         margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+      }
+      .members-section hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 2.5rem 0 0.5rem;
       }
       .members-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 0;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1px;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
       }
       .member-card {
-        border-bottom: 1px solid #ddd !important;
+        border-bottom: none !important;
+        background: #fff;
+        padding: 1rem 1.25rem !important;
+        margin-bottom: 0 !important;
       }
       .member-card h3 {
         margin-top: 0;
+        margin-bottom: 0.15rem;
         border: none;
         padding-bottom: 0;
         color: #111;
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+      }
+      .member-card .f5 {
+        font-size: 0.85rem !important;
+      }
+      .member-card .f6 {
+        font-size: 0.78rem !important;
+      }
+      .member-card .f6 a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .member-card .f6 a:hover {
+        text-decoration: underline;
       }
     </style>
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 center measure-wide lh-copy nested-links members-section {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links members-section {{ $.Param "text_color" | compare.Default "mid-gray" }}">
       {{- .Content -}}
     </section>
   </article>
