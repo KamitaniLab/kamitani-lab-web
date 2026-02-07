@@ -62,26 +62,47 @@ layout: "list"
     <div class="res-desc">ykamit</div>
   </div>
 </a>
+<a href="https://jp.linkedin.com/in/yukiyasu-kamitani-45128530" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="LinkedIn" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">LinkedIn</div>
+    <div class="res-desc">Yukiyasu Kamitani</div>
+  </div>
+</a>
 </div>
 
 ## 所属機関
 
 <div class="res-grid">
-<a href="https://kdb.iimc.kyoto-u.ac.jp/profile_private/ja.8f4f353628c6dc71.html" class="res-card" target="_blank" rel="noopener">
+<a href="https://kdb.iimc.kyoto-u.ac.jp/profile/ja.8f4f353628c6dc71.html" class="res-card" target="_blank" rel="noopener">
   <img src="https://www.google.com/s2/favicons?domain=kyoto-u.ac.jp&sz=64" alt="京都大学" class="res-icon">
   <div class="res-info">
     <div class="res-name">京都大学教育研究活動データベース</div>
     <div class="res-desc">神谷之康</div>
   </div>
 </a>
-<a href="https://ci.nii.ac.jp/" class="res-card" target="_blank" rel="noopener">
+<a href="https://orcid.org/0000-0002-9300-8268" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=orcid.org&sz=64" alt="ORCID" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">ORCID</div>
+    <div class="res-desc">0000-0002-9300-8268</div>
+  </div>
+</a>
+<a href="https://researchmap.jp/y_kamitani" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=researchmap.jp&sz=64" alt="researchmap" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">researchmap</div>
+    <div class="res-desc">神谷之康</div>
+  </div>
+</a>
+<a href="https://cir.nii.ac.jp/all?q=%E7%A5%9E%E8%B0%B7%E4%B9%8B%E5%BA%B7%E3%80%80OR+Yukiyasu+Kamitani&count=20&sortorder=" class="res-card" target="_blank" rel="noopener">
   <img src="https://www.google.com/s2/favicons?domain=ci.nii.ac.jp&sz=64" alt="CiNii" class="res-icon">
   <div class="res-info">
     <div class="res-name">CiNii</div>
     <div class="res-desc">学術情報ナビゲータ</div>
   </div>
 </a>
-<a href="https://kaken.nii.ac.jp/" class="res-card" target="_blank" rel="noopener">
+<a href="https://nrid.nii.ac.jp/nrid/1000050418513/" class="res-card" target="_blank" rel="noopener">
   <img src="https://www.google.com/s2/favicons?domain=kaken.nii.ac.jp&sz=64" alt="KAKEN" class="res-icon">
   <div class="res-info">
     <div class="res-name">KAKEN</div>
