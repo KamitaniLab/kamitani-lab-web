@@ -1,5 +1,5 @@
 ---
-title: "Members"
+title: "People"
 description: "Lab members"
 featured_image: ""
 ---

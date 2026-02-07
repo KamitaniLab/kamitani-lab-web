@@ -15,7 +15,7 @@ layout: "list"
     <div class="res-desc">KamitaniLab</div>
   </div>
 </a>
-<a href="https://scholar.google.com/citations?user=BCEh_-AAAAAJ" class="res-card" target="_blank" rel="noopener">
+<a href="https://scholar.google.com/citations?user=m5wNiJ4AAAAJ" class="res-card" target="_blank" rel="noopener">
   <img src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=64" alt="Google Scholar" class="res-icon">
   <div class="res-info">
     <div class="res-name">Google Scholar</div>

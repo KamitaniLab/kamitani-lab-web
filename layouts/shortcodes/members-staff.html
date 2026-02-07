@@ -6,7 +6,7 @@
   <p class="f5 mb2">{{ .role }} / {{ .role_ja }}</p>
   {{ if .links }}
   <p class="f6">
-    {{ range $i, $link := .links }}{{ if $i }} / {{ end }}<a href="{{ $link.url }}" class="link black underline-hover fw7">{{ $link.label }}</a>{{ end }}
+    {{ range $i, $link := .links }}{{ if $i }} / {{ end }}{{ $href := $link.url }}{{ if hasPrefix $link.url "/" }}{{ with site.GetPage $link.url }}{{ $href = .RelPermalink }}{{ end }}{{ end }}<a href="{{ $href }}" class="link black underline-hover fw7"{{ if not (hasPrefix $link.url "/") }} target="_blank" rel="noopener"{{ end }}>{{ $link.label }}</a>{{ end }}
   </p>
   {{ end }}
 </div>
