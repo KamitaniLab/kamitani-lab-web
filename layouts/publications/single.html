@@ -20,7 +20,7 @@
     {{ end }}
     <div class="mt3">
       {{ with .Params.code_url }}
-        <a href="{{ . }}" class="f6 link white bg-dark-green ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">Code</a>
+        <a href="{{ . }}" class="f6 link white bg-dark-green ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">GitHub</a>
       {{ end }}
       {{ with .Params.data_url }}
         <a href="{{ . }}" class="f6 link white bg-orange ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">{{ $.Params.data_label | default "Data" }}</a>
@@ -29,6 +29,16 @@
     {{ with .Params.video_embed }}
       <div class="mt3">
         <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width:100%;"></iframe>
+      </div>
+    {{ end }}
+    {{ with .Params.pub_image }}
+      <div class="mt3">
+        <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+      </div>
+    {{ end }}
+    {{ with .Params.slide_embed }}
+      <div class="mt3">
+        <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent; max-width:100%;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
       </div>
     {{ end }}
   </header>

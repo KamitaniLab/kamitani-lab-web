@@ -7,4 +7,5 @@ volume: "190"
 pages: "107515"
 doi: "10.1016/j.neunet.2025.107515"
 code_url: "https://github.com/KamitaniLab/spurious_reconstruction"
+slide_embed: "https://speakerdeck.com/player/f433c1e91bc24542a2b19056c5e95c35"
 ---
