@@ -6,4 +6,5 @@ journal: "NeuroImage"
 volume: "113"
 pages: "289–297"
 doi: "10.1016/j.neuroimage.2015.03.059"
+code_url: "https://github.com/KamitaniLab/NeuralCodeConverter"
 ---

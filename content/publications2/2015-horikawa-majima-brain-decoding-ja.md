@@ -1,11 +1,10 @@
 ---
 title: "脳情報デコーディング"
-date: 2015-06-01
+date: 2015-07-01
 authors: "堀川友慈, 間島慶"
-journal: "日本神経回路学会誌"
-volume: "22"
-issue: "2"
-pages: "52–60"
-doi: "10.3902/jnns.22.52"
+journal: "細胞工学"
+volume: "34"
+issue: "7"
+pages: "638–643"
 pub_type: "japanese"
 ---

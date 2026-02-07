@@ -1,10 +1,8 @@
 ---
-title: "脳情報デコーディング"
+title: "脳の信号を解読する技術――脳情報デコーディング"
 date: 2014-01-01
 authors: "神谷之康"
-journal: "電子情報通信学会誌"
-volume: "97"
-issue: "12"
-pages: "1081–1086"
+journal: "In: BMI (Brain-Machine Interface)の現状と展望（吉峰俊樹, 川人光男 編）, 医歯薬出版"
+pages: "20–25"
 pub_type: "japanese"
 ---

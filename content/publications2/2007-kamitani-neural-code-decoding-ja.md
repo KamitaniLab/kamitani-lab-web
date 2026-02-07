@@ -1,10 +1,10 @@
 ---
 title: "神経コードとデコーディングの方法"
-date: 2007-06-01
+date: 2007-01-01
 authors: "神谷之康"
-journal: "Brain Medical"
-volume: "19"
-issue: "2"
-pages: "153–159"
+journal: "脳21"
+volume: "10"
+issue: "4"
+pages: "92–94"
 pub_type: "japanese"
 ---
