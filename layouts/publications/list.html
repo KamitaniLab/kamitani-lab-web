@@ -1,47 +1,133 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
   <style>
-    .pub-entry { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; line-height: 1.6; }
-    .pub-entry .pub-title { font-style: italic; }
-    .pub-doi-inline { word-break: break-all; color: #1a73e8; text-decoration: underline; }
-    .pub-doi-inline:hover { color: #0d47a1; }
-    .pub-links { margin-top: 0.3rem; }
-    .pub-links a {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.15rem 0.5rem;
-      margin-right: 0.3rem;
-      margin-bottom: 0.2rem;
-      text-decoration: none;
-      border: 1px solid #333;
-      color: #333;
-      transition: background-color 0.15s, color 0.15s;
+    /* — Entry — */
+    .pub-entry {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid #e8e8e8;
+      line-height: 1.7;
     }
-    .pub-links a:hover { background-color: #333; color: #fff; }
-    .pub-links a.pub-link { border-color: #1a73e8; color: #1a73e8; }
-    .pub-links a.pub-link:hover { background-color: #1a73e8; color: #fff; }
-    .pub-links a.pub-code { border-color: #2ea44f; color: #2ea44f; }
-    .pub-links a.pub-code:hover { background-color: #2ea44f; color: #fff; }
-    .pub-links a.pub-data { border-color: #e67e22; color: #e67e22; }
-    .pub-links a.pub-data:hover { background-color: #e67e22; color: #fff; }
-    .pub-links a.pub-video { border-color: #e74c3c; color: #e74c3c; }
-    .pub-links a.pub-video:hover { background-color: #e74c3c; color: #fff; }
-    .pub-video-embed { margin-top: 0.5rem; margin-bottom: 1rem; }
-    .pub-video-embed iframe { max-width: 100%; }
-    .year-nav a { transition: color 0.15s; }
-    .year-nav a:hover { color: #000 !important; }
-    .pub-category-label {
-      display: inline-block;
+    .pub-entry:last-child { border-bottom: none; }
+
+    /* — Typography hierarchy — */
+    .pub-authors {
+      font-size: 0.85rem;
+      color: #555;
+      letter-spacing: 0.01em;
+    }
+    .pub-paper-title {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #111;
+      margin: 0.2rem 0 0.25rem;
+      line-height: 1.45;
+    }
+    .pub-journal {
+      font-size: 0.85rem;
+      color: #666;
+      font-style: italic;
+    }
+    .pub-journal-name { }
+    .pub-vol { font-style: italic; }
+
+    /* — DOI — */
+    .pub-doi {
+      display: block;
+      font-size: 0.78rem;
+      margin-top: 0.2rem;
+      word-break: break-all;
+    }
+    .pub-doi a {
+      color: #999;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .pub-doi a:hover { color: #111; }
+
+    /* — Buttons — */
+    .pub-links {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .pub-links a {
+      display: inline-flex;
+      align-items: center;
       font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0.7rem;
+      text-decoration: none;
+      border: 1.5px solid #111;
+      color: #111;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+    .pub-links a:hover {
+      background-color: #111;
+      color: #fff;
+    }
+    .pub-links a.pub-link { border-color: #555; color: #555; }
+    .pub-links a.pub-link:hover { background-color: #555; color: #fff; }
+    .pub-links a.pub-code { border-color: #111; color: #111; }
+    .pub-links a.pub-code:hover { background-color: #111; color: #fff; }
+    .pub-links a.pub-data { border-color: #111; color: #111; }
+    .pub-links a.pub-data:hover { background-color: #111; color: #fff; }
+
+    /* — Embeds — */
+    .pub-embed { margin-top: 0.8rem; }
+    .pub-embed iframe { max-width: 100%; }
+
+    /* — Year nav — */
+    .year-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.15rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #111;
+    }
+    .year-nav a {
+      font-size: 0.78rem;
+      font-weight: 700;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: #999;
-      margin-top: 1.2rem;
-      margin-bottom: 0.4rem;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      transition: color 0.15s;
+    }
+    .year-nav a:hover { color: #111; }
+
+    /* — Year heading — */
+    .year-heading {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #111;
+    }
+
+    /* — Category label — */
+    .pub-category-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #fff;
+      background: #111;
+      padding: 0.2rem 0.6rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
     }
   </style>
 
@@ -60,30 +146,34 @@
   {{ end }}
 
   {{/* Year navigation */}}
-  <nav class="tc mb4">
+  <nav class="year-nav">
     {{ range $years }}
-      <a href="#year-{{ . }}" class="f6 link ph2 pv1 mb2 dib black fw7 ttu tracked mr1 underline-hover">{{ . }}</a>
+      <a href="#year-{{ . }}">{{ . }}</a>
     {{ end }}
   </nav>
 
-  {{/* Papers grouped by year, ordered: English → Preprints → Japanese */}}
+  {{/* Papers grouped by year */}}
   {{ range $years }}
     {{ $year := . }}
-    <h2 id="year-{{ $year }}" class="f3 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked">{{ $year }}</h2>
+    <h2 id="year-{{ $year }}" class="year-heading">{{ $year }}</h2>
 
-    {{/* English publications for this year */}}
+    {{/* English publications */}}
     {{ $hasEng := false }}
     {{ range $englishPages }}{{ if eq (.Date.Format "2006") $year }}{{ $hasEng = true }}{{ end }}{{ end }}
     {{ if $hasEng }}
     {{ range $englishPages }}
       {{ if eq (.Date.Format "2006") $year }}
         {{ $p := . }}
-        <div class="pub-entry f5 mid-gray">
-          {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>
-          {{- with .Params.volume }}, <span class="pub-title">{{ . }}</span>{{ end }}
+        <div class="pub-entry">
+          <span class="pub-authors">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
+          <span class="pub-paper-title">{{ .Title }}</span>
+          <span class="pub-journal"><span class="pub-journal-name">{{ .Params.journal }}</span>
+          {{- with .Params.volume }}, <span class="pub-vol">{{ . }}</span>{{ end }}
           {{- with .Params.issue }}({{ . }}){{ end }}
-          {{- with .Params.pages }}, {{ . }}{{ end }}.
-          {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
+          {{- with .Params.pages }}, {{ . }}{{ end }}.</span>
+          {{- with .Params.doi }}
+          <span class="pub-doi"><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a></span>
+          {{- end }}
           {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
             {{- with .Params.link_url }}
@@ -98,17 +188,17 @@
           </div>
           {{- end }}
           {{- with .Params.video_embed }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{- end }}
           {{- with .Params.pub_image }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
@@ -117,7 +207,7 @@
     {{ end }}
     {{ end }}
 
-    {{/* Preprints for this year */}}
+    {{/* Preprints */}}
     {{ $hasPrep := false }}
     {{ range $preprintPages }}{{ if eq (.Date.Format "2006") $year }}{{ $hasPrep = true }}{{ end }}{{ end }}
     {{ if $hasPrep }}
@@ -125,9 +215,13 @@
     {{ range $preprintPages }}
       {{ if eq (.Date.Format "2006") $year }}
         {{ $p := . }}
-        <div class="pub-entry f5 mid-gray">
-          {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>.
-          {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
+        <div class="pub-entry">
+          <span class="pub-authors">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
+          <span class="pub-paper-title">{{ .Title }}</span>
+          <span class="pub-journal"><span class="pub-journal-name">{{ .Params.journal }}</span>.</span>
+          {{- with .Params.doi }}
+          <span class="pub-doi"><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a></span>
+          {{- end }}
           {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
             {{- with .Params.link_url }}
@@ -142,17 +236,17 @@
           </div>
           {{- end }}
           {{- with .Params.video_embed }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{- end }}
           {{- with .Params.pub_image }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
@@ -161,7 +255,7 @@
     {{ end }}
     {{ end }}
 
-    {{/* Japanese publications for this year */}}
+    {{/* Japanese publications */}}
     {{ $hasJa := false }}
     {{ range $japanesePages }}{{ if eq (.Date.Format "2006") $year }}{{ $hasJa = true }}{{ end }}{{ end }}
     {{ if $hasJa }}
@@ -169,12 +263,16 @@
     {{ range $japanesePages }}
       {{ if eq (.Date.Format "2006") $year }}
         {{ $p := . }}
-        <div class="pub-entry f5 mid-gray">
-          {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>
-          {{- with .Params.volume }}, <span class="pub-title">{{ . }}</span>{{ end }}
+        <div class="pub-entry">
+          <span class="pub-authors">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
+          <span class="pub-paper-title">{{ .Title }}</span>
+          <span class="pub-journal"><span class="pub-journal-name">{{ .Params.journal }}</span>
+          {{- with .Params.volume }}, <span class="pub-vol">{{ . }}</span>{{ end }}
           {{- with .Params.issue }}({{ . }}){{ end }}
-          {{- with .Params.pages }}, {{ . }}{{ end }}.
-          {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
+          {{- with .Params.pages }}, {{ . }}{{ end }}.</span>
+          {{- with .Params.doi }}
+          <span class="pub-doi"><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a></span>
+          {{- end }}
           {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
             {{- with .Params.link_url }}
@@ -189,17 +287,17 @@
           </div>
           {{- end }}
           {{- with .Params.video_embed }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{- end }}
           {{- with .Params.pub_image }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
-          <div class="pub-video-embed">
+          <div class="pub-embed">
             <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
