@@ -36,6 +36,13 @@ layout: "list"
     <div class="res-desc">@ykamit</div>
   </div>
 </a>
+<a href="https://openneuro.org/search?query=%7B%22keywords%22%3A%5B%22kamitani%22%5D%7D" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=openneuro.org&sz=64" alt="OpenNeuro" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">OpenNeuro</div>
+    <div class="res-desc">Open fMRI datasets</div>
+  </div>
+</a>
 </div>
 
 ## Social

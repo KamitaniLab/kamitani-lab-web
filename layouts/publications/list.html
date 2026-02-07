@@ -104,7 +104,7 @@
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-video-embed">
-            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:100%;">
+            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
@@ -148,7 +148,7 @@
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-video-embed">
-            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:100%;">
+            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
@@ -195,7 +195,7 @@
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-video-embed">
-            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:100%;">
+            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
