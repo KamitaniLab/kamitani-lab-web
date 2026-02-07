@@ -33,7 +33,7 @@
     {{ end }}
     {{ with .Params.pub_image }}
       <div class="mt3">
-        <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ .Params.pub_image_width | default "50%" }};">
+        <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $.Params.pub_image_width | default "50%" }};">
       </div>
     {{ end }}
     {{ with .Params.slide_embed }}
