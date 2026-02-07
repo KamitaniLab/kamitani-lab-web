@@ -5,4 +5,5 @@ authors: "Shirakawa, K., Nagano, Y., Tanaka, M., Cheng, F. L., & Kamitani, Y."
 journal: "arXiv"
 doi: "10.48550/arXiv.2511.07960"
 pub_type: "preprint"
+code_url: "https://github.com/KamitaniLab/repro_mental_image_recon"
 ---

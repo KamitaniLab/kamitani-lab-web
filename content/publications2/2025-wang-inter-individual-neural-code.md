@@ -6,4 +6,5 @@ journal: "NeuroImage"
 volume: "305"
 pages: "121048"
 doi: "10.1016/j.neuroimage.2025.121048"
+code_url: "https://github.com/KamitaniLab/InterSiteNeuralCodeConversion"
 ---

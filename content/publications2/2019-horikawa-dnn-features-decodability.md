@@ -6,6 +6,7 @@ journal: "Scientific Data"
 volume: "6"
 pages: "190012"
 doi: "10.1038/sdata.2019.12"
+code_url: "https://github.com/KamitaniLab/feature-decoding"
 data_url: "https://openneuro.org/datasets/ds001246"
 data_label: "Data (OpenNeuro)"
 ---

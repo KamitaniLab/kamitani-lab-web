@@ -7,4 +7,5 @@ volume: "6"
 issue: "10"
 pages: "101126"
 doi: "10.1016/j.patter.2025.101126"
+code_url: "https://github.com/KamitaniLab/spurious_reconstruction"
 ---
