@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns mw7 center">
+  <header class="mb4">
+    <p class="f6 fw7 gray mb1 ttu tracked">
+      <a href="{{ (.Parent).RelPermalink }}" class="link black underline-hover">&larr; PUBLICATIONS</a>
+    </p>
+    <h1 class="f2 fw9 lh-title mb2">{{ .Title }}</h1>
+    <p class="f5 mid-gray mt1 mb2">{{ .Params.authors }}</p>
+    <p class="f6 gray">
+      <em>{{ .Params.journal }}</em>
+      {{- with .Params.volume }}, <em>{{ . }}</em>{{ end }}
+      {{- with .Params.issue }}({{ . }}){{ end }}
+      {{- with .Params.pages }}, {{ . }}{{ end }}
+      ({{ .Date.Format "2006" }})
+    </p>
+    {{ with .Params.doi }}
+      <p class="mt2 mb0">
+        <a href="https://doi.org/{{ . }}" class="f6 link blue underline-hover" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>
+      </p>
+    {{ end }}
+    <div class="mt3">
+      {{ with .Params.code_url }}
+        <a href="{{ . }}" class="f6 link white bg-dark-green ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">Code</a>
+      {{ end }}
+      {{ with .Params.data_url }}
+        <a href="{{ . }}" class="f6 link white bg-orange ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">{{ $.Params.data_label | default "Data" }}</a>
+      {{ end }}
+    </div>
+    {{ with .Params.video_embed }}
+      <div class="mt3">
+        <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width:100%;"></iframe>
+      </div>
+    {{ end }}
+  </header>
+  <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
