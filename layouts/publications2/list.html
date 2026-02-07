@@ -31,56 +31,191 @@
     .pub-video-embed iframe { max-width: 100%; }
     .year-nav a { transition: color 0.15s; }
     .year-nav a:hover { color: #000 !important; }
+    .pub-section-nav { margin-bottom: 2rem; }
+    .pub-section-nav a {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.4rem 1rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.3rem;
+      text-decoration: none;
+      border: 2px solid #111;
+      color: #111;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .pub-section-nav a:hover { background-color: #111; color: #fff; }
+    .pub-section-heading {
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-bottom: 3px solid #111;
+      padding-bottom: 0.5rem;
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+    }
   </style>
 
-  {{/* Collect all years */}}
-  {{ $pages := .Pages.ByDate.Reverse }}
-  {{ $years := slice }}
-  {{ range $pages }}
+  {{/* Categorize pages */}}
+  {{ $allPages := .Pages.ByDate.Reverse }}
+  {{ $englishPages := where (where $allPages ".Params.pub_type" "ne" "japanese") ".Params.pub_type" "ne" "preprint" }}
+  {{ $japanesePagesRaw := where $allPages ".Params.pub_type" "japanese" }}
+  {{ $preprintPagesRaw := where $allPages ".Params.pub_type" "preprint" }}
+
+  {{/* Section navigation */}}
+  <nav class="pub-section-nav tc">
+    <a href="#english">English Publications</a>
+    <a href="#preprints">Preprints</a>
+    <a href="#japanese">Japanese Publications</a>
+  </nav>
+
+  {{/* ===== ENGLISH PUBLICATIONS ===== */}}
+  <h2 id="english" class="pub-section-heading">English Publications</h2>
+
+  {{/* Collect English years */}}
+  {{ $engYears := slice }}
+  {{ range $englishPages }}
     {{ $y := .Date.Format "2006" }}
-    {{ if not (in $years $y) }}
-      {{ $years = $years | append $y }}
+    {{ if not (in $engYears $y) }}
+      {{ $engYears = $engYears | append $y }}
     {{ end }}
   {{ end }}
 
-  {{/* Year navigation */}}
-  <nav class="tc mb4">
-    {{ range $years }}
-      <a href="#year-{{ . }}" class="f6 link ph2 pv1 mb2 dib black fw7 ttu tracked mr1 underline-hover">{{ . }}</a>
+  <nav class="tc mb4 mt3">
+    {{ range $engYears }}
+      <a href="#eng-{{ . }}" class="f6 link ph2 pv1 mb2 dib black fw7 ttu tracked mr1 underline-hover">{{ . }}</a>
     {{ end }}
   </nav>
 
-  {{/* Papers grouped by year */}}
-  {{ range $years }}
+  {{ range $engYears }}
     {{ $year := . }}
-    <h2 id="year-{{ $year }}" class="f3 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked">{{ $year }}</h2>
-      {{ range $pages }}
-        {{ if eq (.Date.Format "2006") $year }}
-          {{ $p := . }}
-          <div class="pub-entry f5 mid-gray">
-            {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>
-            {{- with .Params.volume }}, <span class="pub-title">{{ . }}</span>{{ end }}
-            {{- with .Params.issue }}({{ . }}){{ end }}
-            {{- with .Params.pages }}, {{ . }}{{ end }}.
-            {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
-            {{- if or .Params.code_url .Params.data_url }}
-            <div class="pub-links">
-              {{- with .Params.code_url }}
-              <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
-              {{- end }}
-              {{- with .Params.data_url }}
-              <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
-              {{- end }}
-            </div>
+    <h2 id="eng-{{ $year }}" class="f3 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked">{{ $year }}</h2>
+    {{ range $englishPages }}
+      {{ if eq (.Date.Format "2006") $year }}
+        {{ $p := . }}
+        <div class="pub-entry f5 mid-gray">
+          {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>
+          {{- with .Params.volume }}, <span class="pub-title">{{ . }}</span>{{ end }}
+          {{- with .Params.issue }}({{ . }}){{ end }}
+          {{- with .Params.pages }}, {{ . }}{{ end }}.
+          {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
+          {{- if or .Params.code_url .Params.data_url }}
+          <div class="pub-links">
+            {{- with .Params.code_url }}
+            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
             {{- end }}
-            {{- with .Params.video_embed }}
-            <div class="pub-video-embed">
-              <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            {{- with .Params.data_url }}
+            <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
             {{- end }}
           </div>
-        {{ end }}
+          {{- end }}
+          {{- with .Params.video_embed }}
+          <div class="pub-video-embed">
+            <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{- end }}
+        </div>
       {{ end }}
+    {{ end }}
   {{ end }}
+
+  {{/* ===== PREPRINTS ===== */}}
+  <h2 id="preprints" class="pub-section-heading">Preprints</h2>
+
+  {{ $prepYears := slice }}
+  {{ range $preprintPagesRaw }}
+    {{ $y := .Date.Format "2006" }}
+    {{ if not (in $prepYears $y) }}
+      {{ $prepYears = $prepYears | append $y }}
+    {{ end }}
+  {{ end }}
+
+  <nav class="tc mb4 mt3">
+    {{ range $prepYears }}
+      <a href="#prep-{{ . }}" class="f6 link ph2 pv1 mb2 dib black fw7 ttu tracked mr1 underline-hover">{{ . }}</a>
+    {{ end }}
+  </nav>
+
+  {{ range $prepYears }}
+    {{ $year := . }}
+    <h2 id="prep-{{ $year }}" class="f3 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked">{{ $year }}</h2>
+    {{ range $preprintPagesRaw }}
+      {{ if eq (.Date.Format "2006") $year }}
+        {{ $p := . }}
+        <div class="pub-entry f5 mid-gray">
+          {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>.
+          {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
+          {{- if or .Params.code_url .Params.data_url }}
+          <div class="pub-links">
+            {{- with .Params.code_url }}
+            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
+            {{- end }}
+            {{- with .Params.data_url }}
+            <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
+            {{- end }}
+          </div>
+          {{- end }}
+          {{- with .Params.video_embed }}
+          <div class="pub-video-embed">
+            <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{- end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* ===== JAPANESE PUBLICATIONS ===== */}}
+  <h2 id="japanese" class="pub-section-heading">Japanese Publications / 日本語文献</h2>
+
+  {{ $jaYears := slice }}
+  {{ range $japanesePagesRaw }}
+    {{ $y := .Date.Format "2006" }}
+    {{ if not (in $jaYears $y) }}
+      {{ $jaYears = $jaYears | append $y }}
+    {{ end }}
+  {{ end }}
+
+  <nav class="tc mb4 mt3">
+    {{ range $jaYears }}
+      <a href="#ja-{{ . }}" class="f6 link ph2 pv1 mb2 dib black fw7 ttu tracked mr1 underline-hover">{{ . }}</a>
+    {{ end }}
+  </nav>
+
+  {{ range $jaYears }}
+    {{ $year := . }}
+    <h2 id="ja-{{ $year }}" class="f3 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked">{{ $year }}</h2>
+    {{ range $japanesePagesRaw }}
+      {{ if eq (.Date.Format "2006") $year }}
+        {{ $p := . }}
+        <div class="pub-entry f5 mid-gray">
+          {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>
+          {{- with .Params.volume }}, <span class="pub-title">{{ . }}</span>{{ end }}
+          {{- with .Params.issue }}({{ . }}){{ end }}
+          {{- with .Params.pages }}, {{ . }}{{ end }}.
+          {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
+          {{- if or .Params.code_url .Params.data_url }}
+          <div class="pub-links">
+            {{- with .Params.code_url }}
+            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
+            {{- end }}
+            {{- with .Params.data_url }}
+            <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
+            {{- end }}
+          </div>
+          {{- end }}
+          {{- with .Params.video_embed }}
+          <div class="pub-video-embed">
+            <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{- end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
 </article>
 {{ end }}

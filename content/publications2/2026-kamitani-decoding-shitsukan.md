@@ -1,0 +1,7 @@
+---
+title: "Decoding Shitsukan in the brain"
+date: 2026-01-26
+authors: "Kamitani, Y., Tanaka, M., Horikawa, T., Nishida, S., & Nishino, K."
+journal: "In: Shitsukan -- Understanding and Manipulating Material and Quality Perception (Nishida, S. & Nishino, K., Eds.), Springer Nature"
+doi: "10.1007/978-981-95-4762-3"
+---
