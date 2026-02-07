@@ -9,4 +9,5 @@ pages: "639–642"
 doi: "10.1126/science.1234330"
 code_url: "https://github.com/KamitaniLab/HumanDreamDecoding"
 video_embed: "https://www.youtube.com/embed/inaH_i_TjV4"
+highlight: true
 ---
