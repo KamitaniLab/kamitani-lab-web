@@ -29,11 +29,8 @@ languages:
           pageRef: /research
           weight: 30
         - name: Publications
-          pageRef: /papers
+          pageRef: /publications
           weight: 35
-        - name: Publications2
-          pageRef: /publications2
-          weight: 36
         - name: アート
           pageRef: /art
           weight: 40
@@ -56,11 +53,8 @@ menus:
       pageRef: /research
       weight: 30
     - name: Publications
-      pageRef: /papers
+      pageRef: /publications
       weight: 35
-    - name: Publications2
-      pageRef: /publications2
-      weight: 36
     - name: Art
       pageRef: /art
       weight: 40
