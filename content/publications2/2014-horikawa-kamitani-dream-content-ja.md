@@ -5,6 +5,6 @@ authors: "堀川友慈, 神谷之康"
 journal: "Clinical Neuroscience"
 volume: "32"
 issue: "4"
-pages: "436–439"
+pages: "461–469"
 pub_type: "japanese"
 ---

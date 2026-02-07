@@ -7,4 +7,5 @@ volume: "4"
 issue: "2"
 pages: "ENEURO.0268-16.2017"
 doi: "10.1523/ENEURO.0268-16.2017"
+code_url: "https://github.com/KamitaniLab/PositionDecoding"
 ---

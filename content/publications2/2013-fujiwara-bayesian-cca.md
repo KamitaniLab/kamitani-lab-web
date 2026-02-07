@@ -7,4 +7,5 @@ volume: "25"
 issue: "4"
 pages: "979–1005"
 doi: "10.1162/NECO_a_00423"
+code_url: "https://github.com/KamitaniLab/VBCCA"
 ---
