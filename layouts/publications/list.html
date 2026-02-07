@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
   <style>
-    .pub-entry { margin-bottom: 1.5rem; line-height: 1.6; }
+    .pub-entry { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; line-height: 1.6; }
     .pub-entry .pub-title { font-style: italic; }
     .pub-doi-inline { word-break: break-all; color: #1a73e8; text-decoration: underline; }
     .pub-doi-inline:hover { color: #0d47a1; }
@@ -21,6 +21,8 @@
       transition: background-color 0.15s, color 0.15s;
     }
     .pub-links a:hover { background-color: #333; color: #fff; }
+    .pub-links a.pub-link { border-color: #1a73e8; color: #1a73e8; }
+    .pub-links a.pub-link:hover { background-color: #1a73e8; color: #fff; }
     .pub-links a.pub-code { border-color: #2ea44f; color: #2ea44f; }
     .pub-links a.pub-code:hover { background-color: #2ea44f; color: #fff; }
     .pub-links a.pub-data { border-color: #e67e22; color: #e67e22; }
@@ -82,8 +84,11 @@
           {{- with .Params.issue }}({{ . }}){{ end }}
           {{- with .Params.pages }}, {{ . }}{{ end }}.
           {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
-          {{- if or .Params.code_url .Params.data_url }}
+          {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
+            {{- with .Params.link_url }}
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Link</a>
+            {{- end }}
             {{- with .Params.code_url }}
             <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
             {{- end }}
@@ -99,7 +104,7 @@
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-video-embed">
-            <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:100%;">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
@@ -123,8 +128,11 @@
         <div class="pub-entry f5 mid-gray">
           {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. <span class="pub-title">{{ .Params.journal }}</span>.
           {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
-          {{- if or .Params.code_url .Params.data_url }}
+          {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
+            {{- with .Params.link_url }}
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Link</a>
+            {{- end }}
             {{- with .Params.code_url }}
             <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
             {{- end }}
@@ -140,7 +148,7 @@
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-video-embed">
-            <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:100%;">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
@@ -167,8 +175,11 @@
           {{- with .Params.issue }}({{ . }}){{ end }}
           {{- with .Params.pages }}, {{ . }}{{ end }}.
           {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" class="pub-doi-inline" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>{{ end }}
-          {{- if or .Params.code_url .Params.data_url }}
+          {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
+            {{- with .Params.link_url }}
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Link</a>
+            {{- end }}
             {{- with .Params.code_url }}
             <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
             {{- end }}
@@ -184,7 +195,7 @@
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-video-embed">
-            <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:100%;">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}

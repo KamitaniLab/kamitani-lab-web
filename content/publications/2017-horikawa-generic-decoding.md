@@ -8,4 +8,5 @@ pages: "15037"
 doi: "10.1038/ncomms15037"
 code_url: "https://github.com/KamitaniLab/GenericObjectDecoding"
 data_url: "https://openneuro.org/datasets/ds001246"
+data_label: "Data (OpenNeuro)"
 ---

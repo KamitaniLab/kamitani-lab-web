@@ -7,5 +7,7 @@ volume: "271"
 pages: "120007"
 doi: "10.1016/j.neuroimage.2023.120007"
 code_url: "https://github.com/KamitaniLab/InterIndividualDeepImageReconstruction"
+data_url: "https://openneuro.org/datasets/ds003993"
+data_label: "Data (OpenNeuro)"
 video_embed: "https://www.youtube.com/embed/XJGeG7KuQuk"
 ---
