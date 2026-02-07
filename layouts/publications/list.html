@@ -85,7 +85,7 @@
           {{- if or .Params.code_url .Params.data_url }}
           <div class="pub-links">
             {{- with .Params.code_url }}
-            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
+            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
             {{- end }}
             {{- with .Params.data_url }}
             <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
@@ -95,6 +95,16 @@
           {{- with .Params.video_embed }}
           <div class="pub-video-embed">
             <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{- end }}
+          {{- with .Params.pub_image }}
+          <div class="pub-video-embed">
+            <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+          </div>
+          {{- end }}
+          {{- with .Params.slide_embed }}
+          <div class="pub-video-embed">
+            <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
         </div>
@@ -116,7 +126,7 @@
           {{- if or .Params.code_url .Params.data_url }}
           <div class="pub-links">
             {{- with .Params.code_url }}
-            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
+            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
             {{- end }}
             {{- with .Params.data_url }}
             <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
@@ -126,6 +136,16 @@
           {{- with .Params.video_embed }}
           <div class="pub-video-embed">
             <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{- end }}
+          {{- with .Params.pub_image }}
+          <div class="pub-video-embed">
+            <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+          </div>
+          {{- end }}
+          {{- with .Params.slide_embed }}
+          <div class="pub-video-embed">
+            <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
         </div>
@@ -150,7 +170,7 @@
           {{- if or .Params.code_url .Params.data_url }}
           <div class="pub-links">
             {{- with .Params.code_url }}
-            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">Code</a>
+            <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
             {{- end }}
             {{- with .Params.data_url }}
             <a href="{{ . }}" class="pub-data" target="_blank" rel="noopener">{{ $p.Params.data_label | default "Data" }}</a>
@@ -160,6 +180,16 @@
           {{- with .Params.video_embed }}
           <div class="pub-video-embed">
             <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{- end }}
+          {{- with .Params.pub_image }}
+          <div class="pub-video-embed">
+            <img src="{{ . | relURL }}" alt="" style="max-width:560px; width:100%;">
+          </div>
+          {{- end }}
+          {{- with .Params.slide_embed }}
+          <div class="pub-video-embed">
+            <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
         </div>
