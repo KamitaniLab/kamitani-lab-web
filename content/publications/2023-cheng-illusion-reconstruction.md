@@ -11,4 +11,5 @@ code_url: "https://github.com/KamitaniLab/IllusionReconstruction"
 data_url: "https://openneuro.org/datasets/ds004670"
 data_label: "Data (OpenNeuro)"
 video_embed: "https://www.youtube.com/embed/qQpFATyanUk"
+highlight: true
 ---

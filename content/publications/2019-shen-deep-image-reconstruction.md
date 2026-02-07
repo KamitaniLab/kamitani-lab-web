@@ -11,4 +11,5 @@ code_url: "https://github.com/KamitaniLab/DeepImageReconstruction"
 data_url: "https://openneuro.org/datasets/ds001506"
 data_label: "Data (OpenNeuro)"
 video_embed: "https://www.youtube.com/embed/jsp1KaM-avU"
+highlight: true
 ---

@@ -188,6 +188,22 @@ hr {
   border-width: 2px;
 }
 
+/* --- HOMEPAGE RESEARCH GRID --- */
+.research-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.research-grid > a {
+  flex: 1 1 calc(25% - 1.5rem);
+  min-width: 180px;
+}
+@media screen and (max-width: 30em) {
+  .research-grid > a {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
 /* --- SELECTION COLOR (Off-White yellow accent) --- */
 ::selection {
   background: #FFC300;

@@ -1,28 +1,89 @@
-{{ define "main" }}
-
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tl center measure-wide lh-copy nested-links mid-gray">
-    {{ .Content }}
-  </article>
-
-  <div class="pa3 pa4-ns mw8 center">
-
-    {{/* News (top, full width) */}}
-    {{ $news := (where site.RegularPages "Section" "news").ByDate.Reverse }}
-    {{ if $news }}
-    <section class="mb5">
-      <div class="flex items-center justify-between mb3">
-        <h2 class="f3 fw9 mv0 ttu tracked ow-quote">News</h2>
-        <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">SEE ALL &rarr;</a>
-      </div>
-      {{ range first 5 $news }}
-      <div class="pa2 mb2 bb bw1 b--black">
-        <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 link black underline-hover lh-title db"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
-        <span class="f7 gray">{{ .Date.Format "2006-01-02" }}</span>
-      </div>
+{{ define "header" }}
+<header>
+  <div class="bg-black">
+    {{ partials.Include "site-navigation.html" . }}
+    <div class="tc pv4 pv5-l ph3 ph4-ns">
+      <h1 class="f1 f-subheadline-l fw9 white mb0 lh-solid" style="text-transform:uppercase; letter-spacing:0.12em;">
+        {{ .Site.Title }}
+      </h1>
+      {{ with .Params.description }}
+      <p class="f5 f4-l fw4 white-70 mt3 mb0" style="text-transform:uppercase; letter-spacing:0.2em;">
+        {{ . }}
+      </p>
       {{ end }}
-    </section>
-    {{ end }}
-
+      <div class="f5 white-80 mt3 mb0 measure center lh-copy">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
+</header>
+{{ end }}
 
+{{ define "main" }}
+<div class="pa3 pa4-ns mw8 center">
+
+  {{/* ── Research Areas ── */}}
+  {{ with .Params.research_areas }}
+  <section class="mb5">
+    <div class="flex items-center justify-between mb3">
+      <h2 class="f3 fw9 mv0 ttu tracked">{{ if eq $.Lang "ja" }}Research{{ else }}Research{{ end }}</h2>
+      <a href="{{ "research/" | absURL }}" class="f6 link black fw7 ttu tracked">{{ if eq $.Lang "ja" }}MORE{{ else }}MORE{{ end }} &rarr;</a>
+    </div>
+    <div class="research-grid">
+      {{ range . }}
+      <a href="{{ .url }}" class="link black db">
+        <div class="bt bw2 b--black pt2 pb3">
+          <h3 class="f6 fw9 ttu tracked mv0">{{ .name }}</h3>
+          <p class="f7 mid-gray mt1 mb0 lh-copy">{{ .description }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ── Selected Publications ── */}}
+  {{ $highlights := where (where site.RegularPages "Section" "publications") ".Params.highlight" true }}
+  {{ $highlights = $highlights.ByDate }}
+  {{ if $highlights }}
+  <section class="mb5">
+    <div class="flex items-center justify-between mb3">
+      <h2 class="f3 fw9 mv0 ttu tracked">{{ if eq .Lang "ja" }}Selected Publications{{ else }}Selected Publications{{ end }}</h2>
+      <a href="{{ "publications/" | absURL }}" class="f6 link black fw7 ttu tracked">{{ if eq .Lang "ja" }}ALL{{ else }}ALL{{ end }} &rarr;</a>
+    </div>
+    {{ range $highlights }}
+    <div class="pv2 mb2 bb b--black-20">
+      <span class="f7 fw7 gray ttu tracked" style="letter-spacing:0.05em;">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
+      <a href="{{ .RelPermalink }}" class="f6 fw6 link black underline-hover lh-title db mt1">{{ .Title }}</a>
+      <span class="f7 gray i">{{ .Params.journal }}{{ with .Params.volume }}, {{ . }}{{ end }}{{ with .Params.pages }}, {{ . }}{{ end }}</span>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* ── News ── */}}
+  {{ $news := (where site.RegularPages "Section" "news").ByDate.Reverse }}
+  {{ if $news }}
+  <section class="mb5">
+    <div class="flex items-center justify-between mb3">
+      <h2 class="f3 fw9 mv0 ttu tracked">News</h2>
+      <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">{{ if eq .Lang "ja" }}ALL{{ else }}ALL{{ end }} &rarr;</a>
+    </div>
+    {{ range first 5 $news }}
+    <div class="pv2 mb2 bb b--black-20">
+      <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 link black underline-hover lh-title db"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+      <div class="f7 gray mt1">
+        {{ .Date.Format "2006-01-02" }}
+        {{ with .Params.tags }}
+          {{ range . }}
+            <span class="dib bg-black white ph1 pv0 ml1 fw7 ttu" style="font-size:0.55rem; letter-spacing:0.08em;">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+</div>
 {{ end }}
