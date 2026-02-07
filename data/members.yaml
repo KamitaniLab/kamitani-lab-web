@@ -4,8 +4,15 @@ staff:
     role: "Professor"
     role_ja: "教授"
     links:
+
+      - label: "researchmap"
+        url: "https://researchmap.jp/y_kamitani"
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=m5wNiJ4AAAAJ"
       - label: "Kyoto Univ Researcher DB"
-        url: "https://kdb.iimc.kyoto-u.ac.jp/profile_private/ja.8f4f353628c6dc71.html"
+        url: "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.8f4f353628c6dc71.html"
+      - label: "Profile"
+        url: "/members/kamitani-profile/"
 
   - name: "Yoshihiro Nagano"
     name_ja: "長野 祥大"
@@ -36,19 +43,9 @@ staff:
 atr_staff:
   - name: "Yukiyasu Kamitani"
     name_ja: "神谷 之康"
-    role: "Department Head"
-    role_ja: "室長"
-    links:
-      - label: "researchmap"
-        url: "http://researchmap.jp/y_kamitani/?lang=english"
-
-  - name: "Eizaburo Doi"
-    name_ja: "土肥 英三郎"
-    role: "Researcher"
-    role_ja: "研究員"
-    links:
-      - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=F1Tci7gAAAAJ&hl=en"
+    role: "Department Head (ATR Fellow)"
+    role_ja: "客員室長（ATRフェロー）"
+  
 
   - name: "Takufumi Yanagisawa"
     name_ja: "柳澤 琢史"
@@ -70,37 +67,10 @@ atr_staff:
       - label: "researchmap"
         url: "http://researchmap.jp/fukuma/?lang=english"
 
-  - name: "Mitsuaki Tsukamoto"
-    name_ja: "塚本 光昭"
-    role: "Research Engineer"
-    role_ja: "研究技術員"
-    links:
-      - label: "researchmap"
-        url: "https://researchmap.jp/m_tsukamoto/?lang=english"
-
-  - name: "Fan Cheng"
-    name_ja: "程 帆"
-    role: "Intern"
-    role_ja: "研修研究員"
-    links: []
-
-  - name: "Huixiang Yang"
-    name_ja: "楊 惠翔"
-    role: "Cooperate Researcher"
-    role_ja: "連携研究員"
-    affiliation: "Osaka University"
-    affiliation_ja: "大阪大学"
-    links: []
-
 atr_students:
   - name: "Ken Shirakawa"
     name_ja: "白川 健"
     level: "D3"
-    affiliation: "Kyoto University"
-
-  - name: "Naoki Miyaguchi"
-    name_ja: "宮口 直樹"
-    level: "M2"
     affiliation: "Kyoto University"
 
 atr_secretary:
