@@ -1,5 +1,5 @@
 ---
-title: "リンク"
+title: "リソーシーズ"
 description: "外部リソース・プロフィール"
 featured_image: ""
 ---
@@ -10,13 +10,12 @@ featured_image: ""
 - [Google Scholar](https://scholar.google.com/citations?user=BCEh_-AAAAAJ)
 - [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Kamitani+Yukiyasu%5BAuthor%5D&sort=date)
 - [figshare](https://figshare.com/authors/Yukiyasu_Kamitani/305626)
-- [Brainliner](https://brainliner.jp/)
 
 ## ソーシャル
 
 - [YouTube](https://www.youtube.com/@KamitaniLab)
 - [X (Twitter)](https://twitter.com/ykamit)
-- [Instagram](https://www.instagram.com/kamitanilab/)
+- [note](https://note.com/ykamit)
 
 ## 所属機関
 

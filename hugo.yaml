@@ -31,11 +31,14 @@ languages:
         - name: Publications
           pageRef: /papers
           weight: 35
+        - name: Publications2
+          pageRef: /publications2
+          weight: 36
         - name: アート
           pageRef: /art
           weight: 40
         - name: Resources
-          pageRef: /links
+          pageRef: /resources
           weight: 80
         - name: 検索
           pageRef: /search
@@ -55,11 +58,14 @@ menus:
     - name: Publications
       pageRef: /papers
       weight: 35
+    - name: Publications2
+      pageRef: /publications2
+      weight: 36
     - name: Art
       pageRef: /art
       weight: 40
     - name: Resources
-      pageRef: /links
+      pageRef: /resources
       weight: 80
     - name: Search
       pageRef: /search
