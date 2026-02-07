@@ -59,21 +59,63 @@ atr_staff:
       - label: "researchmap"
         url: "http://researchmap.jp/takufumi/?lang=english"
 
-  - name: "Ryohei Fukuma"
-    name_ja: "福間 良平"
-    role: "Visiting Researcher"
-    role_ja: "客員研究員"
-    affiliation: "Osaka University"
-    affiliation_ja: "大阪大学"
-    links:
-      - label: "researchmap"
-        url: "http://researchmap.jp/fukuma/?lang=english"
+  - name: "Kizen Yamaguchi"
+    name_ja: "山口 暉善"
+    role: "Research Engineer"
+    role_ja: "研究技術員"
+    links: []
 
-atr_students:
   - name: "Ken Shirakawa"
     name_ja: "白川 健"
-    level: "D3"
-    affiliation: "Kyoto University"
+    role: "Research Trainee"
+    role_ja: "研修研究員"
+    links: []
+
+atr_collaborative:
+  - name: "Yoshihiro Nagano"
+    name_ja: "長野 祥大"
+    role: "Collaborative Researcher"
+    role_ja: "連携研究員"
+    links:
+      - label: "researchmap"
+        url: "https://researchmap.jp/ganow"
+
+  - name: "Misato Tanaka"
+    name_ja: "田中 美里"
+    role: "Collaborative Researcher"
+    role_ja: "連携研究員"
+    links: []
+
+  - name: "Haibao Wang"
+    name_ja: "王 海保"
+    role: "Collaborative Researcher"
+    role_ja: "連携研究員"
+    links: []
+
+  - name: "Shuntaro Aoki"
+    name_ja: "青木 俊太郎"
+    role: "Collaborative Researcher"
+    role_ja: "連携研究員"
+    links: []
+
+atr_trainees:
+  - name: "Shiyun Yang"
+    name_ja: "楊 詩韻"
+    role: "External Trainee"
+    role_ja: "連携実習生"
+
+  - name: "Reo Tsukasa"
+    name_ja: "司 怜央"
+    role: "External Trainee"
+    role_ja: "連携実習生"
+
+  - name: "Kenya Otsuka"
+    name_ja: "大塚 健矢"
+    role: "External Trainee"
+    role_ja: "連携実習生"
+    links:
+      - label: "researchmap"
+        url: "https://researchmap.jp/kenyaotsuka"
 
 atr_secretary:
   - name: "Yukari Kado"
