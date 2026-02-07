@@ -6,4 +6,5 @@ journal: "Frontiers in Computational Neuroscience"
 volume: "13"
 pages: "21"
 doi: "10.3389/fncom.2019.00021"
+video_embed: "https://www.youtube.com/embed/bP8HcJE8LSQ"
 ---

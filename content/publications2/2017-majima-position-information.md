@@ -1,8 +1,10 @@
 ---
-title: "Position information encoded by population activity in hierarchical visual areas"
-date: 2017-10-05
+title: "Position Information Encoded by Population Activity in Hierarchical Visual Areas"
+date: 2017-03-27
 authors: "Majima, K., Sukhanov, P., Horikawa, T., & Kamitani, Y."
-journal: "Frontiers in Computational Neuroscience"
-volume: "11"
-doi: "10.3389/fncom.2017.00091"
+journal: "eNeuro"
+volume: "4"
+issue: "2"
+pages: "ENEURO.0268-16.2017"
+doi: "10.1523/ENEURO.0268-16.2017"
 ---

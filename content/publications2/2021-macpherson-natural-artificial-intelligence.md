@@ -5,5 +5,5 @@ authors: "Macpherson, T., Churchland, A., Sejnowski, T., DiCarlo, J., Kamitani, 
 journal: "Neural Networks"
 volume: "144"
 pages: "218–233"
-doi: "10.1016/j.neunet.2021.09.011"
+doi: "10.1016/j.neunet.2021.09.018"
 ---
