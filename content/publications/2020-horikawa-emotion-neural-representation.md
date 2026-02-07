@@ -8,4 +8,6 @@ issue: "5"
 pages: "101060"
 doi: "10.1016/j.isci.2020.101060"
 code_url: "https://github.com/KamitaniLab/EmotionVideoNeuralRepresentation"
+data_url: "https://openneuro.org/datasets/ds002425"
+data_label: "Data (OpenNeuro)"
 ---

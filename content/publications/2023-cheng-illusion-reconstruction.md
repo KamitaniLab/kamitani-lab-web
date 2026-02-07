@@ -8,5 +8,7 @@ issue: "46"
 pages: "eadj3906"
 doi: "10.1126/sciadv.adj3906"
 code_url: "https://github.com/KamitaniLab/IllusionReconstruction"
+data_url: "https://openneuro.org/datasets/ds004670"
+data_label: "Data (OpenNeuro)"
 video_embed: "https://www.youtube.com/embed/qQpFATyanUk"
 ---
