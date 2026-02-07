@@ -13,11 +13,29 @@
 </div>
 {{ end }}
 
-{{ range .Site.Data.members.atr_students }}
+{{ range .Site.Data.members.atr_collaborative }}
 <div class="member-card pa3 mb3 bb b--black">
   <h3 class="f4 fw7 mb1 ttu tracked">{{ .name }}</h3>
   <p class="f5 gray mt0 mb1">{{ .name_ja }}</p>
-  <p class="f5 mb0">{{ .level }}{{ with .affiliation }}, {{ . }}{{ end }}</p>
+  <p class="f5 mb1">{{ .role }} / {{ .role_ja }}</p>
+  {{ if .links }}{{ if gt (len .links) 0 }}
+  <p class="f6">
+    {{ range $i, $link := .links }}{{ if $i }} / {{ end }}{{ $href := $link.url }}{{ if hasPrefix $link.url "/" }}{{ with site.GetPage $link.url }}{{ $href = .RelPermalink }}{{ end }}{{ end }}<a href="{{ $href }}" class="link black underline-hover fw7"{{ if not (hasPrefix $link.url "/") }} target="_blank" rel="noopener"{{ end }}>{{ $link.label }}</a>{{ end }}
+  </p>
+  {{ end }}{{ end }}
+</div>
+{{ end }}
+
+{{ range .Site.Data.members.atr_trainees }}
+<div class="member-card pa3 mb3 bb b--black">
+  <h3 class="f4 fw7 mb1 ttu tracked">{{ .name }}</h3>
+  <p class="f5 gray mt0 mb1">{{ .name_ja }}</p>
+  <p class="f5 mb1">{{ .role }} / {{ .role_ja }}</p>
+  {{ if .links }}{{ if gt (len .links) 0 }}
+  <p class="f6">
+    {{ range $i, $link := .links }}{{ if $i }} / {{ end }}{{ $href := $link.url }}{{ if hasPrefix $link.url "/" }}{{ with site.GetPage $link.url }}{{ $href = .RelPermalink }}{{ end }}{{ end }}<a href="{{ $href }}" class="link black underline-hover fw7"{{ if not (hasPrefix $link.url "/") }} target="_blank" rel="noopener"{{ end }}>{{ $link.label }}</a>{{ end }}
+  </p>
+  {{ end }}{{ end }}
 </div>
 {{ end }}
 
