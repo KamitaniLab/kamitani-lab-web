@@ -17,4 +17,5 @@ research_areas:
     url: "/research/#art"
 ---
 
-We study how the brain represents and processes information — decoding perception, imagery, thoughts, and emotions from neural activity, bridging neuroscience and AI, and translating brain signals into action and art.
+
+Externalizing the mind.
