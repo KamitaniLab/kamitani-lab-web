@@ -19,6 +19,8 @@ staff:
     role: "Assistant Professor"
     role_ja: "助教"
     links:
+      - label: "researchmap"
+        url: "https://researchmap.jp/ganow"
       - label: "Website"
         url: "https://ganow.me/"
 
@@ -87,6 +89,9 @@ students:
   - name: "Kenya Otsuka"
     name_ja: "大塚 健矢"
     level: "D1"
+    links:
+      - label: "researchmap"
+        url: "https://researchmap.jp/kenyaotsuka"
 
   - name: "Hideki Izumi"
     name_ja: "泉 英樹"
