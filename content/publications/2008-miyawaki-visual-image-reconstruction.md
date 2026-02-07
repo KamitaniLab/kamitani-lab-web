@@ -9,4 +9,5 @@ pages: "915–929"
 doi: "10.1016/j.neuron.2008.11.004"
 pub_image: "images/neuron_dec11_2008.jpg"
 video_embed: "https://www.youtube.com/embed/70Jy0b_pD1s"
+pub_image_width: "30%"
 ---

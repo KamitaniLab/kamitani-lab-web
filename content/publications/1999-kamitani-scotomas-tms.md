@@ -8,4 +8,5 @@ issue: "8"
 pages: "767-71"
 doi: "10.1038/11245"
 pub_image: "images/natNeuro9908Cover.jpg"
+pub_image_width: "30%"
 ---
