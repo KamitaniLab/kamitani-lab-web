@@ -8,4 +8,5 @@ issue: "46"
 pages: "eadj3906"
 doi: "10.1126/sciadv.adj3906"
 code_url: "https://github.com/KamitaniLab/IllusionReconstruction"
+video_embed: "https://www.youtube.com/embed/qQpFATyanUk"
 ---

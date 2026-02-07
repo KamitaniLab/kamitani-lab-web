@@ -5,5 +5,5 @@ authors: "Majima, K., Matsuo, T., Kawasaki, K., Kawai, K., Saito, N., Hasegawa, 
 journal: "NeuroImage"
 volume: "90"
 pages: "74–83"
-doi: "10.1016/j.neuroimage.2013.12.025"
+doi: "10.1016/j.neuroimage.2013.12.020"
 ---

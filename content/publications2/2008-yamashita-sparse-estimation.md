@@ -6,5 +6,5 @@ journal: "NeuroImage"
 volume: "42"
 issue: "4"
 pages: "1414–1429"
-doi: "10.1016/j.neuroimage.2008.05.025"
+doi: "10.1016/j.neuroimage.2008.05.050"
 ---

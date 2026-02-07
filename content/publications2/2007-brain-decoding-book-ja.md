@@ -2,6 +2,7 @@
 title: "ブレイン・デコーディング――脳情報を読む"
 date: 2007-01-01
 authors: "「脳を活かす」研究会 (編), 神谷之康, 柿木隆介, 岩田誠, 田村馨, 堂目卓生, 西條辰義, 松島俊也, 田中沙織, 飯高哲也"
-journal: "東京大学出版会"
+journal: "オーム社"
+link_url: "https://cir.nii.ac.jp/crid/1970023484857614241"
 pub_type: "japanese"
 ---
