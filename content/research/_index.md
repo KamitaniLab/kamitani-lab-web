@@ -45,12 +45,6 @@ Kamitani Lab has contributed to this field through a series of studies connectin
 
 [Nonaka et al. (2021)](/publications/2021-nonaka-brain-hierarchy-score/) introduced the brain hierarchy score, a metric for evaluating how well a DNN's layer structure corresponds to the brain's hierarchical organization. This work revealed that higher task performance does not always mean better alignment with the brain's hierarchy — a finding that challenges the assumption that better engineering performance equals greater biological plausibility (*iScience*).
 
-<div class="research-embed">
-<div class="research-embed-slides">
-<iframe src="https://speakerdeck.com/player/a0c60ab70baf4b1d9aeedeff560574cd" allowfullscreen allowtransparency></iframe>
-</div>
-</div>
-
 More recently, the lab has developed neural code conversion technology that translates brain representations across different individuals and measurement sites without requiring shared stimuli ([Wang et al., 2025](/publications/2025-wang-inter-individual-neural-code/), *Nature Computational Science*), enabling broader applicability of decoding models. [Shirakawa et al. (2025)](/publications/2025-shirakawa-spurious-reconstruction/) critically examined current reconstruction methods, identifying that some high-profile results may reflect "spurious reconstruction" — category-level classification combined with generative model hallucination rather than genuine visual reconstruction (*Neural Networks*).
 
 At the theoretical level, [Onoo et al. (2025)](/publications/2025-onoo-readout-representation/) proposed the concept of readout representation, which redefines neural codes not by the causal origin of neural activity but by the information that can be recovered (read out) from latent representations — providing a unified framework for understanding representation in both brains and AI systems.
@@ -71,26 +65,34 @@ These themes are discussed in Kamitani's essay "[Is the Brain Similar to AI? The
 
 ## BMI {#bmi}
 
-Brain-machine interfaces (BMIs) translate brain signals into control commands for external devices, aiming to restore motor and communication functions for patients with neurological conditions. Kamitani Lab's BMI research, conducted primarily at ATR in collaboration with Osaka University Hospital and other institutions, has focused on electrocorticography (ECoG)-based decoding of motor intentions.
+Brain-machine interfaces (BMIs) translate brain signals into control commands for external devices, aiming to restore motor and communication functions for patients with neurological conditions. Kamitani Lab's BMI research grew directly from the brain decoding methods developed for basic neuroscience.
 
-A key achievement was the development of a BMI system that enables patients with phantom limb pain to control a prosthetic hand using brain signals from the reorganized motor cortex. [Yanagisawa et al. (2012)](/publications/2012-yanagisawa-electrocorticographic-prosthetic/) demonstrated real-time control of an electrocorticographic prosthetic hand, and subsequent work showed that [neurofeedback training with such systems can alleviate phantom limb pain](/publications/2020-yanagisawa-bci-phantom-limb/) by normalizing cortical representations. [Hirata et al. (2012)](/publications/2012-hirata-bmi-brain-surface/) developed a fully implantable wireless BMI system using brain surface electrodes for motor restoration (*Advanced Robotics*).
-
-The lab has also investigated how BMI training induces cortical plasticity, showing that repeated use of brain-machine interfaces can reshape neural representations in motor areas ([Yanagisawa et al., 2016](/publications/2016-yanagisawa-sensorimotor-plasticity/); [Yanagisawa et al., 2018](/publications/2018-yanagisawa-induction-cortical-plasticity/)), and how decoded visual semantic information can be used for image retrieval in closed-loop systems ([Fukuma et al., 2024](/publications/2024-fukuma-image-retrieval-closed-loop/)).
-
-A recent review in *Trends in Cognitive Sciences* ([Beste et al., 2026](/publications/2026-beste-moving-intentions/)) discusses the broader challenge of moving motor intentions from brains to machines, addressing the cognitive science questions that BMI research raises about the nature of intention, agency, and neural coding of movement.
+In 2006, in collaboration with Honda Research Institute, the fMRI decoding technique from the 2005 *Nature Neuroscience* study was applied to demonstrate that hand shapes (rock, paper, scissors) could be decoded from brain activity in real time and used to control a robot hand — showing that brain decoding could serve as the basis for a brain-machine interface.
 
 <div class="research-embed">
-<div class="research-embed-slides">
-<iframe src="https://speakerdeck.com/player/d96cb75df2254c0ebcfd4ced51754104" allowfullscreen allowtransparency></iframe>
+<div class="research-embed-video">
+<iframe src="https://www.youtube.com/embed/_pAp-EIUCqo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
+
+Subsequently, the lab began a collaboration with the neurosurgery group at Osaka University (led by Toshiki Yoshimine and later Haruhiko Kishima), shifting focus to electrocorticography (ECoG) — electrodes placed directly on the brain surface during neurosurgical procedures. From 2008, the research concentrated on ECoG-based decoding, which offers higher spatial and temporal resolution than fMRI. [Yanagisawa et al. (2009)](/publications/2009-yanagisawa-neural-decoding-ecog/) demonstrated neural decoding using gyral and intrasulcal electrocorticograms (*NeuroImage*), and [Yanagisawa et al. (2011)](/publications/2011-yanagisawa-prosthetic-hand-ecog/) achieved real-time control of a prosthetic hand using human ECoG signals (*Journal of Neurosurgery*).
+
+A major milestone was reported in [Yanagisawa et al. (2012)](/publications/2012-yanagisawa-electrocorticographic-prosthetic/), which demonstrated that paralyzed patients could control a prosthetic arm using ECoG signals decoded in real time (*Annals of Neurology*). This established the clinical viability of ECoG-based BMI for motor restoration.
+
+The research then extended to phantom limb pain. [Yanagisawa et al. (2016)](/publications/2016-yanagisawa-sensorimotor-plasticity/) showed that BMI-driven neurofeedback could induce sensorimotor brain plasticity and control pain in phantom limb patients (*Nature Communications*), and a subsequent randomized crossover trial confirmed that [BCI training to move a virtual hand reduces phantom limb pain](/publications/2020-yanagisawa-bci-phantom-limb/) (Yanagisawa et al., 2020, *Neurology*).
+
+Beyond motor decoding, the lab has also pursued vision-based brain-machine interfaces, where visual semantic information is decoded from brain activity and used for image retrieval and communication. [Fukuma et al. (2018)](/publications/2018-fukuma-decoding-visual-stimulus-semantic/) decoded visual stimulus semantics from ECoG signals, [Fukuma et al. (2022)](/publications/2022-fukuma-voluntary-control-semantic/) demonstrated voluntary control of semantic neural representations (*Communications Biology*), and [Fukuma et al. (2024)](/publications/2024-fukuma-image-retrieval-closed-loop/) developed a closed-loop image retrieval system based on visual-semantic neural decoding.
+
+A recent review in *Trends in Cognitive Sciences* ([Beste et al., 2026](/publications/2026-beste-moving-intentions/)) discusses the broader challenge of moving intentions from brains to machines, addressing fundamental questions about intention, agency, and neural coding that BMI research raises for cognitive science.
 
 ### Key Publications
 
+- **[Yanagisawa et al. (2009)](/publications/2009-yanagisawa-neural-decoding-ecog/)** Neural decoding using gyral and intrasulcal electrocorticograms. *NeuroImage*, 45(4), 1099–1106
+- **[Yanagisawa et al. (2011)](/publications/2011-yanagisawa-prosthetic-hand-ecog/)** Real-time control of a prosthetic hand using human electrocorticography signals. *Journal of Neurosurgery*, 114(6), 1715–1722
 - **[Yanagisawa et al. (2012)](/publications/2012-yanagisawa-electrocorticographic-prosthetic/)** Electrocorticographic control of a prosthetic arm in paralyzed patients. *Annals of Neurology*, 71(3), 353–361
-- **[Hirata et al. (2012)](/publications/2012-hirata-bmi-brain-surface/)** Motor restoration based on the brain machine interface using brain surface electrodes. *Advanced Robotics*, 26(3-4), 335–351
-- **[Fukuma et al. (2018)](/publications/2018-fukuma-bmi-robotic-hand/)** Training in use of brain–machine interface-controlled robotic hand improves accuracy decoding two types of hand movements. *Frontiers in Neuroscience*, 12, 478
-- **[Yanagisawa et al. (2020)](/publications/2020-yanagisawa-bci-phantom-limb/)** BCI-based neurofeedback training for phantom limb pain. *Journal of Neural Engineering*
+- **[Yanagisawa et al. (2016)](/publications/2016-yanagisawa-sensorimotor-plasticity/)** Induced sensorimotor brain plasticity controls pain in phantom limb patients. *Nature Communications*, 7, 13209
+- **[Fukuma et al. (2022)](/publications/2022-fukuma-voluntary-control-semantic/)** Voluntary control of semantic neural representations by imagery with conflicting visual stimulation. *Communications Biology*, 5(1), 1–15
+- **[Fukuma et al. (2024)](/publications/2024-fukuma-image-retrieval-closed-loop/)** Image retrieval based on closed-loop visual-semantic neural decoding. *bioRxiv*
 - **[Beste et al. (2026)](/publications/2026-beste-moving-intentions/)** Moving intentions from brains to machines. *Trends in Cognitive Sciences*
 
 ---
