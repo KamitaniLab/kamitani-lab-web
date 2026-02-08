@@ -4,8 +4,6 @@ date: 2019-03-16
 source: "Sonar+D"
 news_type: event
 link_url: "https://sonarplusd.com/en/programs/barcelona-2019/areas/artificial-intelligence/yukiyasu-kamitani-daito-manabe-dream-visualization"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/183496201016/yukiyasi-kamitani-daito-manabe-dream"
-draft: false
 ---
 [Yukiyasi Kamitani + Daito Manabe, Dream Visualization - Sónar+D Barcelona 2019](https://sonarplusd.com/en/programs/barcelona-2019/areas/artificial-intelligence/yukiyasu-kamitani-daito-manabe-dream-visualization)
 

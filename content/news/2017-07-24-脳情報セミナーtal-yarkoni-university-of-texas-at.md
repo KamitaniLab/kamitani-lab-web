@@ -3,8 +3,6 @@ title: "【脳情報セミナー】Tal Yarkoni (University of Texas at Austin), 
 date: 2017-07-24
 news_type: event
 link_url: "http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/163364680981/%E8%84%B3%E6%83%85%E5%A0%B1%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BCtal-yarkoni-university-of-texas-at"
-draft: false
 ---
 [http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1)
 

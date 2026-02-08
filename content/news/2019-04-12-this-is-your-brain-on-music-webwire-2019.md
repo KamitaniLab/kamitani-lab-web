@@ -4,8 +4,6 @@ date: 2019-04-12
 source: "WebWire"
 news_type: media
 link_url: "https://www.webwire.com/ViewPressRel.asp?aId=237447"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/184134819231/this-is-your-brain-on-music-webwire-2019"
-draft: false
 ---
 [This is your brain on music | WebWire 2019](https://www.webwire.com/ViewPressRel.asp?aId=237447)
 

@@ -4,8 +4,6 @@ date: 2017-12-13
 source: "Kyoto University"
 news_type: event
 link_url: "http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/168501807071/181011vangervenseminar"
-draft: false
 ---
 [http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 

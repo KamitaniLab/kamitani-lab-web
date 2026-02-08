@@ -4,7 +4,6 @@ date: 2000-09-30
 source: "ATR"
 news_type: media
 link_url: "http://www.atr.jp/map_etc/access_e.html"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152088769376/access-atr-lab-department-of-neuroinformatics"
 draft: true
 ---
 [English](http://www.atr.jp/map_etc/access_e.html)

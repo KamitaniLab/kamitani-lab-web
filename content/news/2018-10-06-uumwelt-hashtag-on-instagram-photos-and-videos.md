@@ -3,8 +3,6 @@ title: "#uumwelt hashtag on Instagram • Photos and Videos"
 date: 2018-10-06
 news_type: media
 link_url: "https://www.instagram.com/explore/tags/uumwelt/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/178775574821/uumwelt-hashtag-on-instagram-photos-and-videos"
-draft: false
 ---
 [#uumwelt hashtag on Instagram • Photos and Videos](https://www.instagram.com/explore/tags/uumwelt/)
 

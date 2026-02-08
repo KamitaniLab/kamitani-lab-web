@@ -4,8 +4,6 @@ date: 2008-12-12
 source: "New Scientist"
 news_type: media
 link_url: "https://www.newscientist.com/article/dn16267-mind-reading-software-could-record-your-dreams/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152995986126/mind-reading-software-could-record-your-dreams"
-draft: false
 ---
 [‘Mind-reading’ software could record your dreams](https://www.newscientist.com/article/dn16267-mind-reading-software-could-record-your-dreams/)
 

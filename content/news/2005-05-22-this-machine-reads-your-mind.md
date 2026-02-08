@@ -3,8 +3,6 @@ title: "This Machine Reads Your Mind"
 date: 2005-05-22
 news_type: media
 link_url: "http://www.mindpowernews.com/MachineReadsMinds.htm"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152144643056/this-machine-reads-your-mind"
-draft: false
 ---
 [This Machine Reads Your Mind](http://www.mindpowernews.com/MachineReadsMinds.htm)
 

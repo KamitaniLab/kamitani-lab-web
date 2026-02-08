@@ -4,8 +4,6 @@ date: 2018-10-18
 source: "ArtReview"
 news_type: media
 link_url: "https://artreview.com/previews/ar_october_2018_short_contents/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/179179954796/artreview-october-2018"
-draft: false
 ---
 [ArtReview | October 2018](https://artreview.com/previews/ar_october_2018_short_contents/)
 

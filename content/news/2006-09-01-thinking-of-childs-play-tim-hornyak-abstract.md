@@ -4,8 +4,6 @@ date: 2006-09-01
 source: "Nature"
 news_type: media
 link_url: "http://www.nature.com/scientificamerican/journal/v295/n3/full/scientificamerican0906-30.html"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152995740951/thinking-of-childs-play-tim-hornyak-abstract"
-draft: false
 ---
 [Thinking of Child's Play Tim Hornyak Abstract Brain-Machine Interface Turns Robots Into Gamers](http://www.nature.com/scientificamerican/journal/v295/n3/full/scientificamerican0906-30.html)
 

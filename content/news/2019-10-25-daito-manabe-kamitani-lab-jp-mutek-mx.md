@@ -4,8 +4,6 @@ date: 2019-10-25
 source: "MUTEK"
 news_type: event
 link_url: "http://mutek.mx/2019/en/daito-manabe/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/188583164206/daito-manabe-kamitani-lab-jp-mutek-mx"
-draft: false
 ---
 [Daito Manabe & Kamitani Lab  JP  – MUTEK MX](http://mutek.mx/2019/en/daito-manabe/)
 

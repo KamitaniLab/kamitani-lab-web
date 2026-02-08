@@ -5,8 +5,6 @@ source: "YouTube"
 news_type: video
 link_url: "https://www.youtube.com/watch?v=DwcKed26KQ8"
 embed_url: "https://www.youtube.com/embed/DwcKed26KQ8"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/180716845156/maison-book-girl-%E5%A4%A2-mv"
-draft: false
 ---
 [Maison book girl / 夢 / MV](https://www.youtube.com/watch?v=DwcKed26KQ8)
 

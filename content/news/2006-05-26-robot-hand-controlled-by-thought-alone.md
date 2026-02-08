@@ -4,8 +4,6 @@ date: 2006-05-26
 source: "New Scientist"
 news_type: media
 link_url: "https://www.newscientist.com/article/dn9237-robot-hand-controlled-by-thought-alone/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152989288996/robot-hand-controlled-by-thought-alone"
-draft: false
 ---
 [Robot hand controlled by thought alone](https://www.newscientist.com/article/dn9237-robot-hand-controlled-by-thought-alone/)
 

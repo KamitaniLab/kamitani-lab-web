@@ -5,8 +5,6 @@ source: "YouTube"
 news_type: video
 link_url: "https://youtu.be/AgbeGFYluEA"
 embed_url: "https://www.youtube.com/embed/AgbeGFYluEA"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/182338402796/mind-reading"
-draft: false
 ---
 [Mind Reading](https://youtu.be/AgbeGFYluEA)
 
