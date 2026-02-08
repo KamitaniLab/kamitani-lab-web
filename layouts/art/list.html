@@ -1,31 +1,314 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
-  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray nested-links">
-    {{- .Content -}}
-  </section>
+  <style>
+    /* — Art Entry — */
+    .art-entry {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #e0e0e0;
+      line-height: 1.6;
+    }
+    .art-entry:last-child { border-bottom: none; }
 
-  {{ $pages := .Pages.ByDate.Reverse }}
+    /* — Typography — */
+    .art-artist {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #555;
+      margin-bottom: 0.15rem;
+    }
+    .art-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #111;
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+    .art-title a {
+      color: #111;
+      text-decoration: none;
+    }
+    .art-title a:hover { text-decoration: underline; }
+    .art-type-badge {
+      display: inline-block;
+      font-size: 0.55rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #fff;
+      background: #111;
+      padding: 0.12rem 0.45rem;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+      position: relative;
+      top: -0.1em;
+    }
+    .art-venue {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .art-venue-name {
+      font-style: italic;
+    }
+
+    /* — Media — */
+    .art-media {
+      margin-top: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .art-media iframe {
+      max-width: 100%;
+      width: 560px;
+      height: 315px;
+    }
+    .art-media img {
+      max-width: 100%;
+      max-height: 450px;
+      width: auto;
+    }
+
+    /* — Description — */
+    .art-description {
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.65;
+      margin-top: 0.6rem;
+      max-width: 640px;
+    }
+
+    /* — Exhibitions list (sub-venues) — */
+    .art-exhibitions {
+      margin-top: 0.6rem;
+      padding-left: 0;
+      list-style: none;
+    }
+    .art-exhibitions li {
+      font-size: 0.8rem;
+      color: #555;
+      padding: 0.15rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .art-exhibitions li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #999;
+    }
+    .art-exhibitions a {
+      color: #555;
+      text-decoration: none;
+    }
+    .art-exhibitions a:hover { color: #111; }
+
+    /* — Link buttons — */
+    .art-links {
+      margin-top: 0.7rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .art-links a {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0.7rem;
+      text-decoration: none;
+      border: 1.5px solid #111;
+      color: #111;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+    .art-links a:hover {
+      background-color: #111;
+      color: #fff;
+    }
+    .art-links a.art-link-video { border-color: #333; color: #333; }
+    .art-links a.art-link-video:hover { background-color: #333; color: #fff; }
+
+    /* — Press — */
+    .art-press {
+      margin-top: 0.6rem;
+    }
+    .art-press-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      margin-bottom: 0.25rem;
+    }
+    .art-press a {
+      display: block;
+      font-size: 0.78rem;
+      color: #666;
+      text-decoration: none;
+      padding: 0.12rem 0;
+      line-height: 1.4;
+    }
+    .art-press a:hover { color: #111; }
+    .art-press-source {
+      font-weight: 600;
+      color: #444;
+    }
+
+    /* — Year nav — */
+    .art-year-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.15rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #111;
+    }
+    .art-year-nav a {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #999;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      transition: color 0.15s;
+    }
+    .art-year-nav a:hover { color: #111; }
+
+    /* — Year heading — */
+    .art-year-heading {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #111;
+    }
+  </style>
+
+  {{/* Intro */}}
+  {{ with .Content }}
+  <div class="measure-wide lh-copy f5 mid-gray mb4">{{ . }}</div>
+  {{ end }}
+
+  {{/* Collect all years */}}
+  {{ $allPages := .Pages.ByDate.Reverse }}
   {{ $years := slice }}
-  {{ range $pages }}
+  {{ range $allPages }}
     {{ $y := .Date.Format "2006" }}
     {{ if not (in $years $y) }}
       {{ $years = $years | append $y }}
     {{ end }}
   {{ end }}
 
+  {{/* Year navigation */}}
+  <nav class="art-year-nav">
+    {{ range $years }}
+      <a href="#year-{{ . }}">{{ . }}</a>
+    {{ end }}
+  </nav>
+
+  {{/* Entries grouped by year */}}
   {{ range $years }}
     {{ $year := . }}
-    <h2 id="year-{{ $year }}" class="f4 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked ow-quote">{{ $year }}</h2>
-    {{ range $pages }}
+    <h2 id="year-{{ $year }}" class="art-year-heading">{{ $year }}</h2>
+
+    {{ range $allPages }}
       {{ if eq (.Date.Format "2006") $year }}
-        {{ partial "link-card.html" . }}
-        {{ with .Content }}
-          <div class="f5 mid-gray mb4 ml3 nested-links youtube-container">{{ . }}</div>
-        {{ end }}
+        {{ $p := . }}
+        <div class="art-entry">
+
+          {{/* Artist */}}
+          {{ with .Params.artist }}
+          <div class="art-artist">{{ . }}</div>
+          {{ end }}
+
+          {{/* Title + type badge */}}
+          <div class="art-title">
+            {{ if .Params.link_url }}
+              <a href="{{ .Params.link_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ else }}
+              {{ .Title }}
+            {{ end }}
+            {{ with .Params.art_type }}
+            <span class="art-type-badge">{{ . }}</span>
+            {{ end }}
+          </div>
+
+          {{/* Venue + Location */}}
+          {{ if or .Params.venue .Params.location }}
+          <div class="art-venue">
+            {{ with .Params.venue }}<span class="art-venue-name">{{ . }}</span>{{ end }}
+            {{ if and .Params.venue .Params.location }}, {{ end }}
+            {{ with .Params.location }}{{ . }}{{ end }}
+            {{ with .Params.date_range }} · {{ . }}{{ end }}
+          </div>
+          {{ end }}
+
+          {{/* Video embed */}}
+          {{ with .Params.video_embed }}
+          <div class="art-media">
+            <iframe src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          {{ end }}
+
+          {{/* Image */}}
+          {{ with .Params.art_image }}
+          <div class="art-media">
+            <img src="{{ . }}" alt="{{ $p.Title }}">
+          </div>
+          {{ end }}
+
+          {{/* Content / Description */}}
+          {{ with .Content }}
+          <div class="art-description">{{ . }}</div>
+          {{ end }}
+
+          {{/* Exhibitions sub-list */}}
+          {{ with .Params.exhibitions }}
+          <ul class="art-exhibitions">
+            {{ range . }}
+            <li>
+              {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ end }}
+              {{ .venue }}{{ with .location }}, {{ . }}{{ end }}{{ with .date }} ({{ . }}){{ end }}{{ with .note }} — {{ . }}{{ end }}
+              {{ if .url }}</a>{{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+
+          {{/* Link buttons */}}
+          {{ with .Params.links }}
+          <div class="art-links">
+            {{ range . }}
+            <a href="{{ .url }}" class="{{ with .class }}{{ . }}{{ end }}" target="_blank" rel="noopener">{{ .label }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          {{/* Press */}}
+          {{ with .Params.press }}
+          <div class="art-press">
+            <div class="art-press-title">Press</div>
+            {{ range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener">
+              <span class="art-press-source">{{ .source }}</span> — {{ .title }}
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+
+        </div>
       {{ end }}
     {{ end }}
   {{ end }}
 
-  {{ partial "pagination.html" . }}
 </article>
 {{ end }}
