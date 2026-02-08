@@ -56,11 +56,11 @@
             <div class="news-embed">
               {{ if or (in . "youtube.com") (in . "youtu.be") }}
                 <div class="news-embed-video">
-                  <iframe src="{{ . }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe src="{{ . }}" title="Embedded video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               {{ else if in . "speakerdeck.com" }}
                 <div class="news-embed-slides">
-                  <iframe src="{{ . }}" allowfullscreen allowtransparency></iframe>
+                  <iframe src="{{ . }}" title="Embedded slides" allowfullscreen allowtransparency></iframe>
                 </div>
               {{ end }}
             </div>

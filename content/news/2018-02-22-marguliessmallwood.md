@@ -3,15 +3,15 @@ title: "【脳情報セミナー】Daniel Margulies (CNRS, Paris), Jonathan Sma
 date: 2018-02-22
 source: "Kyoto University"
 news_type: event
-link_url: "http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html"
+link_url: "https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html"
 ---
-[http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
+[https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 
 日時：2018年3月30日（金）16:30-18:30 
 
 場所：京都大学吉田キャンパス 医学部構内 先端科学研究棟1階 大セミナー室
 
-[http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
+[https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 
 参加費や登録は不要です。
 本講演会は、AMED [脳科学研究戦略推進プログラム](https://www.amed.go.jp/program/list/01/04/001_nopro.html)の助成を受けて行われます。

@@ -28,19 +28,19 @@ staff:
     name_ja: "田中 美里"
     role: "Program-specific Researcher"
     role_ja: "特定研究員"
-    links: []
+    links:
 
   - name: "Haibao Wang"
     name_ja: "王 海保"
     role: "Program-specific Researcher"
     role_ja: "特定研究員"
-    links: []
+    links:
 
   - name: "Yukiko Masuda"
     name_ja: "増田 由季子"
     role: "Secretary"
     role_ja: "秘書"
-    links: []
+    links:
 
 atr_staff:
   - name: "Yukiyasu Kamitani"
@@ -57,19 +57,19 @@ atr_staff:
     affiliation_ja: "大阪大学"
     links:
       - label: "researchmap"
-        url: "http://researchmap.jp/takufumi/?lang=english"
+        url: "https://researchmap.jp/takufumi/?lang=english"
 
   - name: "Kizen Yamaguchi"
     name_ja: "山口 暉善"
     role: "Research Engineer"
     role_ja: "研究技術員"
-    links: []
+    links:
 
   - name: "Ken Shirakawa"
     name_ja: "白川 健"
     role: "Research Trainee"
     role_ja: "研修研究員"
-    links: []
+    links:
 
 atr_collaborative:
   - name: "Yoshihiro Nagano"
@@ -78,7 +78,7 @@ atr_collaborative:
     role_ja: "連携研究員"
     affiliation: "Kyoto University"
     affiliation_ja: "京都大学"
-    links: []
+    links:
 
   - name: "Misato Tanaka"
     name_ja: "田中 美里"
@@ -86,7 +86,7 @@ atr_collaborative:
     role_ja: "連携研究員"
     affiliation: "Kyoto University"
     affiliation_ja: "京都大学"
-    links: []
+    links:
 
   - name: "Haibao Wang"
     name_ja: "王 海保"
@@ -94,13 +94,13 @@ atr_collaborative:
     role_ja: "連携研究員"
     affiliation: "Kyoto University"
     affiliation_ja: "京都大学"
-    links: []
+    links:
 
   - name: "Shuntaro Aoki"
     name_ja: "青木 俊太郎"
     role: "Collaborative Researcher"
     role_ja: "連携研究員"
-    links: []
+    links:
 
 atr_trainees:
   - name: "Shiyun Yang"

@@ -24,12 +24,12 @@
 
     {{ with .Params.embed_url }}
       {{ if or (in . "youtube.com") (in . "youtu.be") }}
-        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin-top:1.5rem; max-width:640px;">
-          <iframe src="{{ . }}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="news-single-video-wrap">
+          <iframe src="{{ . }}" title="Embedded video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       {{ else if in . "speakerdeck.com" }}
-        <div style="position:relative; padding-bottom:75%; height:0; overflow:hidden; margin-top:1.5rem; max-width:640px;">
-          <iframe src="{{ . }}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen allowtransparency></iframe>
+        <div class="news-single-slides-wrap">
+          <iframe src="{{ . }}" title="Embedded slides" allowfullscreen allowtransparency></iframe>
         </div>
       {{ end }}
     {{ end }}
