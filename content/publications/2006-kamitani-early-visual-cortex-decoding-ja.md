@@ -6,5 +6,6 @@ journal: "映像情報メディア学会誌"
 volume: "60"
 issue: "11"
 pages: "1731-1734"
+doi: "10.3169/itej.60.1731"
 pub_type: "japanese"
 ---

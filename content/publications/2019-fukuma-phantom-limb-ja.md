@@ -6,5 +6,6 @@ journal: "PAIN RESEARCH"
 volume: "34"
 issue: "1"
 pages: "39–43"
+doi: "10.11154/pain.34.39"
 pub_type: "japanese"
 ---
