@@ -22,8 +22,9 @@
 {{ define "main" }}
 <div class="pa3 pa4-ns mw8 center">
 
-  {{/* ── News (3 items) ── */}}
-  {{ $news := (where site.RegularPages "Section" "news").ByDate.Reverse }}
+  {{/* ── News (3 items) — always pull from default (English) site ── */}}
+  {{ $defaultSite := index site.Sites 0 }}
+  {{ $news := (where $defaultSite.RegularPages "Section" "news").ByDate.Reverse }}
   {{ if $news }}
   <section class="mb5">
     <div class="flex items-center justify-between mb3">
@@ -67,8 +68,8 @@
   </section>
   {{ end }}
 
-  {{/* ── Selected Publications ── */}}
-  {{ $highlights := where (where site.RegularPages "Section" "publications") ".Params.highlight" true }}
+  {{/* ── Selected Publications — always pull from default (English) site ── */}}
+  {{ $highlights := where (where $defaultSite.RegularPages "Section" "publications") ".Params.highlight" true }}
   {{ $highlights = $highlights.ByDate.Reverse }}
   {{ if $highlights }}
   <section class="mb5">

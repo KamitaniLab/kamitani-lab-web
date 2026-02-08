@@ -1,9 +1,9 @@
 ---
-title: "神谷研究室"
-description: "脳情報学 – 京都大学・ATR"
+title: "Kamitani Lab"
+description: "Neuroinformatics – Kyoto University & ATR"
 featured_image: ""
 research_areas:
-  - name: "ブレインデコーディング"
+  - name: "Brain Decoding"
     description: "知覚・心象・夢の内容を脳活動から解読"
     url: "ja/research/#brain-decoding"
   - name: "NeuroAI"
@@ -12,9 +12,9 @@ research_areas:
   - name: "BMI"
     description: "脳信号による機械制御と機能回復"
     url: "ja/research/#bmi"
-  - name: "アート"
+  - name: "Art"
     description: "脳科学と芸術表現の交差"
     url: "ja/research/#art"
 ---
 
-心を外在化する
+Externalizing the mind.

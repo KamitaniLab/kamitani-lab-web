@@ -1,4 +1,6 @@
 {{ if hugo.IsMultilingual }}
+{{ $noSwitch := slice "members" "publications" "art" "news" }}
+{{ if not (in $noSwitch .Section) }}
 <ul class="pl0 mr3">
   {{ if .IsTranslated }}
     {{ range .Translations }}
@@ -16,4 +18,5 @@
     {{ end }}
   {{ end }}
 </ul>
+{{ end }}
 {{ end }}
