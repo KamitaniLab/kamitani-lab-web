@@ -4,13 +4,13 @@ date: 2017-07-24
 news_type: event
 link_url: "http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1"
 ---
-[http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1)
+[https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1)
 
 テキサス大学のTal Yarkoni博士をお招きして講演会を開催します。Yarkoni先生は、認知神経科学におけるデータ解析手法の開発者、また、オープンサイエンスの推進者として活躍されています。脳イメージング分野の文献テキストマイニングにより、心理概念と脳座標をデータ駆動的に関連付けるシステムNeurosynthは、ニューロインフォマティクスにおける標準ツールとして幅広く活用されています。本講演では、Neurosynthをはじめとする解析ツールや認知神経科学のオープンサイエンス化に向けた取り組みについて紹介していただきます。
 
 日時：2017年7月28日（金）16:30-18:00 
 場所：京都大学吉田キャンパス 医学部構内 先端科学研究棟1階 大セミナー室 
-[](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&m=1)[http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
+[](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&m=1)[https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 参加費や登録は不要です。
 
 The coming informatics revolution in cognitive neuroimaging

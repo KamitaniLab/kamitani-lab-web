@@ -58,17 +58,17 @@
           {{- end }}
           {{- with .Params.video_embed }}
           <div class="pub-embed">
-            <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="{{ . }}" title="{{ $p.Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-embed">
-            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
+            <img src="{{ . | absURL }}" alt="{{ $p.Title }}" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
           <div class="pub-embed">
-            <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="{{ . }}" width="560" height="420" title="{{ $p.Title }} — slides" class="pub-slide-embed" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
         </div>
@@ -106,17 +106,17 @@
           {{- end }}
           {{- with .Params.video_embed }}
           <div class="pub-embed">
-            <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="{{ . }}" title="{{ $p.Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-embed">
-            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
+            <img src="{{ . | absURL }}" alt="{{ $p.Title }}" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
           <div class="pub-embed">
-            <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="{{ . }}" width="560" height="420" title="{{ $p.Title }} — slides" class="pub-slide-embed" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
         </div>
@@ -157,17 +157,17 @@
           {{- end }}
           {{- with .Params.video_embed }}
           <div class="pub-embed">
-            <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="{{ . }}" title="{{ $p.Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{- end }}
           {{- with .Params.pub_image }}
           <div class="pub-embed">
-            <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
+            <img src="{{ . | absURL }}" alt="{{ $p.Title }}" style="max-width:560px; width:{{ $p.Params.pub_image_width | default "50%" }};">
           </div>
           {{- end }}
           {{- with .Params.slide_embed }}
           <div class="pub-embed">
-            <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="{{ . }}" width="560" height="420" title="{{ $p.Title }} — slides" class="pub-slide-embed" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{- end }}
         </div>

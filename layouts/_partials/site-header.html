@@ -2,7 +2,7 @@
   <div class="bg-black">
     {{ partials.Include "site-navigation.html" . }}
     <div class="tc-l pv3 ph3 ph4-ns">
-      <h1 class="f2 f-subheadline-l fw9 white mb0 lh-title" style="text-transform:uppercase; letter-spacing:0.12em;">
+      <h1 class="f2 f-subheadline-l fw9 white mb0 lh-title ttu-spaced">
         {{ with .Title }}
           <span class="ow-quote">{{ . }}</span>
         {{ else }}
@@ -10,7 +10,7 @@
         {{ end }}
       </h1>
       {{ with .Params.description }}
-        <h2 class="fw4 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4" style="text-transform:uppercase; letter-spacing:0.2em;">
+        <h2 class="fw4 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4 ttu-spaced-wide">
           {{ . }}
         </h2>
       {{ end }}

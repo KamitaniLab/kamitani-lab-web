@@ -3,11 +3,11 @@
   <div class="bg-black">
     {{ partials.Include "site-navigation.html" . }}
     <div class="tc pv4 pv5-l ph3 ph4-ns">
-      <h1 class="f1 f-subheadline-l fw9 white mb0 lh-solid" style="text-transform:uppercase; letter-spacing:0.12em;">
+      <h1 class="f1 f-subheadline-l fw9 white mb0 lh-solid ttu-spaced">
         {{ .Site.Title }}
       </h1>
       {{ with .Params.description }}
-      <p class="f5 f4-l fw4 white-70 mt3 mb0" style="text-transform:uppercase; letter-spacing:0.2em;">
+      <p class="f5 f4-l fw4 white-70 mt3 mb0 ttu-spaced-wide">
         {{ . }}
       </p>
       {{ end }}
@@ -34,13 +34,13 @@
     {{ range first 3 $news }}
     <div class="pv2 mb2 bb b--black-20">
       {{ with .Params.source }}
-      <span class="db" style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#999;">{{ . }}</span>
+      <span class="db home-news-source">{{ . }}</span>
       {{ end }}
       <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 fw6 link black underline-hover lh-title db mt1"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
       <div class="f7 gray mt1">
         {{ .Date.Format "2006-01-02" }}
         {{ with .Params.news_type }}
-          <span class="dib bg-black white ph1 pv0 ml1 fw7 ttu" style="font-size:0.6rem; letter-spacing:0.08em;">{{ . }}</span>
+          <span class="dib bg-black white ph1 pv0 ml1 fw7 home-news-badge">{{ . }}</span>
         {{ end }}
       </div>
     </div>
@@ -79,7 +79,7 @@
     </div>
     {{ range $highlights }}
     <div class="pv2 mb2 bb b--black-20">
-      <span class="f7 fw7 gray ttu tracked" style="letter-spacing:0.05em;">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
+      <span class="f7 fw7 gray ttu home-pub-authors">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
       {{ if .Params.doi }}
       <a href="https://doi.org/{{ .Params.doi }}" class="f6 fw6 link black underline-hover lh-title db mt1" target="_blank" rel="noopener">{{ .Title }}</a>
       {{ else if .Params.link_url }}
@@ -102,7 +102,7 @@
       {{/* 1. Deep image reconstruction */}}
       <div>
         <div class="featured-video-wrap">
-          <iframe src="https://www.youtube.com/embed/jsp1KaM-avU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/jsp1KaM-avU" title="Deep image reconstruction from human brain activity" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="featured-video-caption">
           <div class="featured-video-title">Deep image reconstruction from human brain activity</div>
@@ -112,7 +112,7 @@
       {{/* 2. Attention-modulated reconstruction */}}
       <div>
         <div class="featured-video-wrap">
-          <iframe src="https://www.youtube.com/embed/iJAF8d7d9dc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/iJAF8d7d9dc" title="Attention-modulated neural reconstruction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="featured-video-caption">
           <div class="featured-video-title">Attention modulates neural representation to render reconstructions according to subjective appearance</div>
@@ -122,7 +122,7 @@
       {{/* 3. Illusion reconstruction */}}
       <div>
         <div class="featured-video-wrap">
-          <iframe src="https://www.youtube.com/embed/qQpFATyanUk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/qQpFATyanUk" title="Reconstructing visual illusory experiences" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="featured-video-caption">
           <div class="featured-video-title">Reconstructing visual illusory experiences from human brain activity</div>
@@ -132,7 +132,7 @@
       {{/* 4. Sound reconstruction */}}
       <div>
         <div class="featured-video-wrap">
-          <iframe src="https://www.youtube.com/embed/kNSseidxFJU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/kNSseidxFJU" title="Natural sound reconstruction from brain activity" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="featured-video-caption">
           <div class="featured-video-title">Natural sounds can be reconstructed from human neuroimaging data</div>
