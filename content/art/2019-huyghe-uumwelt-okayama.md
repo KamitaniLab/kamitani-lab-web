@@ -6,6 +6,8 @@ venue: "岡山芸術交流 2019"
 location: "Okayama, Japan"
 art_type: "exhibition"
 link_url: "https://bijutsutecho.com/magazine/news/report/20618"
+art_image: "images/huyghe-uumwelt-okayama-2019.jpg"
+video_embed: "https://www.youtube.com/embed/Uh-bKO5j6bQ"
 links:
   - label: "美術手帖"
     url: "https://bijutsutecho.com/magazine/news/report/20618"
