@@ -262,7 +262,7 @@
           {{/* Image */}}
           {{ with .Params.art_image }}
           <div class="art-media">
-            <img src="{{ . }}" alt="{{ $p.Title }}">
+            <img src="{{ . | relURL }}" alt="{{ $p.Title }}">
           </div>
           {{ end }}
 

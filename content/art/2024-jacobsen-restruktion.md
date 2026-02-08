@@ -6,6 +6,7 @@ venue: "Ringsted Galleriet"
 location: "Denmark"
 art_type: "exhibition"
 link_url: "https://www.ringstedgalleriet.dk/udstilling-x-restruktion/"
+art_image: "images/jacobsen-restruktion-flora.png"
 links:
   - label: "Ringsted Galleriet"
     url: "https://www.ringstedgalleriet.dk/udstilling-x-restruktion/"
