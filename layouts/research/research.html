@@ -1,6 +1,165 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
-  <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray measure-wide center">
+  <style>
+    /* — Section nav — */
+    .research-section-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.15rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #111;
+    }
+    .research-section-nav a {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #999;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      transition: color 0.15s;
+    }
+    .research-section-nav a:hover { color: #111; }
+
+    /* — Content body — */
+    .research-body {
+      max-width: 700px;
+    }
+    .research-body h2 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #111;
+    }
+    .research-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #111;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .research-body p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .research-body a {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+    .research-body a:hover {
+      color: #555;
+    }
+    .research-body hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 3rem 0;
+    }
+    .research-body ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1.5rem;
+    }
+    .research-body ul li {
+      font-size: 0.9rem;
+      color: #333;
+      line-height: 1.6;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .research-body ul li:last-child {
+      border-bottom: none;
+    }
+    .research-body ul li strong {
+      color: #111;
+    }
+    .research-body blockquote {
+      border-left: 3px solid #111;
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* — Embedded media — */
+    .research-embed {
+      margin: 1.5rem 0;
+      max-width: 640px;
+    }
+    .research-embed-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .research-embed-video iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .research-embed-slides {
+      position: relative;
+      padding-bottom: 75%;
+      height: 0;
+      overflow: hidden;
+    }
+    .research-embed-slides iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* — Resource links — */
+    .research-resources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 1rem 0 1.5rem;
+    }
+    .research-resources a {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0.7rem;
+      text-decoration: none;
+      border: 1.5px solid #111;
+      color: #111;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+    .research-resources a:hover {
+      background-color: #111;
+      color: #fff;
+    }
+  </style>
+
+  {{/* Section navigation */}}
+  <nav class="research-section-nav">
+    <a href="#brain-decoding">Brain Decoding</a>
+    <a href="#neuroai">NeuroAI</a>
+    <a href="#bmi">BMI</a>
+    <a href="#art">Art</a>
+  </nav>
+
+  {{/* Content */}}
+  <div class="research-body">
     {{ .Content }}
   </div>
 </article>
