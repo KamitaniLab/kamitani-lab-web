@@ -1,12 +1,12 @@
 ---
 title: "APCV 2019: Asia Pacific Conference on Vision (Osaka, Japan;  July, 2019)"
 date: 2018-08-20
-tags: ["events"]
+source: "日本視覚学会"
+news_type: event
 link_url: "http://visionsociety.jp/apcv2019/"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/177193453776/apcv-2019-asia-pacific-conference-on-vision"
 draft: false
 ---
-
 [APCV 2019: Asia Pacific Conference on Vision (Osaka, Japan;  July, 2019)](http://visionsociety.jp/apcv2019/)
 
 

@@ -1,12 +1,12 @@
 ---
 title: "Yukiyasu Kamitani - Researcher - researchmap"
 date: 2000-10-21
-tags: ["members"]
+source: "researchmap"
+news_type: media
 link_url: "http://researchmap.jp/y_kamitani/?lang=english"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152101740666/yukiyasu-kamitani-researcher-researchmap"
-draft: false
+draft: true
 ---
-
 [Yukiyasu Kamitani - Researcher - researchmap](http://researchmap.jp/y_kamitani/?lang=english)
 
 

@@ -1,12 +1,12 @@
 ---
 title: "The mind gardener: the machine that turns your thoughts into art | The Guardian, 2018"
 date: 2018-10-06
-tags: ["installation", "art and design", "culture", "exhibitions", "art", "news", "media"]
+source: "The Guardian"
+news_type: media
 link_url: "https://www.theguardian.com/artanddesign/2018/oct/02/pierre-huyghe-serpentine-gallery-london"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/178775228226/the-mind-gardener-the-machine-that-turns-your"
 draft: false
 ---
-
 [The mind gardener: the machine that turns your thoughts into art | The Guardian, 2018](https://www.theguardian.com/artanddesign/2018/oct/02/pierre-huyghe-serpentine-gallery-london)
 
 Pierre Huyghe ’UUmwelt’ 

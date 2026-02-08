@@ -1,12 +1,12 @@
 ---
 title: "Guide to study at Kamitani Lab"
 date: 2016-10-22
-tags: ["about"]
+source: "Kyoto University"
+news_type: media
 link_url: "http://www.i.kyoto-u.ac.jp/en/admission/application.html"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152153243056/guide-to-study-at-kamitani-lab"
 draft: false
 ---
-
 [http://www.i.kyoto-u.ac.jp/en/admission/application.html](http://www.i.kyoto-u.ac.jp/en/admission/application.html)
 
 In April 2015, Prof. Kamitani established a new lab and joined the faculty of the Graduate School of Informatics at Kyoto University. He also serves as the head (adjunct) of the Department of Neuroinformatics at ATR Computational Neuroscience Laboratories, where he continues his research. The two labs closely collaborate in both research and education.Prof. Kamitani is currently accepting graduate students at the Graduate School of Informatics. For admission to the graduate school, please refer to the Guidelines for Admission (Department of Intelligence Science and Technology). You can find them at [http://www.i.kyoto-u.ac.jp/en/admission/application.html](http://www.i.kyoto-u.ac.jp/en/admission/application.html).

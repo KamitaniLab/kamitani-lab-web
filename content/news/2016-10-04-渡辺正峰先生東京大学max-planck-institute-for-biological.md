@@ -1,12 +1,11 @@
 ---
 title: "渡辺正峰先生（東京大学、Max Planck Institute for Biological Cybernetics ）講演会"
 date: 2016-10-04
-tags: ["seminars", "events"]
+news_type: event
 link_url: "https://archive.org/details/Redwood_Center_2014_04_30_Masataka_Watanabe"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152273355191/%E6%B8%A1%E8%BE%BA%E6%AD%A3%E5%B3%B0%E5%85%88%E7%94%9F%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6max-planck-institute-for-biological"
 draft: false
 ---
-
 [https://archive.org/details/Redwood_Center_2014_04_30_Masataka_Watanabe](https://archive.org/details/Redwood_Center_2014_04_30_Masataka_Watanabe)
 
 日時：平成28年10月4日（火）16:00-17:30

@@ -1,12 +1,12 @@
 ---
 title: "【脳情報セミナー】Marcel van Gerven (Donders Institute, Radboud University), 2018.1.11"
 date: 2017-12-13
-tags: ["seminars"]
+source: "Kyoto University"
+news_type: event
 link_url: "http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/168501807071/181011vangervenseminar"
 draft: false
 ---
-
 [http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 
 2018年1月11日に、オランダ・ラドバウド大学のMarcel van Gerven教授をお迎えして講演会を開催します。van Gerven先生は、計算神経科学や人工知能の手法を脳画像解析に応用する研究を活発に進めている気鋭の研究者です。本講演では、深層ニューラルネットワークを活用したヒトの認知研究のアプローチについてお話いただきます。

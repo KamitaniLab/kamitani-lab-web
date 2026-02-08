@@ -1,12 +1,12 @@
 ---
 title: "The thin line between reconstruction, classification, and hallucination in brain decoding"
 date: 2024-07-04
-tags: ["events", "talk", "braindecoding", "brain decoding", "reconstruction", "visual image reconstruction"]
+source: "SpeakerDeck"
+news_type: event
 link_url: "https://speakerdeck.com/ykamit/the-thin-line-between-reconstruction-classification-and-hallucination-in-brain-decoding"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/755082073830785024/the-thin-line-between-reconstruction"
 draft: false
 ---
-
 [The thin line between reconstruction, classification, and hallucination in brain decoding](https://speakerdeck.com/ykamit/the-thin-line-between-reconstruction-classification-and-hallucination-in-brain-decoding)
 
 SFB workshop “Categorization in Perception and Action: Minds, Models, Mechanisms”

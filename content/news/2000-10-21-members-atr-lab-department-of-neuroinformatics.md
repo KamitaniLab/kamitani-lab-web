@@ -1,12 +1,12 @@
 ---
 title: "Members: ATR Lab (Department of Neuroinformatics)"
 date: 2000-10-21
-tags: ["members"]
+source: "ATR"
+news_type: media
 link_url: "https://bicr.atr.jp/dni/member/"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152130964206/members-atr-lab-department-of-neuroinformatics"
-draft: false
+draft: true
 ---
-
 [Members: ATR Lab (Department of Neuroinformatics)](https://bicr.atr.jp/dni/member/)
 
 

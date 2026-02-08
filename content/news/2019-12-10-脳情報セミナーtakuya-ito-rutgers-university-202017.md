@@ -1,12 +1,12 @@
 ---
 title: "【脳情報セミナー】Takuya Ito (Rutgers University), 2020.1.7"
 date: 2019-12-10
-tags: ["seminar", "event", "events"]
+source: "Kyoto University"
+news_type: event
 link_url: "https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/189588611596/%E8%84%B3%E6%83%85%E5%A0%B1%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BCtakuya-ito-rutgers-university-202017"
 draft: false
 ---
-
 [https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 
 日時: 2020 年 1 月 7 日 (火) 12:15-13:30

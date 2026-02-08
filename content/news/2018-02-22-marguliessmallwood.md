@@ -1,12 +1,12 @@
 ---
 title: "【脳情報セミナー】Daniel Margulies (CNRS, Paris), Jonathan Smallwood (University of York, UK), 2018.3.30"
 date: 2018-02-22
-tags: ["seminars"]
+source: "Kyoto University"
+news_type: event
 link_url: "http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/171161515151/marguliessmallwood"
 draft: false
 ---
-
 [http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html)
 
 日時：2018年3月30日（金）16:30-18:30 

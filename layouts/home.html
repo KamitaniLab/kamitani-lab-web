@@ -71,13 +71,14 @@
     </div>
     {{ range first 5 $news }}
     <div class="pv2 mb2 bb b--black-20">
-      <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 link black underline-hover lh-title db"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+      {{ with .Params.source }}
+      <span class="db" style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#999;">{{ . }}</span>
+      {{ end }}
+      <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 fw6 link black underline-hover lh-title db mt1"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
       <div class="f7 gray mt1">
         {{ .Date.Format "2006-01-02" }}
-        {{ with .Params.tags }}
-          {{ range . }}
-            <span class="dib bg-black white ph1 pv0 ml1 fw7 ttu" style="font-size:0.6rem; letter-spacing:0.08em;">{{ . }}</span>
-          {{ end }}
+        {{ with .Params.news_type }}
+          <span class="dib bg-black white ph1 pv0 ml1 fw7 ttu" style="font-size:0.6rem; letter-spacing:0.08em;">{{ . }}</span>
         {{ end }}
       </div>
     </div>

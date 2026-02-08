@@ -1,12 +1,11 @@
 ---
 title: "【脳情報セミナー】Tal Yarkoni (University of Texas at Austin), 2017.7.28"
 date: 2017-07-24
-tags: ["seminars"]
+news_type: event
 link_url: "http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/163364680981/%E8%84%B3%E6%83%85%E5%A0%B1%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BCtal-yarkoni-university-of-texas-at"
 draft: false
 ---
-
 [http://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r_i.html](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.kyoto-u.ac.jp%2Fja%2Faccess%2Fcampus%2Fyoshida%2Fmap6r_y%2F&amp;t=NTUxMmM4M2RkN2ZmMzQ1MjA5NzAzOTJmMDg1OGI1MmM2MGM1MGZmZSw0eEJpVFh5Yw%3D%3D&amp;b=t%3A0GEVU5IIM6u_MsN-Vw2j8Q&amp;p=http%3A%2F%2Fkamitani-lab.ist.i.kyoto-u.ac.jp%2Fpost%2F154549119766%2Fnishino170119&amp;m=1)
 
 テキサス大学のTal Yarkoni博士をお招きして講演会を開催します。Yarkoni先生は、認知神経科学におけるデータ解析手法の開発者、また、オープンサイエンスの推進者として活躍されています。脳イメージング分野の文献テキストマイニングにより、心理概念と脳座標をデータ駆動的に関連付けるシステムNeurosynthは、ニューロインフォマティクスにおける標準ツールとして幅広く活用されています。本講演では、Neurosynthをはじめとする解析ツールや認知神経科学のオープンサイエンス化に向けた取り組みについて紹介していただきます。

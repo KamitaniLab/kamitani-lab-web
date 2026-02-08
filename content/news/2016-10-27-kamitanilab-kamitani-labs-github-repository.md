@@ -1,12 +1,12 @@
 ---
 title: "KamitaniLab: Kamitani Lab's GitHub repository"
 date: 2016-10-27
-tags: ["sharing"]
+source: "GitHub"
+news_type: code
 link_url: "https://github.com/KamitaniLab"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152360806046/kamitanilab-kamitani-labs-github-repository"
 draft: false
 ---
-
 [KamitaniLab: Kamitani Lab's GitHub repository](https://github.com/KamitaniLab)
 
 

@@ -1,12 +1,12 @@
 ---
 title: "International Conference on the Ethics of Neurotechnology"
 date: 2023-07-06
-tags: ["event", "events"]
+source: "UNESCO"
+news_type: event
 link_url: "https://www.unesco.org/en/articles/international-conference-ethics-neurotechnology"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/722109342366810112/international-conference-on-the-ethics-of"
 draft: false
 ---
-
 [International Conference on the Ethics of Neurotechnology](https://www.unesco.org/en/articles/international-conference-ethics-neurotechnology)
 
 International Conference on the Ethics of Neurotechnology

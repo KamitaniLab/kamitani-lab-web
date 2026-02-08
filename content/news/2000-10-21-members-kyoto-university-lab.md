@@ -1,12 +1,12 @@
 ---
 title: "Members: Kyoto University Lab"
 date: 2000-10-21
-tags: ["members"]
+source: "Kyoto University"
+news_type: media
 link_url: "https://kdb.iimc.kyoto-u.ac.jp/profile_private/ja.8f4f353628c6dc71.html"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152129913276/members-kyoto-university-lab"
-draft: false
+draft: true
 ---
-
 [京都大学教育研究活動データベース](https://kdb.iimc.kyoto-u.ac.jp/profile_private/ja.8f4f353628c6dc71.html)
 
 Neuroinformatics Lab (Kamitani Lab), Department of Information Science and Technology, Graduate School of Informatics, Kyoto University

@@ -1,12 +1,12 @@
 ---
 title: "脳とAIは似ているか ― NeuroAI の挑戦"
 date: 2023-09-23
-tags: ["research", "presentation", "presentations", "NeuroAI"]
+source: "SpeakerDeck"
+news_type: presentation
 link_url: "https://speakerdeck.com/ykamit/noy-toaihasi-teiruka-neuroai-notiao-zhan?fbclid=IwAR2FW9xFYE2D98k3IBrfmyr9YNd4UemfcSTUMyqCsRUlXn7ek4tQk8wBKJ0"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/729259915615600640/httpsspeakerdeckcomykamitnoy-toaihasi-teiruka"
 draft: false
 ---
-
 [ 脳とAIは似ているか ― NeuroAI の挑戦 ](https://speakerdeck.com/ykamit/noy-toaihasi-teiruka-neuroai-notiao-zhan?fbclid=IwAR2FW9xFYE2D98k3IBrfmyr9YNd4UemfcSTUMyqCsRUlXn7ek4tQk8wBKJ0)
 
 脳とAIは似ているか ― NeuroAI の挑戦
