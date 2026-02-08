@@ -1,0 +1,6 @@
+{{ if .Site.Params.favicon }}
+<link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="48x48">
+<link rel="icon" href="{{ "favicon-32x32.png" | absURL }}" type="image/png" sizes="32x32">
+<link rel="icon" href="{{ "favicon-16x16.png" | absURL }}" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}" sizes="180x180">
+{{ end }}

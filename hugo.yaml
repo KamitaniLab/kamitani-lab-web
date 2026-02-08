@@ -70,7 +70,7 @@ menus:
         icon: search
 
 params:
-  favicon: ""
+  favicon: /favicon.ico
   site_logo: ""
   featured_image: /images/ogp.png
   images:
