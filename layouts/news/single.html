@@ -1,0 +1,99 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns mw7 center">
+  <style>
+    .news-single-source {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #555;
+      margin-bottom: 0.3rem;
+    }
+    .news-single-title {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.15;
+      color: #111;
+      margin-bottom: 0.5rem;
+    }
+    .news-single-meta {
+      font-size: 0.78rem;
+      color: #999;
+      margin-bottom: 1.5rem;
+    }
+    .news-single-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #fff;
+      background: #111;
+      padding: 0.12rem 0.45rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      position: relative;
+      top: -0.1em;
+    }
+    .news-single-link {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      background: #111;
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: background 0.15s;
+    }
+    .news-single-link:hover { background: #333; }
+    .news-single-body {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.75;
+      max-width: 640px;
+    }
+    .news-single-body a { color: #111; text-decoration: underline; }
+    .news-single-body a:hover { color: #555; }
+    .news-single-body p { margin-bottom: 1rem; }
+    .news-single-body img { max-width: 100%; height: auto; margin: 1rem 0; }
+    .news-single-body h2 { font-size: 1.4rem; font-weight: 900; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .news-single-body h3 { font-size: 1.15rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    .news-single-body ul, .news-single-body ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+    .news-single-body li { margin-bottom: 0.3rem; }
+    .news-single-body blockquote { border-left: 3px solid #111; padding-left: 1rem; margin: 1rem 0; color: #555; font-style: italic; }
+    .news-single-body code { font-size: 0.9em; background: #f5f5f5; padding: 0.1em 0.3em; }
+    .news-single-body pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+    .news-single-body pre code { background: none; padding: 0; }
+  </style>
+
+  <header class="mb4">
+    <p class="f6 fw7 gray mb2 ttu tracked">
+      <a href="{{ (.Parent).RelPermalink }}" class="link black underline-hover">&larr; NEWS</a>
+    </p>
+
+    {{ with .Params.source }}
+    <div class="news-single-source">{{ . }}</div>
+    {{ end }}
+
+    <h1 class="news-single-title">{{ .Title }}</h1>
+
+    <div class="news-single-meta">
+      {{ .Date.Format "2006-01-02" }}
+      {{ with .Params.news_type }}
+        <span class="news-single-badge">{{ . }}</span>
+      {{ end }}
+    </div>
+
+    {{ with .Params.link_url }}
+    <a href="{{ . }}" class="news-single-link" target="_blank" rel="noopener">Source &rarr;</a>
+    {{ end }}
+  </header>
+
+  <div class="news-single-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

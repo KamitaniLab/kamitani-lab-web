@@ -2,7 +2,7 @@
 title: "Pierre Huyghe’s exhibition at Serpentine Gallery, London, 3 Oct 2018 to 10 Feb 2019."
 date: 2018-08-22
 source: "Serpentine Galleries"
-news_type: event
+news_type: media
 link_url: "http://www.serpentinegalleries.org/exhibitions-events/pierre-huyghe"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/177270017926/pierre-huyghes-exhibition-at-serpentine-gallery"
 draft: false

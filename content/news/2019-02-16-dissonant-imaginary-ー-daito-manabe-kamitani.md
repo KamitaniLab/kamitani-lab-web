@@ -1,7 +1,7 @@
 ---
 title: "“dissonant imaginary” ー Daito Manabe + Kamitani Lab, Kyoto University | Daito Manabe"
 date: 2019-02-16
-news_type: event
+news_type: media
 link_url: "http://www.daito.ws/work/dissonant-imaginary.html"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/182843506391/dissonant-imaginary-%E3%83%BC-daito-manabe-kamitani"
 draft: false
