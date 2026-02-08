@@ -1,5 +1,5 @@
 ---
-title: "メンバー"
+title: "People"
 description: "研究室メンバー"
 featured_image: ""
 ---

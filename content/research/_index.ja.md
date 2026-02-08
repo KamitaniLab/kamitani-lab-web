@@ -1,5 +1,5 @@
 ---
-title: "研究"
+title: "Research"
 description: "神谷研究室の研究領域"
 featured_image: ""
 layout: "research"

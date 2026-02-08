@@ -19,19 +19,19 @@ languages:
       description: "神谷研究室 – 神経情報学 – 京都大学・ATR"
     menus:
       main:
-        - name: 概要
+        - name: About
           pageRef: /about
           weight: 10
         - name: People
           pageRef: /members
           weight: 20
-        - name: 研究
+        - name: Research
           pageRef: /research
           weight: 30
         - name: Publications
           pageRef: /publications
           weight: 35
-        - name: アート
+        - name: Art
           pageRef: /art
           weight: 40
         - name: News
