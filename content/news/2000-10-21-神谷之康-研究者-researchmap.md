@@ -4,7 +4,6 @@ date: 2000-10-21
 source: "researchmap"
 news_type: media
 link_url: "http://researchmap.jp/y_kamitani/?lang=japanese"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152101690301/%E7%A5%9E%E8%B0%B7%E4%B9%8B%E5%BA%B7-%E7%A0%94%E7%A9%B6%E8%80%85-researchmap"
 draft: true
 ---
 [神谷之康 - 研究者 - researchmap](http://researchmap.jp/y_kamitani/?lang=japanese)

@@ -5,8 +5,6 @@ source: "SpeakerDeck"
 news_type: presentation
 link_url: "https://speakerdeck.com/ykamit/noy-toaihasi-teiruka-neuroai-notiao-zhan?fbclid=IwAR2FW9xFYE2D98k3IBrfmyr9YNd4UemfcSTUMyqCsRUlXn7ek4tQk8wBKJ0"
 embed_url: "https://speakerdeck.com/player/a0c60ab70baf4b1d9aeedeff560574cd"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/729259915615600640/httpsspeakerdeckcomykamitnoy-toaihasi-teiruka"
-draft: false
 ---
 [ 脳とAIは似ているか ― NeuroAI の挑戦 ](https://speakerdeck.com/ykamit/noy-toaihasi-teiruka-neuroai-notiao-zhan?fbclid=IwAR2FW9xFYE2D98k3IBrfmyr9YNd4UemfcSTUMyqCsRUlXn7ek4tQk8wBKJ0)
 

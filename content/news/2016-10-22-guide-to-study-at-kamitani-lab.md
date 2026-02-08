@@ -4,7 +4,6 @@ date: 2016-10-22
 source: "Kyoto University"
 news_type: media
 link_url: "http://www.i.kyoto-u.ac.jp/en/admission/application.html"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152153243056/guide-to-study-at-kamitani-lab"
 draft: true
 ---
 [http://www.i.kyoto-u.ac.jp/en/admission/application.html](http://www.i.kyoto-u.ac.jp/en/admission/application.html)

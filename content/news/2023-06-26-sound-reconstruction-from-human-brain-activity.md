@@ -5,8 +5,6 @@ source: "YouTube"
 news_type: video
 link_url: "https://youtube.com/playlist?list=PLNHcdUTDOdP_JlRI6W40CgNiwJtKJISnB"
 embed_url: "https://www.youtube.com/embed/videoseries?list=PLNHcdUTDOdP_JlRI6W40CgNiwJtKJISnB"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/721193211830452224/sound-reconstruction-from-human-brain-activity"
-draft: false
 ---
 [Sound reconstruction from human brain activity (Park et al., 2023)](https://youtube.com/playlist?list=PLNHcdUTDOdP_JlRI6W40CgNiwJtKJISnB)
 

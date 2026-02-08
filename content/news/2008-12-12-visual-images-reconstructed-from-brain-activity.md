@@ -3,8 +3,6 @@ title: "Visual images reconstructed from brain activity"
 date: 2008-12-12
 news_type: media
 link_url: "http://scienceblogs.com/neurophilosophy/2008/12/12/visual-images-reconstructed-from-brain-activity/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/152996136141/visual-images-reconstructed-from-brain-activity"
-draft: false
 ---
 [Visual images reconstructed from brain activity](http://scienceblogs.com/neurophilosophy/2008/12/12/visual-images-reconstructed-from-brain-activity/)
 

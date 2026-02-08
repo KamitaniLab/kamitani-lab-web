@@ -4,8 +4,6 @@ date: 2021-07-29
 source: "J-WAVE"
 news_type: media
 link_url: "https://www.j-wave.co.jp/original/innovationworldera/"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/658030436453351424/j-wave-toppan-innovation-world-era"
-draft: false
 ---
 [J-WAVE TOPPAN INNOVATION WORLD ERA](https://www.j-wave.co.jp/original/innovationworldera/)
 

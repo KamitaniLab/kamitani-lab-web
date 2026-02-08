@@ -4,8 +4,6 @@ date: 2018-05-07
 source: "EurekAlert"
 news_type: media
 link_url: "https://eurekalert.org/pub_releases/2018-05/sfn-nfs050218.php"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/173681859906/neuro-filter-sharpens-visual-processing"
-draft: false
 ---
 [Neuro filter sharpens visual processing](https://eurekalert.org/pub_releases/2018-05/sfn-nfs050218.php)
 

@@ -5,8 +5,6 @@ source: "YouTube"
 news_type: video
 link_url: "https://www.youtube.com/watch?time_continue=1&v=enx-vyWn7UU"
 embed_url: "https://www.youtube.com/embed/enx-vyWn7UU"
-tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/179787959581/pierre-huyghe-uumwelt"
-draft: false
 ---
 [Pierre Huyghe: UUmwelt](https://www.youtube.com/watch?time_continue=1&v=enx-vyWn7UU)
 
