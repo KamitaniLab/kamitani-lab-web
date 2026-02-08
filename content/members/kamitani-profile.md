@@ -3,7 +3,7 @@ title: "「参考にならない私の経歴」神谷之康"
 date: 2018-04-15
 description: "神谷之康プロフィール — 情報学広報 第17号（平成27年）収録エッセイ"
 draft: false
-_build:
+build:
   list: never
 ---
 

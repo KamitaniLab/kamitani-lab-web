@@ -220,3 +220,937 @@ hr {
   background: #FFC300;
   color: #000;
 }
+
+/* ============================================
+   PUBLICATIONS LIST
+   ============================================ */
+
+/* — Entry — */
+.pub-entry {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1.75;
+}
+.pub-entry:last-child { border-bottom: none; }
+
+/* — Typography hierarchy — */
+.pub-authors {
+  font-size: 0.85rem;
+  color: #333;
+  letter-spacing: 0.01em;
+}
+.pub-paper-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0.2rem 0 0.25rem;
+  line-height: 1.45;
+}
+.pub-journal {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+.pub-journal-name { }
+.pub-vol { font-style: italic; }
+
+/* — DOI — */
+.pub-doi {
+  display: block;
+  font-size: 0.78rem;
+  margin-top: 0.2rem;
+  word-break: break-all;
+}
+.pub-doi a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.pub-doi a:hover { color: #111; }
+
+/* — Buttons — */
+.pub-links {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.7rem;
+  text-decoration: none;
+  border: 1.5px solid #111;
+  color: #111;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.pub-links a:hover {
+  background-color: #111;
+  color: #fff;
+}
+.pub-links a.pub-link { border-color: #111; color: #111; }
+.pub-links a.pub-link:hover { background-color: #111; color: #fff; }
+.pub-links a.pub-code { border-color: #111; color: #111; }
+.pub-links a.pub-code:hover { background-color: #111; color: #fff; }
+.pub-links a.pub-data { border-color: #111; color: #111; }
+.pub-links a.pub-data:hover { background-color: #111; color: #fff; }
+
+/* — Embeds — */
+.pub-embed { margin-top: 0.8rem; }
+.pub-embed iframe { max-width: 100%; }
+
+/* — Year nav — */
+.year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #111;
+}
+.year-nav a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s;
+}
+.year-nav a:hover { color: #111; }
+
+/* — Year heading — */
+.year-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #111;
+}
+
+/* — Category label — */
+.pub-category-label {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fff;
+  background: #111;
+  padding: 0.2rem 0.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ============================================
+   PUBLICATIONS SINGLE
+   ============================================ */
+
+.pub-single-back { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+.pub-single-back a { color: #111; text-decoration: none; }
+.pub-single-back a:hover { color: #555; }
+.pub-single-title { font-size: 2rem; font-weight: 900; line-height: 1.15; color: #111; margin-bottom: 0.5rem; }
+.pub-single-authors { font-size: 1rem; color: #333; margin-bottom: 0.3rem; }
+.pub-single-journal { font-size: 0.9rem; color: #555; }
+.pub-single-doi { font-size: 0.85rem; margin-top: 0.5rem; word-break: break-all; }
+.pub-single-doi a { color: #111; text-decoration: underline; text-underline-offset: 2px; }
+.pub-single-doi a:hover { color: #555; }
+.pub-single-buttons { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.pub-single-buttons a {
+  display: inline-flex; align-items: center;
+  font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 0.3rem 0.7rem; text-decoration: none;
+  border: 1.5px solid #111; color: #111; background: transparent;
+  transition: all 0.15s;
+}
+.pub-single-buttons a:hover { background: #111; color: #fff; }
+.pub-single-embed { margin-top: 1.5rem; }
+.pub-single-embed iframe { max-width: 100%; }
+.pub-single-body { font-size: 1rem; color: #333; line-height: 1.75; max-width: 640px; margin-top: 2rem; }
+.pub-single-body a { color: #111; text-decoration: underline; text-underline-offset: 2px; }
+.pub-single-body a:hover { color: #555; }
+.pub-single-body p { margin-bottom: 1rem; }
+
+/* ============================================
+   NEWS LIST
+   ============================================ */
+
+/* — News Entry — */
+.news-entry {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
+.news-entry:last-child { border-bottom: none; }
+
+/* — Typography — */
+.news-source {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+.news-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+.news-title a {
+  color: #111;
+  text-decoration: none;
+}
+.news-title a:hover { text-decoration: underline; }
+.news-type-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fff;
+  background: #111;
+  padding: 0.12rem 0.45rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+}
+.news-date {
+  font-size: 0.78rem;
+  color: #999;
+}
+
+/* — Content — */
+.news-description {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.75;
+  margin-top: 0.6rem;
+  max-width: 640px;
+}
+.news-description a { color: #111; }
+.news-description a:hover { text-decoration: underline; }
+.news-description img { max-width: 100%; height: auto; margin: 0.5rem 0; }
+.news-description p { margin-bottom: 0.5rem; }
+.news-description p:last-child { margin-bottom: 0; }
+
+/* — Embed — */
+.news-embed {
+  margin-top: 0.8rem;
+  max-width: 560px;
+}
+.news-embed-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.news-embed-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.news-embed-slides {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.news-embed-slides iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* — Year nav — */
+.news-year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #111;
+}
+.news-year-nav a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s;
+}
+.news-year-nav a:hover { color: #111; }
+
+/* — Year heading — */
+.news-year-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #111;
+}
+
+/* ============================================
+   NEWS SINGLE
+   ============================================ */
+
+.news-single-source {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+.news-single-title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.news-single-meta {
+  font-size: 0.78rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+.news-single-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fff;
+  background: #111;
+  padding: 0.12rem 0.45rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+}
+.news-single-link {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #111;
+  background: transparent;
+  border: 1.5px solid #111;
+  padding: 0.3rem 0.7rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: all 0.15s;
+}
+.news-single-link:hover { background: #111; color: #fff; }
+.news-single-body {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.75;
+  max-width: 640px;
+}
+.news-single-body a { color: #111; text-decoration: underline; }
+.news-single-body a:hover { color: #555; }
+.news-single-body p { margin-bottom: 1rem; }
+.news-single-body img { max-width: 100%; height: auto; margin: 1rem 0; }
+.news-single-body h2 { font-size: 1.4rem; font-weight: 900; margin-top: 2rem; margin-bottom: 0.5rem; }
+.news-single-body h3 { font-size: 1.15rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.news-single-body ul, .news-single-body ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+.news-single-body li { margin-bottom: 0.3rem; }
+.news-single-body blockquote { border-left: 3px solid #111; padding-left: 1rem; margin: 1rem 0; color: #555; font-style: italic; }
+.news-single-body code { font-size: 0.9em; background: #f5f5f5; padding: 0.1em 0.3em; }
+.news-single-body pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+.news-single-body pre code { background: none; padding: 0; }
+
+/* ============================================
+   ART LIST
+   ============================================ */
+
+/* — Art Entry — */
+.art-entry {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
+.art-entry:last-child { border-bottom: none; }
+
+/* — Typography — */
+.art-artist {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+.art-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+.art-title a {
+  color: #111;
+  text-decoration: none;
+}
+.art-title a:hover { text-decoration: underline; }
+.art-type-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fff;
+  background: #111;
+  padding: 0.12rem 0.45rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+}
+.art-venue {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.art-venue-name {
+  font-style: italic;
+}
+
+/* — Media — */
+.art-media {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.art-media iframe {
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
+}
+.art-media img {
+  max-width: 100%;
+  max-height: 450px;
+  width: auto;
+}
+
+/* — Description — */
+.art-description {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.75;
+  margin-top: 0.6rem;
+  max-width: 640px;
+}
+
+/* — Exhibitions list (sub-venues) — */
+.art-exhibitions {
+  margin-top: 0.6rem;
+  padding-left: 0;
+  list-style: none;
+}
+.art-exhibitions li {
+  font-size: 0.85rem;
+  color: #333;
+  padding: 0.15rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.art-exhibitions li::before {
+  content: "\2014";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+.art-exhibitions a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.art-exhibitions a:hover { color: #555; }
+
+/* — Link buttons — */
+.art-links {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.art-links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.7rem;
+  text-decoration: none;
+  border: 1.5px solid #111;
+  color: #111;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.art-links a:hover {
+  background-color: #111;
+  color: #fff;
+}
+.art-links a.art-link-video { border-color: #111; color: #111; }
+.art-links a.art-link-video:hover { background-color: #111; color: #fff; }
+
+/* — Press — */
+.art-press {
+  margin-top: 0.6rem;
+}
+.art-press-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #999;
+  margin-bottom: 0.25rem;
+}
+.art-press a {
+  display: block;
+  font-size: 0.78rem;
+  color: #666;
+  text-decoration: none;
+  padding: 0.12rem 0;
+  line-height: 1.4;
+}
+.art-press a:hover { color: #111; }
+.art-press-source {
+  font-weight: 600;
+  color: #333;
+}
+
+/* — Year nav — */
+.art-year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #111;
+}
+.art-year-nav a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s;
+}
+.art-year-nav a:hover { color: #111; }
+
+/* — Year heading — */
+.art-year-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #111;
+}
+
+/* ============================================
+   ABOUT
+   ============================================ */
+
+/* — About page sections — */
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #111;
+}
+.about-content > h2:first-child {
+  margin-top: 0;
+}
+
+/* — Sub-headings (location names) — */
+.about-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #111;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* — Body text — */
+.about-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* — Lists (links) — */
+.about-content ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0.8rem;
+}
+.about-content li {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.75;
+  padding: 0.25rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.about-content li::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+
+/* — Links — */
+.about-content a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.about-content a:hover {
+  opacity: 0.6;
+}
+
+/* — Map embeds — */
+.about-content iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 300px;
+  border: 2px solid #111;
+  margin: 1rem 0;
+  display: block;
+}
+
+/* — Bold text — */
+.about-content strong {
+  font-weight: 900;
+  color: #111;
+}
+
+/* — Resource cards (integrated from Resources page) — */
+.about-content .res-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.about-content .res-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.about-content .res-card:hover {
+  border-color: #999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.about-content .res-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.about-content .res-info { margin-left: 0.75rem; }
+.about-content .res-name { font-weight: 700; font-size: 0.9rem; color: #111; }
+.about-content .res-desc { font-size: 0.85rem; color: #666; margin-top: 0.15rem; }
+
+/* ============================================
+   MEMBERS
+   ============================================ */
+
+.members-section {
+  text-align: left;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.members-section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  border-bottom: 3px solid #111;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.members-section h5 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+.members-section h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.members-section hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2.5rem 0 0.5rem;
+}
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px;
+  background: #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+.member-card {
+  border-bottom: none !important;
+  background: #fff;
+  padding: 1rem 1.25rem !important;
+  margin-bottom: 0 !important;
+}
+.member-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  border: none;
+  padding-bottom: 0;
+  color: #111;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+.member-card .f5 {
+  font-size: 0.9rem !important;
+}
+.member-card .f6 {
+  font-size: 0.8rem !important;
+}
+.member-card .f6 a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+.member-card .f6 a:hover {
+  color: #555;
+}
+
+/* ============================================
+   RESEARCH
+   ============================================ */
+
+/* — Section nav — */
+.research-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #111;
+}
+.research-section-nav a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s;
+}
+.research-section-nav a:hover { color: #111; }
+
+/* — Content body — */
+.research-body {
+  max-width: 700px;
+}
+.research-body h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #111;
+}
+.research-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.research-body p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.research-body a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.research-body a:hover {
+  color: #555;
+}
+.research-body hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 3rem 0;
+}
+.research-body ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+.research-body ul li {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.research-body ul li:last-child {
+  border-bottom: none;
+}
+.research-body ul li strong {
+  color: #111;
+}
+.research-body blockquote {
+  border-left: 3px solid #111;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #555;
+  font-style: italic;
+}
+
+/* — Embedded media — */
+.research-embed {
+  margin: 1.5rem 0;
+  max-width: 640px;
+}
+.research-embed-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.research-embed-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.research-embed-slides {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.research-embed-slides iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* — Resource links — */
+.research-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 1.5rem;
+}
+.research-resources a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.7rem;
+  text-decoration: none;
+  border: 1.5px solid #111;
+  color: #111;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.research-resources a:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+/* ============================================
+   HOMEPAGE
+   ============================================ */
+
+.featured-videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+@media screen and (max-width: 40em) {
+  .featured-videos { grid-template-columns: 1fr; }
+}
+.featured-video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.featured-video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.featured-video-caption { margin-top: 0.5rem; }
+.featured-video-title { font-size: 0.85rem; font-weight: 700; color: #111; line-height: 1.3; }
+.featured-video-title a { color: #111; text-decoration: none; }
+.featured-video-title a:hover { text-decoration: underline; }
+.featured-video-meta { font-size: 0.7rem; color: #999; margin-top: 0.2rem; line-height: 1.4; }
+.featured-video-meta a { color: #999; text-decoration: underline; text-underline-offset: 2px; }
+.featured-video-meta a:hover { color: #111; }
