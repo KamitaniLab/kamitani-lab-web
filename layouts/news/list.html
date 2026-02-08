@@ -50,7 +50,7 @@
       color: #999;
     }
 
-    /* — Description — */
+    /* — Content — */
     .news-description {
       font-size: 0.9rem;
       color: #444;
@@ -58,6 +58,11 @@
       margin-top: 0.6rem;
       max-width: 640px;
     }
+    .news-description a { color: #111; }
+    .news-description a:hover { text-decoration: underline; }
+    .news-description img { max-width: 100%; height: auto; margin: 0.5rem 0; }
+    .news-description p { margin-bottom: 0.5rem; }
+    .news-description p:last-child { margin-bottom: 0; }
 
     /* — Year nav — */
     .news-year-nav {
@@ -145,12 +150,9 @@
           {{/* Date */}}
           <div class="news-date">{{ .Date.Format "2006-01-02" }}</div>
 
-          {{/* Description */}}
+          {{/* Content */}}
           {{ with .Content }}
-            {{ $plain := plainify . }}
-            {{ if gt (len $plain) 20 }}
-              <div class="news-description">{{ $plain | truncate 200 }}</div>
-            {{ end }}
+            <div class="news-description">{{ . }}</div>
           {{ end }}
 
         </div>

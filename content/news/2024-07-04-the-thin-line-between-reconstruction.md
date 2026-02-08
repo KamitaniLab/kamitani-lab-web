@@ -2,7 +2,7 @@
 title: "The thin line between reconstruction, classification, and hallucination in brain decoding"
 date: 2024-07-04
 source: "SpeakerDeck"
-news_type: event
+news_type: presentation
 link_url: "https://speakerdeck.com/ykamit/the-thin-line-between-reconstruction-classification-and-hallucination-in-brain-decoding"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/755082073830785024/the-thin-line-between-reconstruction"
 draft: false

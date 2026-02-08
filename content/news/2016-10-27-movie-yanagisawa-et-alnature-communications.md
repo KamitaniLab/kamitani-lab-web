@@ -2,7 +2,7 @@
 title: "[movie] Yanagisawa et al.(Nature Communications 2016): Phantom limb-controlled BMI robot"
 date: 2016-10-27
 source: "Nature"
-news_type: media
+news_type: video
 link_url: "http://www.nature.com/article-assets/npg/ncomms/2016/161027/ncomms13209/extref/ncomms13209-s2.mov"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/153000997181/movie-yanagisawa-et-alnature-communications"
 draft: false
