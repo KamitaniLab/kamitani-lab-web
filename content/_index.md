@@ -11,7 +11,7 @@ research_areas:
     url: "/research/#neuroai"
   - name: "BMI"
     description: "Brain-machine interfaces for assistive applications"
-    url: "/research/#brain-machine-interface-bmi"
+    url: "/research/#bmi"
   - name: "Art"
     description: "Neuroscience meets creative expression"
     url: "/research/#art"
