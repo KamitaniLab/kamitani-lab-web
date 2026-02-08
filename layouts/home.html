@@ -26,12 +26,12 @@
   {{ with .Params.research_areas }}
   <section class="mb5">
     <div class="flex items-center justify-between mb3">
-      <h2 class="f3 fw9 mv0 ttu tracked">{{ if eq $.Lang "ja" }}Research{{ else }}Research{{ end }}</h2>
-      <a href="{{ "research/" | absURL }}" class="f6 link black fw7 ttu tracked">{{ if eq $.Lang "ja" }}MORE{{ else }}MORE{{ end }} &rarr;</a>
+      <h2 class="f3 fw9 mv0 ttu tracked">Research</h2>
+      <a href="{{ "research/" | absURL }}" class="f6 link black fw7 ttu tracked">MORE &rarr;</a>
     </div>
     <div class="research-grid">
       {{ range . }}
-      <a href="{{ .url }}" class="link black db">
+      <a href="{{ .url | absURL }}" class="link black db research-card">
         <div class="bt bw2 b--black pt2 pb3">
           <h3 class="f6 fw9 ttu tracked mv0">{{ .name }}</h3>
           <p class="f7 mid-gray mt1 mb0 lh-copy">{{ .description }}</p>
@@ -44,17 +44,23 @@
 
   {{/* ── Selected Publications ── */}}
   {{ $highlights := where (where site.RegularPages "Section" "publications") ".Params.highlight" true }}
-  {{ $highlights = $highlights.ByDate }}
+  {{ $highlights = $highlights.ByDate.Reverse }}
   {{ if $highlights }}
   <section class="mb5">
     <div class="flex items-center justify-between mb3">
-      <h2 class="f3 fw9 mv0 ttu tracked">{{ if eq .Lang "ja" }}Selected Publications{{ else }}Selected Publications{{ end }}</h2>
-      <a href="{{ "publications/" | absURL }}" class="f6 link black fw7 ttu tracked">{{ if eq .Lang "ja" }}ALL{{ else }}ALL{{ end }} &rarr;</a>
+      <h2 class="f3 fw9 mv0 ttu tracked">Selected Publications</h2>
+      <a href="{{ "publications/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
     </div>
     {{ range $highlights }}
     <div class="pv2 mb2 bb b--black-20">
       <span class="f7 fw7 gray ttu tracked" style="letter-spacing:0.05em;">{{ .Params.authors }} ({{ .Date.Format "2006" }})</span>
+      {{ if .Params.doi }}
+      <a href="https://doi.org/{{ .Params.doi }}" class="f6 fw6 link black underline-hover lh-title db mt1" target="_blank" rel="noopener">{{ .Title }}</a>
+      {{ else if .Params.link_url }}
+      <a href="{{ .Params.link_url }}" class="f6 fw6 link black underline-hover lh-title db mt1" target="_blank" rel="noopener">{{ .Title }}</a>
+      {{ else }}
       <a href="{{ .RelPermalink }}" class="f6 fw6 link black underline-hover lh-title db mt1">{{ .Title }}</a>
+      {{ end }}
       <span class="f7 gray i">{{ .Params.journal }}{{ with .Params.volume }}, {{ . }}{{ end }}{{ with .Params.pages }}, {{ . }}{{ end }}</span>
     </div>
     {{ end }}
@@ -67,7 +73,7 @@
   <section class="mb5">
     <div class="flex items-center justify-between mb3">
       <h2 class="f3 fw9 mv0 ttu tracked">News</h2>
-      <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">{{ if eq .Lang "ja" }}ALL{{ else }}ALL{{ end }} &rarr;</a>
+      <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
     </div>
     {{ range first 5 $news }}
     <div class="pv2 mb2 bb b--black-20">
