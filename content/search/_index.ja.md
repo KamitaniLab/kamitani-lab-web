@@ -1,5 +1,5 @@
 ---
-title: "検索"
+title: "Search"
 description: "サイト内検索"
 layout: "search"
 ---

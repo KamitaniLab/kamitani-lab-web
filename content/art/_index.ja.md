@@ -1,5 +1,5 @@
 ---
-title: "アート"
+title: "Art"
 description: "神経科学と芸術表現の交差"
 featured_image: ""
 ---

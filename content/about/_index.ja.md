@@ -1,5 +1,5 @@
 ---
-title: "概要"
+title: "About"
 description: "神谷研究室について"
 featured_image: ""
 ---
