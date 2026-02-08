@@ -6,5 +6,6 @@ journal: "計測と制御"
 volume: "47"
 issue: "5"
 pages: "431–436"
+doi: "10.11499/sicejl.47.431"
 pub_type: "japanese"
 ---
