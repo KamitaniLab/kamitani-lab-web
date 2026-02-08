@@ -20,6 +20,9 @@ press:
   - source: "IBSA Foundation"
     title: "Brain Activity? A Work of Art Interpreted by Artificial Intelligence"
     url: "https://www.ibsafoundation.org/en/blog/brain-activity-a-work-of-art-interpreted-by-artificial-intelligence"
+  - source: "Plinth"
+    title: "Rudimentary Consciousness"
+    url: "https://plinth.uk.com/blogs/magazine/rudimentary-consciousness"
 ---
 
 Major exhibition featuring deep image reconstruction from brain activity. LED screens displayed neural images generated from fMRI data, while the gallery space was inhabited by flies and other organisms — creating a porous, contingent environment housing different forms of cognition and emerging intelligence.
