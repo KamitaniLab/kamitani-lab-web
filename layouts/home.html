@@ -22,6 +22,31 @@
 {{ define "main" }}
 <div class="pa3 pa4-ns mw8 center">
 
+  {{/* ── News (3 items) ── */}}
+  {{ $news := (where site.RegularPages "Section" "news").ByDate.Reverse }}
+  {{ if $news }}
+  <section class="mb5">
+    <div class="flex items-center justify-between mb3">
+      <h2 class="f3 fw9 mv0 ttu tracked">News</h2>
+      <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
+    </div>
+    {{ range first 3 $news }}
+    <div class="pv2 mb2 bb b--black-20">
+      {{ with .Params.source }}
+      <span class="db" style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#999;">{{ . }}</span>
+      {{ end }}
+      <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 fw6 link black underline-hover lh-title db mt1"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+      <div class="f7 gray mt1">
+        {{ .Date.Format "2006-01-02" }}
+        {{ with .Params.news_type }}
+          <span class="dib bg-black white ph1 pv0 ml1 fw7 ttu" style="font-size:0.6rem; letter-spacing:0.08em;">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
   {{/* ── Research Areas ── */}}
   {{ with .Params.research_areas }}
   <section class="mb5">
@@ -67,30 +92,26 @@
   </section>
   {{ end }}
 
-  {{/* ── News ── */}}
-  {{ $news := (where site.RegularPages "Section" "news").ByDate.Reverse }}
-  {{ if $news }}
+  {{/* ── Featured Video ── */}}
   <section class="mb5">
-    <div class="flex items-center justify-between mb3">
-      <h2 class="f3 fw9 mv0 ttu tracked">News</h2>
-      <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
-    </div>
-    {{ range first 5 $news }}
-    <div class="pv2 mb2 bb b--black-20">
-      {{ with .Params.source }}
-      <span class="db" style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#999;">{{ . }}</span>
-      {{ end }}
-      <a href="{{ if .Params.link_url }}{{ .Params.link_url }}{{ else }}{{ .RelPermalink }}{{ end }}" class="f6 fw6 link black underline-hover lh-title db mt1"{{ if .Params.link_url }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
-      <div class="f7 gray mt1">
-        {{ .Date.Format "2006-01-02" }}
-        {{ with .Params.news_type }}
-          <span class="dib bg-black white ph1 pv0 ml1 fw7 ttu" style="font-size:0.6rem; letter-spacing:0.08em;">{{ . }}</span>
-        {{ end }}
+    <style>
+      .featured-video { max-width: 800px; }
+      .featured-video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+      .featured-video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+      .featured-video-caption { margin-top: 0.75rem; }
+      .featured-video-caption a { color: #111; text-decoration: underline; text-underline-offset: 2px; }
+      .featured-video-caption a:hover { color: #555; }
+    </style>
+    <div class="featured-video">
+      <div class="featured-video-wrap">
+        <iframe src="https://www.youtube.com/embed/jsp1KaM-avU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="featured-video-caption">
+        <span class="f7 fw7 ttu tracked" style="letter-spacing:0.08em; color:#999;">Featured</span>
+        <a href="{{ "research/#brain-decoding" | absURL }}" class="f6 fw6 db mt1 lh-title">Deep image reconstruction from human brain activity</a>
       </div>
     </div>
-    {{ end }}
   </section>
-  {{ end }}
 
 </div>
 {{ end }}
