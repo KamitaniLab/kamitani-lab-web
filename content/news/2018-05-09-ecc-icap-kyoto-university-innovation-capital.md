@@ -1,12 +1,12 @@
 ---
 title: "ECC-iCAP : Kyoto University Innovation Capital Co., Ltd. Entrepreneur Candidate Club #3 | May 25th, 2018"
 date: 2018-05-09
-tags: ["events"]
+source: "Peatix"
+news_type: event
 link_url: "https://eccicapevent3.peatix.com/view"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/173719922191/ecc-icap-kyoto-university-innovation-capital"
 draft: false
 ---
-
 [ECC-iCAP : Kyoto University Innovation Capital Co., Ltd. Entrepreneur Candidate Club #3 | May 25th, 2018](https://eccicapevent3.peatix.com/view)
 
 【Entrepreneur Candidate Club (ECC-iCAP)　　

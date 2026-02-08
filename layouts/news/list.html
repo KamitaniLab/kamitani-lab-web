@@ -1,28 +1,162 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
-  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray nested-links">
-    {{- .Content -}}
-  </section>
+  <style>
+    /* — News Entry — */
+    .news-entry {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid #e0e0e0;
+      line-height: 1.6;
+    }
+    .news-entry:last-child { border-bottom: none; }
 
-  {{ $pages := .Pages.ByDate.Reverse }}
+    /* — Typography — */
+    .news-source {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #555;
+      margin-bottom: 0.15rem;
+    }
+    .news-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #111;
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+    .news-title a {
+      color: #111;
+      text-decoration: none;
+    }
+    .news-title a:hover { text-decoration: underline; }
+    .news-type-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #fff;
+      background: #111;
+      padding: 0.12rem 0.45rem;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+      position: relative;
+      top: -0.1em;
+    }
+    .news-date {
+      font-size: 0.78rem;
+      color: #999;
+    }
+
+    /* — Description — */
+    .news-description {
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.65;
+      margin-top: 0.6rem;
+      max-width: 640px;
+    }
+
+    /* — Year nav — */
+    .news-year-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.15rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #111;
+    }
+    .news-year-nav a {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #999;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      transition: color 0.15s;
+    }
+    .news-year-nav a:hover { color: #111; }
+
+    /* — Year heading — */
+    .news-year-heading {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #111;
+    }
+  </style>
+
+  {{/* Intro */}}
+  {{ with .Content }}
+  <div class="lh-copy f5 mid-gray mb4 nested-links">{{ . }}</div>
+  {{ end }}
+
+  {{/* Collect all years */}}
+  {{ $allPages := .Pages.ByDate.Reverse }}
   {{ $years := slice }}
-  {{ range $pages }}
+  {{ range $allPages }}
     {{ $y := .Date.Format "2006" }}
     {{ if not (in $years $y) }}
       {{ $years = $years | append $y }}
     {{ end }}
   {{ end }}
 
+  {{/* Year navigation */}}
+  <nav class="news-year-nav">
+    {{ range $years }}
+      <a href="#year-{{ . }}">{{ . }}</a>
+    {{ end }}
+  </nav>
+
+  {{/* Entries grouped by year */}}
   {{ range $years }}
     {{ $year := . }}
-    <h2 id="year-{{ $year }}" class="f4 fw9 mb3 mt4 bb bw2 b--black pb2 ttu tracked ow-quote">{{ $year }}</h2>
-    {{ range $pages }}
+    <h2 id="year-{{ $year }}" class="news-year-heading">{{ $year }}</h2>
+
+    {{ range $allPages }}
       {{ if eq (.Date.Format "2006") $year }}
-        {{ partial "link-card.html" . }}
+        <div class="news-entry">
+
+          {{/* Source */}}
+          {{ with .Params.source }}
+          <div class="news-source">{{ . }}</div>
+          {{ end }}
+
+          {{/* Title + type badge */}}
+          <div class="news-title">
+            {{ if .Params.link_url }}
+              <a href="{{ .Params.link_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ else }}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+            {{ with .Params.news_type }}
+            <span class="news-type-badge">{{ . }}</span>
+            {{ end }}
+          </div>
+
+          {{/* Date */}}
+          <div class="news-date">{{ .Date.Format "2006-01-02" }}</div>
+
+          {{/* Description */}}
+          {{ with .Content }}
+            {{ $plain := plainify . }}
+            {{ if gt (len $plain) 20 }}
+              <div class="news-description">{{ $plain | truncate 200 }}</div>
+            {{ end }}
+          {{ end }}
+
+        </div>
       {{ end }}
     {{ end }}
   {{ end }}
 
-  {{ partial "pagination.html" . }}
 </article>
 {{ end }}

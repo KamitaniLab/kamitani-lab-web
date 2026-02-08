@@ -1,12 +1,11 @@
 ---
 title: "Visual image reconstruction"
 date: 2018-02-17
-tags: ["sharing"]
+news_type: code
 link_url: "https://openfmri.org/dataset/ds000255/"
 tumblr_url: "https://kamitani-lab.ist.i.kyoto-u.ac.jp/post/170977787141/visual-image-reconstruction"
 draft: false
 ---
-
 [Visual image reconstruction](https://openfmri.org/dataset/ds000255/)
 
 
