@@ -14,7 +14,7 @@
         border-bottom: 3px solid #111;
         padding-bottom: 0.5rem;
         margin-top: 3rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
       }
       .members-section h5 {
         font-weight: 400;
@@ -43,8 +43,8 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 1px;
-        background: #e8e8e8;
-        border: 1px solid #e8e8e8;
+        background: #e0e0e0;
+        border: 1px solid #e0e0e0;
       }
       .member-card {
         border-bottom: none !important;
@@ -68,12 +68,13 @@
         font-size: 0.8rem !important;
       }
       .member-card .f6 a {
-        color: #1a73e8;
-        text-decoration: none;
+        color: #111;
+        text-decoration: underline;
+        text-underline-offset: 2px;
         font-weight: 600;
       }
       .member-card .f6 a:hover {
-        text-decoration: underline;
+        color: #555;
       }
     </style>
     <section class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links members-section {{ $.Param "text_color" | compare.Default "mid-gray" }}">

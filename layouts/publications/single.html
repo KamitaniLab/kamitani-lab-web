@@ -1,12 +1,39 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw7 center">
+  <style>
+    .pub-single-back { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+    .pub-single-back a { color: #111; text-decoration: none; }
+    .pub-single-back a:hover { color: #555; }
+    .pub-single-title { font-size: 2rem; font-weight: 900; line-height: 1.15; color: #111; margin-bottom: 0.5rem; }
+    .pub-single-authors { font-size: 1rem; color: #333; margin-bottom: 0.3rem; }
+    .pub-single-journal { font-size: 0.9rem; color: #555; }
+    .pub-single-doi { font-size: 0.85rem; margin-top: 0.5rem; word-break: break-all; }
+    .pub-single-doi a { color: #111; text-decoration: underline; text-underline-offset: 2px; }
+    .pub-single-doi a:hover { color: #555; }
+    .pub-single-buttons { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .pub-single-buttons a {
+      display: inline-flex; align-items: center;
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+      padding: 0.3rem 0.7rem; text-decoration: none;
+      border: 1.5px solid #111; color: #111; background: transparent;
+      transition: all 0.15s;
+    }
+    .pub-single-buttons a:hover { background: #111; color: #fff; }
+    .pub-single-embed { margin-top: 1.5rem; }
+    .pub-single-embed iframe { max-width: 100%; }
+    .pub-single-body { font-size: 1rem; color: #333; line-height: 1.75; max-width: 640px; margin-top: 2rem; }
+    .pub-single-body a { color: #111; text-decoration: underline; text-underline-offset: 2px; }
+    .pub-single-body a:hover { color: #555; }
+    .pub-single-body p { margin-bottom: 1rem; }
+  </style>
+
   <header class="mb4">
-    <p class="f6 fw7 gray mb1 ttu tracked">
-      <a href="{{ (.Parent).RelPermalink }}" class="link black underline-hover">&larr; PUBLICATIONS</a>
-    </p>
-    <h1 class="f2 fw9 lh-title mb2">{{ .Title }}</h1>
-    <p class="f5 mid-gray mt1 mb2">{{ .Params.authors }}</p>
-    <p class="f6 gray">
+    <div class="pub-single-back">
+      <a href="{{ (.Parent).RelPermalink }}">&larr; Publications</a>
+    </div>
+    <h1 class="pub-single-title">{{ .Title }}</h1>
+    <p class="pub-single-authors">{{ .Params.authors }}</p>
+    <p class="pub-single-journal">
       <em>{{ .Params.journal }}</em>
       {{- with .Params.volume }}, <em>{{ . }}</em>{{ end }}
       {{- with .Params.issue }}({{ . }}){{ end }}
@@ -14,36 +41,40 @@
       ({{ .Date.Format "2006" }})
     </p>
     {{ with .Params.doi }}
-      <p class="mt2 mb0">
-        <a href="https://doi.org/{{ . }}" class="f6 link blue underline-hover" target="_blank" rel="noopener">https://doi.org/{{ . }}</a>
-      </p>
+      <div class="pub-single-doi">
+        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a>
+      </div>
     {{ end }}
-    <div class="mt3">
+    {{ if or .Params.code_url .Params.data_url }}
+    <div class="pub-single-buttons">
       {{ with .Params.code_url }}
-        <a href="{{ . }}" class="f6 link white bg-dark-green ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>
       {{ end }}
       {{ with .Params.data_url }}
-        <a href="{{ . }}" class="f6 link white bg-orange ph3 pv2 dib fw7 ttu tracked mr2 mb2" target="_blank" rel="noopener">{{ $.Params.data_label | default "Data" }}</a>
+        <a href="{{ . }}" target="_blank" rel="noopener">{{ $.Params.data_label | default "Data" }}</a>
       {{ end }}
     </div>
+    {{ end }}
     {{ with .Params.video_embed }}
-      <div class="mt3">
-        <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width:100%;"></iframe>
+      <div class="pub-single-embed">
+        <iframe width="560" height="315" src="{{ . }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     {{ end }}
     {{ with .Params.pub_image }}
-      <div class="mt3">
+      <div class="pub-single-embed">
         <img src="{{ . | absURL }}" alt="" style="max-width:560px; width:{{ $.Params.pub_image_width | default "50%" }};">
       </div>
     {{ end }}
     {{ with .Params.slide_embed }}
-      <div class="mt3">
+      <div class="pub-single-embed">
         <iframe src="{{ . }}" width="560" height="420" style="aspect-ratio:4/3; border:0; padding:0; margin:0; background:transparent; max-width:100%;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
       </div>
     {{ end }}
   </header>
-  <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
-    {{ .Content }}
+  {{ with .Content }}
+  <div class="pub-single-body">
+    {{ . }}
   </div>
+  {{ end }}
 </article>
 {{ end }}
