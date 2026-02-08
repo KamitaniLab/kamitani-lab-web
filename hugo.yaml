@@ -37,12 +37,11 @@ languages:
         - name: News
           pageRef: /news
           weight: 45
-        - name: Resources
-          pageRef: /resources
-          weight: 80
-        - name: 検索
+        - name: "🔍"
           pageRef: /search
           weight: 90
+          params:
+            icon: search
 
 menus:
   main:
@@ -64,12 +63,11 @@ menus:
     - name: News
       pageRef: /news
       weight: 45
-    - name: Resources
-      pageRef: /resources
-      weight: 80
-    - name: Search
+    - name: "🔍"
       pageRef: /search
       weight: 90
+      params:
+        icon: search
 
 params:
   favicon: ""
