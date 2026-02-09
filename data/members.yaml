@@ -180,3 +180,11 @@ students:
   - name: "Hiroki Yasuda"
     name_ja: "安田 大起"
     level: "M1"
+
+  - name: "Alexandra Marquardt"
+    level: "Exchange Student"
+    level_ja: "交換留学生"
+
+  - name: "Anniruddh Kumar"
+    level: "Research Student"
+    level_ja: "研究生"
