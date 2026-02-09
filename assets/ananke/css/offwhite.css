@@ -22,6 +22,34 @@ body {
   border-radius: 0 !important;
 }
 
+/* --- SKIP LINK --- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: #FFC300;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- FOCUS INDICATOR --- */
+:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* --- LINKS: monochrome --- */
 a {
   color: #000;
@@ -29,7 +57,7 @@ a {
   transition: opacity 0.15s ease;
 }
 a:hover,
-a:focus {
+a:focus-visible {
   color: #000;
   opacity: 0.6;
 }
@@ -264,7 +292,7 @@ hr {
   word-break: break-all;
 }
 .pub-doi a {
-  color: #999;
+  color: #767676;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -284,7 +312,7 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 0.75rem;
   text-decoration: none;
   border: 1.5px solid #111;
   color: #111;
@@ -295,19 +323,48 @@ hr {
   background-color: #111;
   color: #fff;
 }
-.pub-links a.pub-link { border-color: #111; color: #111; }
-.pub-links a.pub-link:hover { background-color: #111; color: #fff; }
-.pub-links a.pub-code { border-color: #111; color: #111; }
-.pub-links a.pub-code:hover { background-color: #111; color: #fff; }
-.pub-links a.pub-data { border-color: #111; color: #111; }
-.pub-links a.pub-data:hover { background-color: #111; color: #fff; }
 
 /* — Embeds — */
 .pub-embed { margin-top: 0.8rem; }
-.pub-embed iframe { max-width: 100%; }
+.pub-embed iframe { max-width: 100%; border: 0; }
+.pub-embed-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 560px;
+}
+.pub-embed-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.pub-embed-slides {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  max-width: 560px;
+}
+.pub-embed-slides iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.pub-image {
+  max-width: 560px;
+  width: 50%;
+  height: auto;
+}
 
-/* — Year nav — */
-.year-nav {
+/* — Year nav (shared) — */
+.year-nav,
+.news-year-nav,
+.art-year-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -316,20 +373,26 @@ hr {
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #111;
 }
-.year-nav a {
+.year-nav a,
+.news-year-nav a,
+.art-year-nav a {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #999;
+  color: #767676;
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   transition: color 0.15s;
 }
-.year-nav a:hover { color: #111; }
+.year-nav a:hover,
+.news-year-nav a:hover,
+.art-year-nav a:hover { color: #111; }
 
-/* — Year heading — */
-.year-heading {
+/* — Year heading (shared) — */
+.year-heading,
+.news-year-heading,
+.art-year-heading {
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: -0.02em;
@@ -371,7 +434,7 @@ hr {
 .pub-single-buttons a {
   display: inline-flex; align-items: center;
   font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
-  padding: 0.3rem 0.7rem; text-decoration: none;
+  padding: 0.4rem 0.75rem; text-decoration: none;
   border: 1.5px solid #111; color: #111; background: transparent;
   transition: all 0.15s;
 }
@@ -433,7 +496,7 @@ hr {
 }
 .news-date {
   font-size: 0.78rem;
-  color: #999;
+  color: #767676;
 }
 
 /* — Content — */
@@ -482,39 +545,6 @@ hr {
   border: 0;
 }
 
-/* — Year nav — */
-.news-year-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.15rem;
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #111;
-}
-.news-year-nav a {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #999;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  transition: color 0.15s;
-}
-.news-year-nav a:hover { color: #111; }
-
-/* — Year heading — */
-.news-year-heading {
-  font-size: 2.5rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: #111;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #111;
-}
 
 /* ============================================
    NEWS SINGLE
@@ -537,7 +567,7 @@ hr {
 }
 .news-single-meta {
   font-size: 0.78rem;
-  color: #999;
+  color: #767676;
   margin-bottom: 1.5rem;
 }
 .news-single-badge {
@@ -563,7 +593,7 @@ hr {
   color: #111;
   background: transparent;
   border: 1.5px solid #111;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 0.75rem;
   text-decoration: none;
   margin-bottom: 2rem;
   transition: all 0.15s;
@@ -696,9 +726,11 @@ hr {
   margin-bottom: 0.8rem;
 }
 .art-media iframe {
-  max-width: 100%;
-  width: 560px;
-  height: 315px;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16/9;
+  height: auto;
+  border: 0;
 }
 .art-media img {
   max-width: 100%;
@@ -732,7 +764,7 @@ hr {
   content: "\2014";
   position: absolute;
   left: 0;
-  color: #999;
+  color: #767676;
 }
 .art-exhibitions a {
   color: #111;
@@ -755,7 +787,7 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 0.75rem;
   text-decoration: none;
   border: 1.5px solid #111;
   color: #111;
@@ -766,8 +798,6 @@ hr {
   background-color: #111;
   color: #fff;
 }
-.art-links a.art-link-video { border-color: #111; color: #111; }
-.art-links a.art-link-video:hover { background-color: #111; color: #fff; }
 
 /* — Press — */
 .art-press {
@@ -778,7 +808,7 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #999;
+  color: #767676;
   margin-bottom: 0.25rem;
 }
 .art-press a {
@@ -795,39 +825,6 @@ hr {
   color: #333;
 }
 
-/* — Year nav — */
-.art-year-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.15rem;
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #111;
-}
-.art-year-nav a {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #999;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  transition: color 0.15s;
-}
-.art-year-nav a:hover { color: #111; }
-
-/* — Year heading — */
-.art-year-heading {
-  font-size: 2.5rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: #111;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #111;
-}
 
 /* ============================================
    ABOUT
@@ -885,7 +882,7 @@ hr {
   content: "\2192";
   position: absolute;
   left: 0;
-  color: #999;
+  color: #767676;
 }
 
 /* — Links — */
@@ -932,7 +929,7 @@ hr {
   transition: box-shadow 0.15s, border-color 0.15s;
 }
 .about-content .res-card:hover {
-  border-color: #999;
+  border-color: #767676;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .about-content .res-icon {
@@ -1045,7 +1042,7 @@ hr {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #999;
+  color: #767676;
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   transition: color 0.15s;
@@ -1166,7 +1163,7 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 0.75rem;
   text-decoration: none;
   border: 1.5px solid #111;
   color: #111;
@@ -1196,8 +1193,8 @@ hr {
 .featured-video-title { font-size: 0.85rem; font-weight: 700; color: #111; line-height: 1.3; }
 .featured-video-title a { color: #111; text-decoration: none; }
 .featured-video-title a:hover { text-decoration: underline; }
-.featured-video-meta { font-size: 0.7rem; color: #999; margin-top: 0.2rem; line-height: 1.4; }
-.featured-video-meta a { color: #999; text-decoration: underline; text-underline-offset: 2px; }
+.featured-video-meta { font-size: 0.7rem; color: #767676; margin-top: 0.2rem; line-height: 1.4; }
+.featured-video-meta a { color: #767676; text-decoration: underline; text-underline-offset: 2px; }
 .featured-video-meta a:hover { color: #111; }
 
 /* — Homepage: news & publications inline classes — */
@@ -1206,7 +1203,7 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #999;
+  color: #767676;
 }
 .home-news-badge {
   font-size: 0.6rem;
@@ -1215,4 +1212,30 @@ hr {
 }
 .home-pub-authors {
   letter-spacing: 0.05em;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 30em) {
+  .year-heading,
+  .news-year-heading,
+  .art-year-heading,
+  .about-content h2,
+  .research-body h2,
+  .members-section h2 {
+    font-size: 1.75rem;
+  }
+  .pub-single-title,
+  .news-single-title {
+    font-size: 1.5rem;
+  }
+  .pub-links a,
+  .pub-single-buttons a,
+  .art-links a,
+  .research-resources a,
+  .news-single-link {
+    padding: 0.5rem 0.8rem;
+  }
 }
