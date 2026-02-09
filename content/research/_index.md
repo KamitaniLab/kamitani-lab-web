@@ -7,6 +7,8 @@ layout: "research"
 
 Kamitani Lab investigates how the brain represents and processes information, developing techniques to decode and visualize mental contents from brain activity. Our research bridges neuroscience and AI, spanning four interconnected areas.
 
+<!--more-->
+
 ## Brain Decoding {#brain-decoding}
 
 Brain decoding uses machine learning to read out the contents of perception, imagery, and dreams from brain activity measured with fMRI. Kamitani Lab has been a pioneer of this field since the mid-2000s, progressively expanding what can be decoded from the brain.
