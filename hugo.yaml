@@ -2,6 +2,7 @@ baseURL: https://kamitani-lab.ist.i.kyoto-u.ac.jp/
 title: Kamitani Lab
 theme: ananke
 enableRobotsTXT: true
+relativeURLs: true
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
