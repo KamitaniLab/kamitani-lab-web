@@ -113,7 +113,7 @@ main h2 {
 /* Year dividers: heavy underline */
 main h2.bb {
   border-bottom-width: 3px !important;
-  border-bottom-color: #000 !important;
+  border-bottom-color: #111 !important;
 }
 
 /* --- TAGS: zip-tie style --- */
@@ -371,7 +371,7 @@ hr {
   gap: 0.15rem;
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #111;
+  border-bottom: 3px solid #111;
 }
 .year-nav a,
 .news-year-nav a,
@@ -994,7 +994,7 @@ hr {
 }
 .members-section hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e0e0e0;
   margin: 2.5rem 0 0.5rem;
 }
 .members-grid {
@@ -1047,7 +1047,7 @@ hr {
   gap: 0.15rem;
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #111;
+  border-bottom: 3px solid #111;
 }
 .research-section-nav a {
   font-size: 0.78rem;
@@ -1124,7 +1124,7 @@ hr {
   color: #333;
   line-height: 1.6;
   padding: 0.35rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #e0e0e0;
 }
 .research-body ul li:last-child {
   border-bottom: none;
