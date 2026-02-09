@@ -1,5 +1,10 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
+  {{/* Intro paragraph */}}
+  <div class="research-body">
+    <p>{{ .Summary }}</p>
+  </div>
+
   {{/* Section navigation */}}
   <nav class="research-section-nav" aria-label="Section navigation">
     <a href="#brain-decoding">Brain Decoding</a>
@@ -8,9 +13,9 @@
     <a href="#art">Art</a>
   </nav>
 
-  {{/* Content */}}
+  {{/* Content after the intro */}}
   <div class="research-body">
-    {{ .Content }}
+    {{ .ContentWithoutSummary }}
   </div>
 </article>
 {{ end }}
