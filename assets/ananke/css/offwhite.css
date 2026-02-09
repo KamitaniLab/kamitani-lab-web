@@ -453,7 +453,7 @@ hr {
 .pub-single-buttons a:hover { background: #111; color: #fff; }
 .pub-single-embed { margin-top: 1.5rem; }
 .pub-single-embed iframe { max-width: 100%; }
-.pub-single-body { font-size: 1rem; color: #333; line-height: 1.75; max-width: 640px; margin-top: 2rem; }
+.pub-single-body { font-size: 1rem; color: #333; line-height: 1.75; max-width: 48rem; margin-top: 2rem; }
 .pub-single-body a { color: #111; text-decoration: underline; text-underline-offset: 2px; }
 .pub-single-body a:hover { color: #555; }
 .pub-single-body p { margin-bottom: 1rem; }
@@ -517,7 +517,7 @@ hr {
   color: #333;
   line-height: 1.75;
   margin-top: 0.6rem;
-  max-width: 640px;
+  max-width: 48rem;
 }
 .news-description a { color: #111; }
 .news-description a:hover { text-decoration: underline; }
@@ -615,7 +615,7 @@ hr {
   font-size: 1rem;
   color: #333;
   line-height: 1.75;
-  max-width: 640px;
+  max-width: 48rem;
 }
 .news-single-body a { color: #111; text-decoration: underline; }
 .news-single-body a:hover { color: #555; }
@@ -637,7 +637,7 @@ hr {
   height: 0;
   overflow: hidden;
   margin-top: 1.5rem;
-  max-width: 640px;
+  max-width: 48rem;
 }
 .news-single-slides-wrap {
   position: relative;
@@ -645,7 +645,7 @@ hr {
   height: 0;
   overflow: hidden;
   margin-top: 1.5rem;
-  max-width: 640px;
+  max-width: 48rem;
 }
 .news-single-video-wrap iframe,
 .news-single-slides-wrap iframe {
@@ -756,7 +756,7 @@ hr {
   color: #333;
   line-height: 1.75;
   margin-top: 0.6rem;
-  max-width: 640px;
+  max-width: 48rem;
 }
 
 /* — Exhibitions list (sub-venues) — */
@@ -910,7 +910,7 @@ hr {
 /* — Map embeds — */
 .about-content iframe {
   width: 100%;
-  max-width: 640px;
+  max-width: 48rem;
   height: 300px;
   border: 2px solid #111;
   margin: 1rem 0;
@@ -1072,7 +1072,7 @@ hr {
 
 /* — Content body — */
 .research-body {
-  max-width: 700px;
+  max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1143,7 +1143,7 @@ hr {
 /* — Embedded media — */
 .research-embed {
   margin: 1.5rem 0;
-  max-width: 640px;
+  max-width: 48rem;
 }
 .research-embed-video {
   position: relative;
