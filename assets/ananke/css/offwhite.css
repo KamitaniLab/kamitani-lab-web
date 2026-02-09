@@ -1219,10 +1219,6 @@ hr {
    ============================================ */
 
 @media screen and (max-width: 30em) {
-  header h1 {
-    font-size: 1.5rem !important;
-    letter-spacing: 0.08em !important;
-  }
   .year-heading,
   .news-year-heading,
   .art-year-heading,
