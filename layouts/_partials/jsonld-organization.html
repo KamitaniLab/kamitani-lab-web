@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "/images/ogp.png" | absURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "parentOrganization": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Kyoto University",
+      "url": "https://www.kyoto-u.ac.jp/"
+    },
+    {
+      "@type": "ResearchOrganization",
+      "name": "ATR Computational Neuroscience Laboratories",
+      "url": "https://www.atr.jp/"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/KamitaniLab",
+    "https://twitter.com/ykamit",
+    "https://www.youtube.com/@KamitaniLab"
+  ]
+}
+</script>

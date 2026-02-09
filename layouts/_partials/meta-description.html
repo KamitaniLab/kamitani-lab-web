@@ -1,0 +1,23 @@
+{{- with .Description -}}
+  {{- . -}}
+{{- else -}}
+  {{- if .IsPage -}}
+    {{- if eq .Section "publications" -}}
+      {{- .Params.authors }} ({{ .Date.Format "2006" }}). {{ .Title }}. {{ .Params.journal -}}
+      {{- with .Params.volume }}, {{ . }}{{ end -}}
+      {{- with .Params.pages }}, {{ . }}{{ end -}}
+      .
+    {{- else if eq .Section "news" -}}
+      {{- .Title -}}
+      {{- with .Params.source }} — {{ . }}{{ end -}}
+    {{- else if eq .Section "art" -}}
+      {{- .Title -}}
+      {{- with .Params.artist }} by {{ . }}{{ end -}}
+      {{- with .Params.venue }} at {{ . }}{{ end -}}
+    {{- else -}}
+      {{- .Summary -}}
+    {{- end -}}
+  {{- else -}}
+    {{- with .Site.Params.description }}{{ . }}{{ end -}}
+  {{- end -}}
+{{- end -}}

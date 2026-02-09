@@ -1,0 +1,31 @@
+{{- if .IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ .Site.Title }}",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{- with .Parent -}}
+    {{- if ne .Kind "home" -}}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify }},
+      "item": "{{ .Permalink }}"
+    }
+    {{- end -}}
+    {{- end -}}
+    ,{
+      "@type": "ListItem",
+      "position": {{ if and .Parent (ne .Parent.Kind "home") }}3{{ else }}2{{ end }},
+      "name": {{ .Title | jsonify }}
+    }
+  ]
+}
+</script>
+{{- end -}}

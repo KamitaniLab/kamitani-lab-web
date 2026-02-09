@@ -1,0 +1,9 @@
+{{- $description := partials.Include "meta-description.html" . -}}
+{{- $image := "" -}}
+{{- with .Params.featured_image }}{{ $image = . | absURL }}{{ else }}{{ with .Site.Params.featured_image }}{{ $image = . | absURL }}{{ end }}{{ end -}}
+<meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
+{{- with $image }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ $description }}">

@@ -1,0 +1,46 @@
+{{- if eq .Section "publications" -}}
+{{- if .IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ .Title | jsonify }},
+  "author": [
+    {{- $authors := split .Params.authors ", " -}}
+    {{- range $i, $a := $authors -}}
+    {{- if $i }},{{ end -}}
+    {
+      "@type": "Person",
+      "name": {{ $a | replaceRE " &amp; | & " "" | jsonify }}
+    }
+    {{- end -}}
+  ],
+  "datePublished": "{{ .Date.Format "2006" }}",
+  {{- with .Params.journal }}
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": {{ . | jsonify }}
+  },
+  {{- end }}
+  {{- with .Params.volume }}
+  "volumeNumber": {{ . | jsonify }},
+  {{- end }}
+  {{- with .Params.pages }}
+  "pagination": {{ . | jsonify }},
+  {{- end }}
+  {{- with .Params.doi }}
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": {{ . | jsonify }}
+  },
+  "url": "https://doi.org/{{ . }}",
+  {{- end }}
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kamitani Lab"
+  }
+}
+</script>
+{{- end -}}
+{{- end -}}
