@@ -1072,9 +1072,6 @@ hr {
 
 /* — Content body — */
 .research-body {
-  max-width: 48rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 .research-body h2 {
   font-size: 2.5rem;
