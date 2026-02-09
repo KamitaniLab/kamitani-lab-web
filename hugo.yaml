@@ -1,6 +1,7 @@
 baseURL: https://ykamit.github.io/kamitani-lab/
 title: Kamitani Lab
 theme: ananke
+enableRobotsTXT: true
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
