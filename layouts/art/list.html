@@ -16,7 +16,7 @@
   {{ end }}
 
   {{/* Year navigation */}}
-  <nav class="art-year-nav">
+  <nav class="art-year-nav" aria-label="Year navigation">
     {{ range $years }}
       <a href="#year-{{ . }}">{{ . }}</a>
     {{ end }}
@@ -62,7 +62,7 @@
           {{/* Video embed */}}
           {{ with .Params.video_embed }}
           <div class="art-media">
-            <iframe src="{{ . }}" title="{{ $p.Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="{{ . }}" title="{{ $p.Title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           {{ end }}
 

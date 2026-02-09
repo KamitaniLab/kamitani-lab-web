@@ -16,7 +16,7 @@
   {{ end }}
 
   {{/* Year navigation */}}
-  <nav class="news-year-nav">
+  <nav class="news-year-nav" aria-label="Year navigation">
     {{ range $years }}
       <a href="#year-{{ . }}">{{ . }}</a>
     {{ end }}
@@ -29,6 +29,7 @@
 
     {{ range $allPages }}
       {{ if eq (.Date.Format "2006") $year }}
+        {{ $page := . }}
         <div class="news-entry">
 
           {{/* Source */}}
@@ -56,11 +57,11 @@
             <div class="news-embed">
               {{ if or (in . "youtube.com") (in . "youtu.be") }}
                 <div class="news-embed-video">
-                  <iframe src="{{ . }}" title="Embedded video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe src="{{ . }}" title="{{ $page.Title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               {{ else if in . "speakerdeck.com" }}
                 <div class="news-embed-slides">
-                  <iframe src="{{ . }}" title="Embedded slides" allowfullscreen allowtransparency></iframe>
+                  <iframe src="{{ . }}" title="{{ $page.Title }} — slides" allowfullscreen></iframe>
                 </div>
               {{ end }}
             </div>
