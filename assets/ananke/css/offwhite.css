@@ -389,6 +389,18 @@ hr {
 .news-year-nav a:hover,
 .art-year-nav a:hover { color: #111; }
 
+/* — Year heading :target highlight — */
+.year-heading:target,
+.news-year-heading:target,
+.art-year-heading:target {
+  color: #111;
+  background: #f5f5f0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 /* — Year heading (shared) — */
 .year-heading,
 .news-year-heading,
@@ -1049,6 +1061,15 @@ hr {
 }
 .research-section-nav a:hover { color: #111; }
 
+/* — Research section :target highlight — */
+.research-body h2:target {
+  background: #f5f5f0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 /* — Content body — */
 .research-body {
   max-width: 700px;
@@ -1217,6 +1238,20 @@ hr {
 /* ============================================
    MOBILE RESPONSIVE
    ============================================ */
+
+@media screen and (max-width: 48em) {
+  .research-grid > a {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  .year-heading,
+  .news-year-heading,
+  .art-year-heading,
+  .about-content h2,
+  .research-body h2,
+  .members-section h2 {
+    font-size: 2rem;
+  }
+}
 
 @media screen and (max-width: 30em) {
   .year-heading,
