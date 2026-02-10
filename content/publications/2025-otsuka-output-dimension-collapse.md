@@ -1,6 +1,6 @@
 ---
 title: "Overcoming Output Dimension Collapse: When Sparsity Enables Zero-shot Brain-to-Image Reconstruction at Small Data Scales"
-date: 2026-01-16
+date: 2025-09-24
 authors: "Otsuka, K., Nagano, Y., & Kamitani, Y."
 journal: "arXiv"
 doi: "10.48550/arXiv.2509.15832"
