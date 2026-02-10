@@ -1,18 +1,18 @@
 {{ if hugo.IsMultilingual }}
 {{ $noSwitch := slice "members" "publications" "art" "news" }}
 {{ if not (in $noSwitch .Section) }}
-<ul class="pl0 mr3">
+<ul class="pl0 ml3 lang-switcher">
   {{ if .IsTranslated }}
     {{ range .Translations }}
-    <li class="list f5 f4-ns fw4 dib pr3">
-      <a class="hover-white white-90 no-underline" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+    <li class="list dib">
+      <a class="hover-white white-60 no-underline f7 fw7 ttu-spaced-sm ba b--white-30 ph2 pv1" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
     </li>
     {{ end }}
   {{ else }}
     {{ range site.Languages }}
       {{ if ne .Lang $.Lang }}
-      <li class="list f5 f4-ns fw4 dib pr3">
-        <a class="hover-white white-90 no-underline" href="/{{ .Lang }}/">{{ .LanguageName }}</a>
+      <li class="list dib">
+        <a class="hover-white white-60 no-underline f7 fw7 ttu-spaced-sm ba b--white-30 ph2 pv1" href="/{{ .Lang }}/">{{ .LanguageName }}</a>
       </li>
       {{ end }}
     {{ end }}

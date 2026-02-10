@@ -1,5 +1,5 @@
 <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
+  <div class="flex items-center justify-between">
     <a href="{{ .Site.Home.RelPermalink }}" class="f5 f3-ns fw9 hover-white white-90 dib no-underline ttu-spaced">
       {{ with .Site.Params.site_logo }}
         <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
@@ -7,21 +7,37 @@
         {{ .Site.Title }}
       {{ end }}
     </a>
-    <div class="flex-l items-center">
-      {{ partials.Include "i18nlist.html" . }}
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </div>
+  <div id="nav-menu" class="nav-menu-wrap">
+    <div class="nav-menu-inner">
       {{ if .Site.Menus.main }}
         <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }} nav-menu">
           {{ range $i, $item := .Site.Menus.main }}
-          <li class="list f6 fw7 dib ttu-spaced">
-            {{ if $i }}<span class="white-40 mh2">/</span>{{ end }}
-            <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}"{{ if and .Params (eq .Params.icon "search") }} aria-label="Search"{{ end }}>
+          <li class="list f6 fw7 dib-l ttu-spaced{{ if or ($.IsMenuCurrent "main" $item) ($.HasMenuCurrent "main" $item) }} nav-active{{ end }}">
+            {{ if $i }}<span class="nav-sep white-40 mh2">/</span>{{ end }}
+            <a class="hover-white no-underline{{ if or ($.IsMenuCurrent "main" $item) ($.HasMenuCurrent "main" $item) }} white{{ else }} white-90{{ end }}" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}"{{ if and .Params (eq .Params.icon "search") }} aria-label="Search"{{ end }}>
               {{ if and .Params (eq .Params.icon "search") }}<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.1em;" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>{{ else }}{{ .Name }}{{ end }}
             </a>
           </li>
           {{ end }}
         </ul>
       {{ end }}
-      {{ partials.IncludeCached "social/follow.html" . }}
+      {{ partials.Include "i18nlist.html" . }}
     </div>
   </div>
 </nav>
+<script>
+(function(){
+  var btn = document.getElementById('nav-toggle');
+  var nav = btn.closest('nav');
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open);
+  });
+})();
+</script>
