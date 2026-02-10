@@ -18,8 +18,11 @@
         <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a>
       </div>
     {{ end }}
-    {{ if or .Params.code_url .Params.data_url }}
+    {{ if or .Params.code_url .Params.data_url .Params.link_url }}
     <div class="pub-single-buttons">
+      {{ with .Params.link_url }}
+        <a href="{{ . }}" target="_blank" rel="noopener">{{ $.Params.link_label | default "OpenReview" }}</a>
+      {{ end }}
       {{ with .Params.code_url }}
         <a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>
       {{ end }}

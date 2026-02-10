@@ -46,7 +46,7 @@
           {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
             {{- with .Params.link_url }}
-            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Link</a>
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">{{ $p.Params.link_label | default "OpenReview" }}</a>
             {{- end }}
             {{- with .Params.code_url }}
             <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
@@ -98,7 +98,7 @@
           {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
             {{- with .Params.link_url }}
-            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Link</a>
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">{{ $p.Params.link_label | default "OpenReview" }}</a>
             {{- end }}
             {{- with .Params.code_url }}
             <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>
@@ -153,7 +153,7 @@
           {{- if or .Params.code_url .Params.data_url .Params.link_url }}
           <div class="pub-links">
             {{- with .Params.link_url }}
-            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Link</a>
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">{{ $p.Params.link_label | default "OpenReview" }}</a>
             {{- end }}
             {{- with .Params.code_url }}
             <a href="{{ . }}" class="pub-code" target="_blank" rel="noopener">GitHub</a>

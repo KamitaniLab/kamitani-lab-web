@@ -85,6 +85,11 @@ header h1 {
   font-weight: 900 !important;
 }
 
+/* --- SITE LOGO --- */
+nav img.mw5-ns {
+  max-width: 10rem;
+}
+
 /* --- NAVIGATION --- */
 nav a,
 nav li {

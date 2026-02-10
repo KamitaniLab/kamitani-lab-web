@@ -72,7 +72,7 @@ menus:
 
 params:
   favicon: /favicon.ico
-  site_logo: ""
+  site_logo: "images/logo.png"
   featured_image: images/ogp.png
   images:
     - https://kamitani-lab.ist.i.kyoto-u.ac.jp/images/ogp.png
