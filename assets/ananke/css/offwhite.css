@@ -86,8 +86,13 @@ header h1 {
 }
 
 /* --- SITE LOGO --- */
-nav img.mw5-ns {
-  max-width: 10rem;
+nav img {
+  max-width: 5rem;
+}
+@media screen and (min-width: 30em) {
+  nav img {
+    max-width: 10rem;
+  }
 }
 
 /* --- NAVIGATION --- */
