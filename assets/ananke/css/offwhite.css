@@ -96,12 +96,50 @@ nav img {
 }
 
 /* --- NAVIGATION --- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #000;
+}
 nav a,
 nav li {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 700;
   font-size: 0.85rem;
+}
+
+/* — Active page indicator — */
+.nav-active a {
+  color: #fff !important;
+}
+@media screen and (min-width: 60em) {
+  .nav-active {
+    position: relative;
+  }
+  .nav-active a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #fff;
+  }
+}
+@media screen and (max-width: 59.99em) {
+  .nav-active a::before {
+    content: "\2192";
+    margin-right: 0.4em;
+  }
+}
+
+/* — Language switcher — */
+.lang-switcher a:hover {
+  color: #fff !important;
+  border-color: rgba(255,255,255,0.6) !important;
 }
 
 /* --- CARDS: no frames --- */
@@ -674,6 +712,104 @@ hr {
 
 /* — Navigation menu layout — */
 .nav-menu { display: flex; flex-wrap: wrap; align-items: center; gap: 0; }
+
+/* ============================================
+   HAMBURGER MENU & RESPONSIVE NAV
+   ============================================ */
+
+/* — Hamburger toggle button — */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: 2px solid rgba(255,255,255,0.5);
+  padding: 8px 7px;
+  cursor: pointer;
+  z-index: 10;
+}
+.nav-toggle:hover {
+  border-color: #fff;
+}
+.nav-toggle-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hamburger → X animation when open */
+nav.nav-open .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+nav.nav-open .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+nav.nav-open .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* — Mobile: menu hidden by default — */
+.nav-menu-wrap {
+  display: none;
+  padding-top: 1rem;
+}
+nav.nav-open .nav-menu-wrap {
+  display: block;
+}
+.nav-menu-wrap .nav-menu {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.nav-menu-wrap .nav-menu li {
+  display: block;
+  padding: 0.5rem 0;
+}
+.nav-menu-wrap .nav-menu li a {
+  font-size: 0.9rem;
+}
+.nav-menu-wrap .nav-sep {
+  display: none;
+}
+.nav-menu-wrap .nav-menu-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* — Desktop: always show, horizontal layout — */
+@media screen and (min-width: 60em) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-menu-wrap {
+    display: flex !important;
+    padding-top: 0;
+    align-items: center;
+  }
+  .nav-menu-wrap .nav-menu-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+  .nav-menu-wrap .nav-menu {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-menu-wrap .nav-menu li {
+    display: inline-block;
+    padding: 0;
+  }
+  .nav-menu-wrap .nav-menu li a {
+    font-size: 0.85rem;
+  }
+  .nav-menu-wrap .nav-sep {
+    display: inline;
+  }
+}
 
 /* ============================================
    ART LIST
