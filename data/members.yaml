@@ -148,6 +148,11 @@ students:
   - name: "Shunsuke Onoo"
     name_ja: "小野尾 俊介"
     level: "M2"
+    links:
+      - label: "Website"
+        url: "https://shunsukeonoo.github.io/"
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=nFiddPUAAAAJ"
 
   - name: "Taiga Kurosawa"
     name_ja: "黒澤 大河"
