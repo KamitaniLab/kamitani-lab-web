@@ -53,7 +53,7 @@ This minisymposium brings together NeuroAI approaches to auditory neuroscience a
 **Abstract:**
 Every day, we encounter diverse natural sounds (chirps, impulses) and effortlessly recognize the objects and events producing them (a bird call, a nail being hammered). Studying how we perceive these sounds provides a unique window into how the auditory system operates under real-world conditions, moving beyond the traditional focus on speech and music. Investigating these signals promises a broader understanding of auditory processing, encompassing both acoustic complexity and semantic structure. I will start this talk by describing my early behavioural and fMRI work attempting to tease apart acoustic and semantic components of natural sound representation. I will then focus on more recent collaborative efforts that combined behavioral measures, ultra-high-field (7T) fMRI, and convolutional neural networks (CNNs) to reveal that CNN-based models closely mirror perceptual and fMRI representations. Here, mid-layer CNN representations best predicted brain and behavioral data, likely emphasizing the acoustic structure critical for identifying objects and actions (hyperacoustics). I will then describe ongoing work that aims to track the temporal unfolding of natural sounds representations through magnetoencephalography. I will conclude the talk with an overview of a new collaborative effort that aims to extend our AI + computationally modelling framework from isolated sounds to the complexity of real-life auditory scenes. By embracing the full richness of everyday listening, we seek a unified perspective on how the auditory system decodes our ever-changing acoustic environment, ultimately integrating neural, behavioral, and computational insights to illuminate the complexity of real-world hearing.
 
----
+<div style="border-top: 1px solid #ccc; margin: 2em 0;"></div>
 
 ### Jong-Yun Park (Science Tokyo)
 
@@ -62,7 +62,7 @@ Every day, we encounter diverse natural sounds (chirps, impulses) and effortless
 **Abstract:**
 Recent advances in brain decoding have demonstrated that complex perceptual experiences can be externally reconstructed from human brain activity. In this talk, I will present a series of studies aimed at reconstructing diverse auditory experiences from fMRI by decoding hierarchical auditory representations that closely parallel those learned by deep neural networks. By integrating these decoded features with an audio-generative model, we show that arbitrary real-world sounds can be reconstructed while preserving key spectral structures and short-timescale temporal information. Behavioral and objective evaluations further indicate that the reconstructed sounds not only resemble the original stimuli but also reflect subjective perceptual states such as selective attention. In addition, I will introduce cross-modal experiments demonstrating that visual stimuli can evoke high-level auditory representations, suggesting top-down modulation from visual to auditory cortex. I will conclude by discussing future directions, including applications to auditory imagery and hallucination, as well as the implications of cross-modal interactions for understanding multisensory auditory experiences.
 
----
+<div style="border-top: 1px solid #ccc; margin: 2em 0;"></div>
 
 ### Vincent Cheung 張家銘 (Sony CSL)
 
