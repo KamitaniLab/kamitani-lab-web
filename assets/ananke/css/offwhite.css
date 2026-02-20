@@ -504,7 +504,7 @@ hr {
 .news-entry {
   margin-bottom: 1.8rem;
   padding-bottom: 1.8rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 3px solid #999;
   line-height: 1.6;
 }
 .news-entry:last-child { border-bottom: none; }
@@ -562,6 +562,11 @@ hr {
 .news-description img { max-width: 100%; height: auto; margin: 0.5rem 0; }
 .news-description p { margin-bottom: 0.5rem; }
 .news-description p:last-child { margin-bottom: 0; }
+.news-description hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.2rem 0;
+}
 
 /* — Embed — */
 .news-embed {
