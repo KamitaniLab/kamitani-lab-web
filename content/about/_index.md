@@ -22,14 +22,14 @@ Graduate students are admitted through the Department of Intelligence Science an
 ### Kyoto University Lab
 
 Kamitani Lab, Graduate School of Informatics, Kyoto University<br>
-Frontier Science Building Room #501, Yoshida-tachibanacho, Sakyo-ku, Kyoto 606-8303, Japan
+[Frontier Science Building (先端科学研究棟)](https://maps.app.goo.gl/LmRUJg7tjQho9Xtq5) Room #501, Yoshida-tachibanacho, Sakyo-ku, Kyoto 606-8303, Japan
 
 Mailing: Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501, Japan
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634!2d135.7769076!3d35.0235345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f6186aaaab%3A0xe7889caa694c74fe!2z5Lqs6YO95aSn5a2mIOWFiOerr-enkeWtpueglOeptuajnw!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 - [Access to Kyoto University Yoshida Campus](https://www.kyoto-u.ac.jp/en/access)
-- [Yoshida Medicine Campus Map ("16": Frontier Science Building)](https://www.kyoto-u.ac.jp/en/access/yoshida/medicine.html)
+- [Yoshida Medicine Campus Map ("16": Frontier Science Building)](https://www.kyoto-u.ac.jp/en/access/medicine-campus-map)
 
 ### ATR Lab
 
