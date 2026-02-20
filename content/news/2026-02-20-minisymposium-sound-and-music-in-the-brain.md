@@ -12,6 +12,8 @@ news_type: event
 
 This minisymposium brings together NeuroAI approaches to auditory neuroscience and music cognition—linking **auditory representations** in the brain to **semantic understanding**, **generative reconstruction of sound**, and **computational accounts of musical enjoyment**.
 
+**[Registration](https://docs.google.com/forms/d/1cvgcLsOGY92lAtUcq_ZGHGvzxYCZEjjFMf4tUq2Ruy4/viewform)**
+
 ---
 
 ## Program
