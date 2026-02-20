@@ -1,5 +1,5 @@
 ---
-title: "Minisymposium: Sound and Music in the Brain"
+title: "Minisymposium: Sound and Music in the Brain (March 3, 2026)"
 date: 2026-02-20
 news_type: event
 ---
