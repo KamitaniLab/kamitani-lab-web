@@ -6,7 +6,8 @@ news_type: event
 
 **Date:** Tuesday, March 3, 2026<br>
 **Time:** 2:30–5:30 pm (JST)<br>
-**Venue:** Kyoto University, [Frontier Science Building (先端科学研究棟)](https://maps.app.goo.gl/LmRUJg7tjQho9Xtq5), Room 103 ([Campus Map](https://www.kyoto-u.ac.jp/en/access/medicine-campus-map))
+**Venue:** Frontier Science Building (先端科学研究棟) Room 103, Kyoto University<br>
+[Google Maps](https://maps.app.goo.gl/LmRUJg7tjQho9Xtq5) | [Campus Map](https://www.kyoto-u.ac.jp/en/access/medicine-campus-map)
 
 ### Overview
 
