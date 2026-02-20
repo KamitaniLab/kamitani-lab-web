@@ -29,7 +29,7 @@ This minisymposium brings together NeuroAI approaches to auditory neuroscience a
   <tbody>
     <tr>
       <td><strong>Bruno L. Giordano</strong> (CNRS & Aix Marseille Université, INT)</td>
-      <td><strong>TBA</strong></td>
+      <td><strong>The perceptual and cerebral representation of natural sounds</strong></td>
     </tr>
     <tr>
       <td><strong>Jong-Yun Park</strong> (Science Tokyo)</td>
@@ -48,8 +48,10 @@ This minisymposium brings together NeuroAI approaches to auditory neuroscience a
 
 ### Bruno L. Giordano (CNRS & Aix Marseille Université, INT)
 
-**Title:** TBA
-**Abstract:** TBA
+**Title:** *The perceptual and cerebral representation of natural sounds*
+
+**Abstract:**
+Every day, we encounter diverse natural sounds (chirps, impulses) and effortlessly recognize the objects and events producing them (a bird call, a nail being hammered). Studying how we perceive these sounds provides a unique window into how the auditory system operates under real-world conditions, moving beyond the traditional focus on speech and music. Investigating these signals promises a broader understanding of auditory processing, encompassing both acoustic complexity and semantic structure. I will start this talk by describing my early behavioural and fMRI work attempting to tease apart acoustic and semantic components of natural sound representation. I will then focus on more recent collaborative efforts that combined behavioral measures, ultra-high-field (7T) fMRI, and convolutional neural networks (CNNs) to reveal that CNN-based models closely mirror perceptual and fMRI representations. Here, mid-layer CNN representations best predicted brain and behavioral data, likely emphasizing the acoustic structure critical for identifying objects and actions (hyperacoustics). I will then describe ongoing work that aims to track the temporal unfolding of natural sounds representations through magnetoencephalography. I will conclude the talk with an overview of a new collaborative effort that aims to extend our AI + computationally modelling framework from isolated sounds to the complexity of real-life auditory scenes. By embracing the full richness of everyday listening, we seek a unified perspective on how the auditory system decodes our ever-changing acoustic environment, ultimately integrating neural, behavioral, and computational insights to illuminate the complexity of real-world hearing.
 
 ---
 
