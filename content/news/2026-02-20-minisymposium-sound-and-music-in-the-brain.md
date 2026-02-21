@@ -11,7 +11,9 @@ news_type: event
 
 ### Overview
 
-This minisymposium brings together NeuroAI approaches to auditory neuroscience and music cognition—linking **auditory representations** in the brain to **semantic understanding**, **generative reconstruction of sound**, and **computational accounts of musical enjoyment**.
+How does the brain transform acoustic signals into rich perceptual experiences—recognizing everyday sounds, reconstructing auditory scenes, and deriving pleasure from music? Recent advances in deep neural networks and brain decoding are beginning to answer these questions by revealing the **computational principles** shared between artificial and biological auditory systems.
+
+This minisymposium brings together three complementary perspectives at the intersection of **auditory neuroscience and AI**: the neural and perceptual representation of natural sounds explored through CNN-based modeling and ultra-high-field fMRI; the generative reconstruction of diverse auditory experiences—including subjective attentional states—from brain activity; and computational approaches to understanding how musical expectations give rise to pleasure. Together, these talks illustrate how integrating neural measurements with modern computational models can illuminate the mechanisms underlying our everyday auditory experience.
 
 <a href="https://docs.google.com/forms/d/1cvgcLsOGY92lAtUcq_ZGHGvzxYCZEjjFMf4tUq2Ruy4/viewform" class="registration-btn" target="_blank" rel="noopener">&#9997; Registration</a>
 
