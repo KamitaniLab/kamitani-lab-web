@@ -31,7 +31,7 @@
       <h2 class="f3 fw9 mv0 ttu tracked">News</h2>
       <a href="{{ "news/" | absURL }}" class="f6 link black fw7 ttu tracked">ALL &rarr;</a>
     </div>
-    {{ range first 3 $news }}
+    {{ range first 10 $news }}
     <div class="pv2 mb2 bb b--black-20">
       {{ with .Params.source }}
       <span class="db home-news-source">{{ . }}</span>
