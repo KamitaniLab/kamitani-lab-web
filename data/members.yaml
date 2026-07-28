@@ -58,8 +58,8 @@ atr_staff:
       - label: "researchmap"
         url: "https://researchmap.jp/takufumi/?lang=english"
 
-  - name: "Kizen Yamaguchi"
-    name_ja: "山口 暉善"
+  - name: "Mei Mitsuoka"
+    name_ja: "光岡 芽"
     role: "Research Engineer"
     role_ja: "研究技術員"
     links:
@@ -95,33 +95,27 @@ atr_collaborative:
     affiliation_ja: "京都大学"
     links:
 
-  - name: "Shuntaro Aoki"
-    name_ja: "青木 俊太郎"
-    role: "Collaborative Researcher"
-    role_ja: "連携研究員"
-    links:
-
 atr_trainees:
   - name: "Shiyun Yang"
     name_ja: "楊 詩韻"
     role: "External Trainee"
     role_ja: "連携実習生"
     affiliation: "Kyoto University"
-    affiliation_ja: "京都大学 D2"
+    affiliation_ja: "京都大学 D3"
 
   - name: "Kenya Otsuka"
     name_ja: "大塚 健矢"
     role: "External Trainee"
     role_ja: "連携実習生"
     affiliation: "Kyoto University"
-    affiliation_ja: "京都大学 D1"
+    affiliation_ja: "京都大学 D2"
 
   - name: "Reo Tsukasa"
     name_ja: "司 怜央"
     role: "External Trainee"
     role_ja: "連携実習生"
     affiliation: "Kyoto University"
-    affiliation_ja: "京都大学 M2"
+    affiliation_ja: "京都大学 D1"
 
 atr_secretary:
   - name: "Yukari Kado"
@@ -132,14 +126,22 @@ atr_secretary:
 students:
   - name: "Shiyun Yang"
     name_ja: "楊 詩韻"
-    level: "D2"
+    level: "D3"
 
   - name: "Kenya Otsuka"
     name_ja: "大塚 健矢"
-    level: "D1"
+    level: "D2"
     links:
       - label: "researchmap"
         url: "https://researchmap.jp/kenyaotsuka"
+
+  - name: "Taiga Kurosawa"
+    name_ja: "黒澤 大河"
+    level: "D1"
+
+  - name: "Reo Tsukasa"
+    name_ja: "司 怜央"
+    level: "D1"
 
   - name: "Hideki Izumi"
     name_ja: "泉 英樹"
@@ -154,41 +156,41 @@ students:
       - label: "Google Scholar"
         url: "https://scholar.google.com/citations?user=nFiddPUAAAAJ"
 
-  - name: "Taiga Kurosawa"
-    name_ja: "黒澤 大河"
-    level: "M2"
-
-  - name: "Reo Tsukasa"
-    name_ja: "司 怜央"
-    level: "M2"
-
   - name: "Yawei Yu"
     name_ja: "喻 雅葳"
     level: "M2"
 
-  - name: "Xiaoxuan Liu"
-    name_ja: "劉 暁軒"
-    level: "M2"
-
   - name: "Motokazu Umehara"
     name_ja: "梅原 志和"
-    level: "M1"
+    level: "M2"
 
   - name: "Noa Nakanishi"
     name_ja: "中西 希天"
-    level: "M1"
+    level: "M2"
 
   - name: "Moana Mikami"
     name_ja: "三上 モアナ"
-    level: "M1"
+    level: "M2"
 
   - name: "Hiroki Yasuda"
     name_ja: "安田 大起"
+    level: "M2"
+
+  - name: "Sora Iwamura"
+    name_ja: "岩村 大空"
     level: "M1"
 
-  - name: "Alexandra Marquardt"
-    level: "Exchange Student"
-    level_ja: "交換留学生"
+  - name: "Kodai Fujimori"
+    name_ja: "藤森 皓大"
+    level: "M1"
+
+  - name: "Junya Matsukawa"
+    name_ja: "松川 潤也"
+    level: "M1"
+
+  - name: "Ziang Yao"
+    name_ja: "姚 子昂"
+    level: "M1"
 
   - name: "Anniruddh Kumar"
     level: "Research Student"
