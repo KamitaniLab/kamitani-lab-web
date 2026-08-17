@@ -25,7 +25,12 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
-      - run: hugo --minify
+      # TEMPORARY: kamitani-lab.ist.i.kyoto-u.ac.jp was taken over by a third
+      # party (2026-08). Until the domain is reclaimed via GitHub domain
+      # verification, build for the github.io fallback URL so that assets
+      # resolve and canonical/favicon links stop pointing at the hijacked host.
+      # Remove the --baseURL override once the custom domain is restored.
+      - run: hugo --minify --baseURL "https://kamitanilab.github.io/kamitani-lab-web/"
       - run: npx pagefind --site public
       - uses: actions/upload-pages-artifact@v3
         with:
