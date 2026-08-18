@@ -4,3 +4,12 @@ resources/_gen/
 .DS_Store
 node_modules/
 __pycache__/
+
+# 認証情報・秘密情報（このリポジトリは公開。絶対にコミットしない）
+credentials.json
+token.json
+*.pem
+*.key
+.env
+.env.*
+.claude/settings.local.json
