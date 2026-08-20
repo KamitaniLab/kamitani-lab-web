@@ -13,3 +13,8 @@ token.json
 .env
 .env.*
 .claude/settings.local.json
+
+# エージェント向け指示ファイル（ローカルに保持。公開リポジトリには置かない）
+CLAUDE.md
+AGENTS.md
+.claude/

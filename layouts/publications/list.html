@@ -1,7 +1,16 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns mw8 center">
+  {{/* Entries live only in the default (English) site — fall back to them
+       so the Japanese section is not an empty page. */}}
+  {{ $pages := .Pages }}
+  {{ if not $pages }}
+    {{ with (index hugo.Sites 0).GetPage .Section }}
+      {{ $pages = .Pages }}
+    {{ end }}
+  {{ end }}
+
   {{/* Collect all years */}}
-  {{ $allPages := .Pages.ByDate.Reverse }}
+  {{ $allPages := $pages.ByDate.Reverse }}
   {{ $englishPages := where (where $allPages ".Params.pub_type" "ne" "japanese") ".Params.pub_type" "ne" "preprint" }}
   {{ $preprintPages := where $allPages ".Params.pub_type" "preprint" }}
   {{ $japanesePages := where $allPages ".Params.pub_type" "japanese" }}

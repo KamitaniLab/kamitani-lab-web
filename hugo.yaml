@@ -15,7 +15,6 @@ languages:
   ja:
     languageName: 日本語
     weight: 2
-    title: 神谷研究室
     params:
       description: "神谷研究室 – 神経情報学 – 京都大学・ATR"
     menus:

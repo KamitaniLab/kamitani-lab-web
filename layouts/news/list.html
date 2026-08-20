@@ -5,8 +5,17 @@
   <div class="lh-copy f5 mid-gray mb4 nested-links">{{ . }}</div>
   {{ end }}
 
+  {{/* Entries live only in the default (English) site — fall back to them
+       so the Japanese section is not an empty page. */}}
+  {{ $pages := .Pages }}
+  {{ if not $pages }}
+    {{ with (index hugo.Sites 0).GetPage .Section }}
+      {{ $pages = .Pages }}
+    {{ end }}
+  {{ end }}
+
   {{/* Collect all years */}}
-  {{ $allPages := .Pages.ByDate.Reverse }}
+  {{ $allPages := $pages.ByDate.Reverse }}
   {{ $years := slice }}
   {{ range $allPages }}
     {{ $y := .Date.Format "2006" }}

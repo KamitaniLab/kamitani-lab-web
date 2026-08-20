@@ -15,6 +15,16 @@ research_areas:
   - name: "Art"
     description: "脳科学と芸術表現の交差"
     url: "ja/research/#art"
+web_books:
+  - name: "読む・書く・伝える：研究の実践ガイド"
+    description: "研究倫理から論文の読み方・書き方、発表、公表まで"
+    url: "https://kamitanilab.github.io/research-handbook/"
+  - name: "脳とAIをつなぐ数理"
+    description: "表現・学習・生成 ── 脳と人工ニューラルネットに共通する数理"
+    url: "https://kamitanilab.github.io/neuroAI-math-book/"
+  - name: "統計入門 数理サプリメント"
+    description: "統計入門講義の数理サプリメント"
+    url: "https://kamitanilab.github.io/stats-math-supplement/"
 ---
 
 Externalizing the mind.

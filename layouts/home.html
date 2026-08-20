@@ -23,7 +23,7 @@
 <div class="pa3 pa4-ns mw8 center">
 
   {{/* ── News (3 items) — always pull from default (English) site ── */}}
-  {{ $defaultSite := index site.Sites 0 }}
+  {{ $defaultSite := index hugo.Sites 0 }}
   {{ $news := (where $defaultSite.RegularPages "Section" "news").ByDate.Reverse }}
   {{ if $news }}
   <section class="mb5">
@@ -65,6 +65,21 @@
       </a>
       {{ end }}
     </div>
+  </section>
+  {{ end }}
+
+  {{/* ── Web Books ── */}}
+  {{ with .Params.web_books }}
+  <section class="mb5">
+    <div class="mb3">
+      <h2 class="f3 fw9 mv0 ttu tracked">Web Books</h2>
+    </div>
+    {{ range . }}
+    <div class="pv2 mb2 bb b--black-20">
+      <a href="{{ .url }}" class="f6 fw6 link black underline-hover lh-title db" target="_blank" rel="noopener">{{ .name }}</a>
+      <div class="f7 gray mt1">{{ .description }}</div>
+    </div>
+    {{ end }}
   </section>
   {{ end }}
 

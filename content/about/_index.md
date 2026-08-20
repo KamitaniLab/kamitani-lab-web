@@ -44,6 +44,34 @@ Department of Neuroinformatics, ATR Computational Neuroscience Laboratories<br>
 
 ## Resources
 
+### Web Books
+
+Open web books written in the lab (in Japanese).
+
+<div class="res-grid">
+<a href="https://kamitanilab.github.io/research-handbook/" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=kamitanilab.github.io&sz=64" alt="Research Handbook" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">読む・書く・伝える：研究の実践ガイド</div>
+    <div class="res-desc">A practical guide to doing research</div>
+  </div>
+</a>
+<a href="https://kamitanilab.github.io/neuroAI-math-book/" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=kamitanilab.github.io&sz=64" alt="NeuroAI Mathematics" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">脳とAIをつなぐ数理</div>
+    <div class="res-desc">Mathematics shared by brains and AI</div>
+  </div>
+</a>
+<a href="https://kamitanilab.github.io/stats-math-supplement/" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=kamitanilab.github.io&sz=64" alt="Statistics Supplement" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">統計入門 数理サプリメント</div>
+    <div class="res-desc">Mathematical companion to the statistics course</div>
+  </div>
+</a>
+</div>
+
 ### Research Outputs
 
 <div class="res-grid">

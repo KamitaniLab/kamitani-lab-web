@@ -44,6 +44,34 @@ ATR脳情報通信総合研究所 神経情報学研究室<br>
 
 ## リソース
 
+### Web書籍
+
+研究室で執筆している、無料公開のWeb書籍です。
+
+<div class="res-grid">
+<a href="https://kamitanilab.github.io/research-handbook/" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=kamitanilab.github.io&sz=64" alt="研究の実践ガイド" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">読む・書く・伝える：研究の実践ガイド</div>
+    <div class="res-desc">研究の進め方・書き方・伝え方</div>
+  </div>
+</a>
+<a href="https://kamitanilab.github.io/neuroAI-math-book/" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=kamitanilab.github.io&sz=64" alt="脳とAIをつなぐ数理" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">脳とAIをつなぐ数理</div>
+    <div class="res-desc">表現・学習・生成の数理</div>
+  </div>
+</a>
+<a href="https://kamitanilab.github.io/stats-math-supplement/" class="res-card" target="_blank" rel="noopener">
+  <img src="https://www.google.com/s2/favicons?domain=kamitanilab.github.io&sz=64" alt="統計入門 数理サプリメント" class="res-icon">
+  <div class="res-info">
+    <div class="res-name">統計入門 数理サプリメント</div>
+    <div class="res-desc">統計入門講義の数理サプリメント</div>
+  </div>
+</a>
+</div>
+
 ### 研究成果
 
 <div class="res-grid">
