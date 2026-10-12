@@ -3,6 +3,11 @@ staff:
     name_ja: "神谷 之康"
     role: "Professor"
     role_ja: "教授"
+    leadership: "PI (Principal Investigator)"
+    leadership_ja: "研究代表者"
+    emails:
+      - "kamitani@i.kyoto-u.ac.jp"
+      - "kamitani.yukiyasu.2x@kyoto-u.ac.jp"
     links:
 
       - label: "researchmap"

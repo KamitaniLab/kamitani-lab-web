@@ -4,6 +4,12 @@
   <h3 class="f4 fw7 mb1 ttu tracked">{{ .name }}</h3>
   <p class="f5 gray mt0 mb1" lang="ja">{{ .name_ja }}</p>
   <p class="f5 mb2">{{ .role }} / <span lang="ja">{{ .role_ja }}</span></p>
+  {{ if .leadership }}
+  <p class="f5 mt0 mb2">{{ .leadership }} / <span lang="ja">{{ .leadership_ja }}</span></p>
+  {{ end }}
+  {{ range .emails }}
+  <p class="f6 mt0 mb1" style="overflow-wrap: anywhere;"><a href="mailto:{{ . }}" class="link black underline-hover">{{ . }}</a></p>
+  {{ end }}
   {{ if .links }}
   <p class="f6">
     {{ range $i, $link := .links }}{{ if $i }} / {{ end }}{{ $href := $link.url }}{{ if hasPrefix $link.url "/" }}{{ with site.GetPage $link.url }}{{ $href = .RelPermalink }}{{ end }}{{ end }}<a href="{{ $href }}" class="link black underline-hover fw7"{{ if not (hasPrefix $link.url "/") }} target="_blank" rel="noopener"{{ end }}>{{ $link.label }}</a>{{ end }}
