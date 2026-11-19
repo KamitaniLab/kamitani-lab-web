@@ -23,7 +23,9 @@ jobs:
           fetch-depth: 0
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          # "latest" にしない。2026-11-19、v0.170.1 で extended 版が取れず
+          # 「no Dart Sass binary found」で公開が止まった。最後に成功した版に固定する
+          hugo-version: "0.167.0"
           extended: true
       - run: hugo --minify
       - run: npx pagefind --site public
